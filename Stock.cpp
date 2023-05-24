@@ -18,6 +18,10 @@ double Stock::getPrice() const {
     return price;
 }
 
+int Stock::getTimestamp() const {
+    return timestamp;
+}
+
 // Setter method
 void Stock::setPrice(double price) {
     this->price = price;

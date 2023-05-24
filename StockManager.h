@@ -15,6 +15,7 @@ private:
 public:
     void addStock(const Stock& stock);
     void loadStockData(const std::string& filename);
+    void displayData()const;
 };
 
 #endif  // STOCKMANAGER_H

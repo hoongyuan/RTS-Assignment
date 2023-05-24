@@ -50,7 +50,16 @@ bool CSVReader::readNextRow(vector<string>& rowData)
 
 void csvReaderTask(void* pvParameters)
 {
-    cout << "Running CSVReaderTask" << endl;
+    cout << R"(
+  ____   ______    ____    ______   _   _
+ / ___| |_    _| /  __  \ /  ____| | | / /
+ | |__    |  |   | |  | | | |      | |/ /
+ \___ \   |  |   | |  | | | |      |   |
+  ___) |  |  |   | |  | | | |____  | |\ \
+ |____/   |__|   \ ____ / \______| |_| \_\
+                                                     
+    )" << endl;
+
     StockManager* stockManager = static_cast<StockManager*>(pvParameters);
     CSVReader csvReader("stocks.txt");
     vector<string> header;
@@ -65,23 +74,29 @@ void csvReaderTask(void* pvParameters)
                 continue;
             }
 
+            // extract variables from row
             int timestamp = stoi(row[0]);
             string symbol = row[1];
             double price = stod(row[2]);
-            
-            cout << "The current Time is: ";
-            cout << simulatedTime << endl;
 
-            cout << symbol << " " << row[2] << endl;
+
+            while (simulatedTime < timestamp) {
+                //Print Stock Data
+                stockManager->displayData();
+
+                // Add a delay here if needed to control the reading speed
+                vTaskDelay(pdMS_TO_TICKS(1000));  // 100 ms delay
+            }
+            
 
             Stock stock(symbol, price, timestamp);
             stockManager->addStock(stock);
+            stockManager->displayData();
 
             row.clear();
+            
         }
 
-        // Add a delay here if needed to control the reading speed
-        vTaskDelay(pdMS_TO_TICKS(100));  // 100 ms delay
     }
 }
 

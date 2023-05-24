@@ -21,6 +21,7 @@ public:
     // Getter methods
     string getSymbol() const;
     double getPrice() const;
+    int getTimestamp() const;
 
     // Setter methods
     void setPrice(double price);
