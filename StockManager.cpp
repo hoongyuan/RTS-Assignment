@@ -60,11 +60,6 @@ void StockManager::displayData()const {
         cout << setw(20) << obj.getPrice();
         SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
         cout << endl;
-        /*cout << setw(20) << "%Change" << right << endl;
-
-        cout << left << setw(20) << obj.getTimestamp()
-            << setw(20) << key
-            << setw(20) << obj.getPrice() << endl;*/
     }
 }
 
