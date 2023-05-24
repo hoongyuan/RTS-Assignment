@@ -19,6 +19,9 @@ TaskHandle_t csvReaderTaskHandle;
 #include "CSVReader.h"
 #include "StockManager.h"
 #include <iostream>
+#include "SimulatedTime.h"
+
+//volatile uint32_t simulatedTime;
 
 CSVReader::CSVReader(const string& filename)
 {
@@ -66,6 +69,8 @@ void csvReaderTask(void* pvParameters)
             string symbol = row[1];
             double price = stod(row[2]);
             
+            cout << "The current Time is: ";
+            cout << simulatedTime << endl;
 
             cout << symbol << " " << row[2] << endl;
 
