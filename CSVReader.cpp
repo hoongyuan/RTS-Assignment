@@ -87,7 +87,6 @@ void csvReaderTask(void* pvParameters)
                 // Add a delay here if needed to control the reading speed
                 vTaskDelay(pdMS_TO_TICKS(1000));  // 100 ms delay
             }
-            
 
             Stock stock(symbol, price, timestamp);
             stockManager->addStock(stock);

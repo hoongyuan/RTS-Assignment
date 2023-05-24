@@ -5,6 +5,9 @@
 #include "task.h"
 #include <iomanip>
 #include "SimulatedTime.h"
+#include <Windows.h>
+
+HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 
 void StockManager::addStock(const Stock& stock)
 {
@@ -27,6 +30,8 @@ void StockManager::loadStockData(const std::string& filename)
 void StockManager::displayData()const {
     system("cls");
 
+    SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
+
     cout << R"(
   ____   ______    ____    ______   _   _
  / ___| |_    _| /  __  \ /  ____| | | / /
@@ -40,18 +45,26 @@ void StockManager::displayData()const {
     cout << "Time: " << simulatedTime << endl;
 
     // Display headers
-    cout << left << setw(20) << "Last Updated"
-        << setw(20) << "Stock"
-        << setw(20) << "Price"
-        << setw(20) << "%Change" << right << endl;
+    cout << left << setw(20) << "Last Updated";
+    cout << setw(20) << "Stock";
+    cout << setw(20) << "Price";
+    cout << setw(20) << "%Change" << right << endl;
 
     for (const auto& pair : stocks) {
         string key = pair.first;
         const Stock &obj = pair.second;
 
+        cout << left << setw(20) << obj.getTimestamp();
+        cout << setw(20) << key;
+        SetConsoleTextAttribute(hConsole, FOREGROUND_GREEN);
+        cout << setw(20) << obj.getPrice();
+        SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
+        cout << endl;
+        /*cout << setw(20) << "%Change" << right << endl;
+
         cout << left << setw(20) << obj.getTimestamp()
             << setw(20) << key
-            << setw(20) << obj.getPrice() << endl;
+            << setw(20) << obj.getPrice() << endl;*/
     }
 }
 
