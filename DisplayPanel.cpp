@@ -13,7 +13,7 @@
 void DisplayPanel::updateTime(int ts, const map<string, Stock> stocks) { //smt = simulated time, ts = timestamp
     while (simulatedTime < ts) {
         printStocks(stocks);
-        vTaskDelay(pdMS_TO_TICKS(1000));
+        vTaskDelay(pdMS_TO_TICKS(1000));// wait for 1 second
     }
 }
 
@@ -58,4 +58,13 @@ void DisplayPanel::printStocks(const map<string,Stock> stocks) const{
     ////SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
     //cout << endl;
 
+}
+
+
+
+void DisplayPanel::printOrderStatus(User* user) {
+    vector<Order*> orders = user->getOrders();
+    for (const auto& order : orders) {
+        cout << user->getUsername() << " has placed an order: BUY " << order->getStock() << " at " << order->getTargetPrice() << endl;
+    }
 }
