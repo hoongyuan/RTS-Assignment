@@ -21,6 +21,7 @@ TaskHandle_t csvReaderTaskHandle;
 #include <iostream>
 #include "SimulatedTime.h"
 #include "DisplayPanel.h"
+#include "OrderManager.h"
 
 //volatile uint32_t simulatedTime;
 
@@ -85,6 +86,36 @@ void csvReaderTask(void* pvParameters)
             displaypanel.updateTime(timestamp,stockManager->getMap());
 
             stockManager->addStock(stock);
+
+            row.clear();
+        }
+
+    }
+}
+
+void csvReadOrder(void* pvParameters) {
+    OrderManager* orderManager = static_cast<OrderManager*>(pvParameters);
+    DisplayPanel displaypanel;
+    CSVReader csvReader("orders.txt");
+    vector<string> header;
+    csvReader.readNextRow(header);
+
+    while (true) {
+        vector<string> row;
+        if (csvReader.readNextRow(row)) {
+            if (row.empty()) {
+                // End of file reached, restart from the beginning
+                csvReader.reset();
+                continue;
+            }
+
+            // extract variables from row
+            string user = row[0];
+            string stock = row[1];
+            string ordertype = row[2];
+            double targetprice = stod(row[3]);
+
+            orderManager->addOrder(user,stock,ordertype,targetprice);            
 
             row.clear();
         }
