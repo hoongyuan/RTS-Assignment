@@ -1,6 +1,5 @@
 #include <iostream>
 #include "portmacro.h"
-//#include "tasks.c"
 
 void OrderManagerTask(void* parameter) {
     // Order Manager

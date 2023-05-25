@@ -6,6 +6,7 @@
 #include "CSVReader.h"
 #include "StockManager.h"
 #include "SimulatedTime.h"
+#include "DisplayPanel.h"
 
 // Define the simulatedTime variable
 void incrementSimulatedTimeTask(void* pvParameters)
@@ -18,9 +19,16 @@ void incrementSimulatedTimeTask(void* pvParameters)
 
 
 int main() {
+
     StockManager stockManager;
-    stockManager.loadStockData("stocks.txt");
+    //stockManager.loadStockData("stocks.txt");
+    DisplayPanel displayPanel;
+    stockManager.setupDisplayPanel(displayPanel);
+
+    //Create file reader task
     xTaskCreate(csvReaderTask, "CSVReader", configMINIMAL_STACK_SIZE, &stockManager, 1, NULL);
+
+    //Create time simulator task
     xTaskCreate(incrementSimulatedTimeTask, "SimulatedTime", configMINIMAL_STACK_SIZE, NULL, 1, NULL);
 
     vTaskStartScheduler();

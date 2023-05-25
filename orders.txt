@@ -1,0 +1,3 @@
+User,Stock,OrderType,TargetPrice
+Hoong Yuan,MAYBANK,BUY,8.30
+Jordan,MAYBANK,BUY,8.35

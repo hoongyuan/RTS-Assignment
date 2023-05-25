@@ -6,13 +6,19 @@
 #include <iomanip>
 #include "SimulatedTime.h"
 #include <Windows.h>
+#include "DisplayPanel.h"
 
 HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+
+void StockManager::setupDisplayPanel(const DisplayPanel& dp) {
+    this->displayPanel = dp;
+}
 
 void StockManager::addStock(const Stock& stock)
 {
     // Map Stock with Price
     stocks[stock.getSymbol()] = stock;
+    displayPanel.printStocks(stocks);
 
 }
 
@@ -63,6 +69,7 @@ void StockManager::displayData()const {
     }
 }
 
-
-
+map<string, Stock> StockManager::getMap() {
+    return stocks;
+}
 

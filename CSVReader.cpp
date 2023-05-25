@@ -20,6 +20,7 @@ TaskHandle_t csvReaderTaskHandle;
 #include "StockManager.h"
 #include <iostream>
 #include "SimulatedTime.h"
+#include "DisplayPanel.h"
 
 //volatile uint32_t simulatedTime;
 
@@ -61,6 +62,7 @@ void csvReaderTask(void* pvParameters)
     )" << endl;
 
     StockManager* stockManager = static_cast<StockManager*>(pvParameters);
+    DisplayPanel displaypanel;
     CSVReader csvReader("stocks.txt");
     vector<string> header;
     csvReader.readNextRow(header);
@@ -78,22 +80,13 @@ void csvReaderTask(void* pvParameters)
             int timestamp = stoi(row[0]);
             string symbol = row[1];
             double price = stod(row[2]);
-
-
-            while (simulatedTime < timestamp) {
-                //Print Stock Data
-                stockManager->displayData();
-
-                // Add a delay here if needed to control the reading speed
-                vTaskDelay(pdMS_TO_TICKS(1000));  // 100 ms delay
-            }
-
             Stock stock(symbol, price, timestamp);
+            
+            displaypanel.updateTime(timestamp,stockManager->getMap());
+
             stockManager->addStock(stock);
-            stockManager->displayData();
 
             row.clear();
-            
         }
 
     }
