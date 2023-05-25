@@ -7,6 +7,8 @@
 #include "SimulatedTime.h"
 #include <Windows.h>
 #include "DisplayPanel.h"
+#include "queue.h"
+#include "OrderManager.h"
 
 HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 
@@ -17,9 +19,22 @@ void StockManager::setupDisplayPanel(const DisplayPanel& dp) {
 void StockManager::addStock(const Stock& stock)
 {
     // Map Stock with Price
-    stocks[stock.getSymbol()] = stock;
+    if (stocks.count(stock.getSymbol()) > 0) {
+        //Stock already exists
+        stocks[stock.getSymbol()].updatePrice(stock.getPrice());
+    }
+    else {
+        //Stock is new
+        stocks[stock.getSymbol()] = stock;
+    }
+
+    // Print stocks data
     displayPanel.printStocks(stocks);
 
+    // Send order to OrderManager
+    orderManager.processStock(stock);
+    cout << "Sending Stock Data to Order Manager..." << endl << "Waiting for response.." << endl;
+    
 }
 
 void StockManager::loadStockData(const std::string& filename)
