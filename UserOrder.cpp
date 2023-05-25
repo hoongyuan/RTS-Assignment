@@ -1,5 +1,6 @@
 #include <string>
 #include "UserOrder.h"
+#include "Stock.h"
 
 using namespace std;
 
@@ -40,6 +41,8 @@ void Order::setTargetPrice(double targetPrice) {
 // User class implementation
 // Constructor
 User::User(const string& username, double balance) {
+    this->username = username;
+    this->balance = balance;
 }
 
 // Getter and setter for username
@@ -70,3 +73,21 @@ void User::newOrder(Order order) {
     this->orders.push_back(newOrder);
 }
 
+vector<Order*> User::getOrdersToExecute(const Stock& newStock) {
+    
+    vector<Order*> orderList = this->orders;
+    vector<Order*> orderByNewStock;
+
+    for (const auto& order : orderList) {
+
+        if (order->getStock() == newStock.getSymbol()) {
+            if (newStock.getPrice() < order->getTargetPrice() < newStock.getPreviousPrice() || 
+                newStock.getPrice() > order->getTargetPrice() > newStock.getPreviousPrice() ||
+                newStock.getPrice() == order->getTargetPrice()) {
+                orderByNewStock.push_back(order);
+            }
+        }
+    }
+
+    return orderByNewStock;
+}

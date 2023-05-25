@@ -3,6 +3,7 @@
 
 #include <string>
 #include <vector>
+#include "Stock.h"
 
 using namespace std;
 
@@ -52,7 +53,7 @@ public:
     // Getter and setter for orders array
     vector<Order*> getOrders() const;
     void newOrder(Order order);
-
+    vector<Order*> getOrdersToExecute(const Stock& newStock);
 };
 
 
