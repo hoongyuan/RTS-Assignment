@@ -7,6 +7,8 @@
 #include "StockManager.h"
 #include "SimulatedTime.h"
 #include "DisplayPanel.h"
+#include "OrderManager.h"
+
 
 // Define the simulatedTime variable
 void incrementSimulatedTimeTask(void* pvParameters)
@@ -21,12 +23,19 @@ void incrementSimulatedTimeTask(void* pvParameters)
 int main() {
 
     StockManager stockManager;
+    OrderManager orderManager;
     //stockManager.loadStockData("stocks.txt");
     DisplayPanel displayPanel;
     stockManager.setupDisplayPanel(displayPanel);
 
     //Create file reader task
-    xTaskCreate(csvReaderTask, "CSVReader", configMINIMAL_STACK_SIZE, &stockManager, 1, NULL);
+    //xTaskCreate(csvReaderTask, "CSVReadStock", configMINIMAL_STACK_SIZE, &stockManager, 1, NULL);
+
+    //Create file reader task
+    xTaskCreate(csvReadOrder, "CSVReadOrder", configMINIMAL_STACK_SIZE, &orderManager, 1, NULL);
+
+    //Create check order task
+    //xTaskCreate(sendOrderTask, "SendOrder", configMINIMAL_STACK_SIZE, &orderManager, 1, NULL);
 
     //Create time simulator task
     xTaskCreate(incrementSimulatedTimeTask, "SimulatedTime", configMINIMAL_STACK_SIZE, NULL, 1, NULL);
