@@ -9,6 +9,7 @@ class Stock {
 private:
     string symbol;  // Symbol of the stock
     double price;   // Current price of the stock
+    double previousPrice;
     int timestamp;  // timestamp
 
 public:
@@ -21,10 +22,11 @@ public:
     // Getter methods
     string getSymbol() const;
     double getPrice() const;
+    double getPreviousPrice() const;
     int getTimestamp() const;
 
     // Setter methods
-    void setPrice(double price);
+    void updatePrice(double price);
 };
 
 #endif  // STOCK_H
