@@ -29,10 +29,14 @@ int main() {
     stockManager.setupDisplayPanel(displayPanel);
 
     //Create file reader task
-    //xTaskCreate(csvReaderTask, "CSVReadStock", configMINIMAL_STACK_SIZE, &stockManager, 1, NULL);
+    xTaskCreate(csvReaderTask, "CSVReadStock", configMINIMAL_STACK_SIZE, &stockManager, 1, NULL);
 
     //Create file reader task
     xTaskCreate(csvReadOrder, "CSVReadOrder", configMINIMAL_STACK_SIZE, &orderManager, 1, NULL);
+
+    //Create display panel task
+    xTaskCreate(printAll, "DisplayPanelStart", configMINIMAL_STACK_SIZE, &displayPanel, 1, NULL);
+
 
     //Create check order task
     //xTaskCreate(sendOrderTask, "SendOrder", configMINIMAL_STACK_SIZE, &orderManager, 1, NULL);

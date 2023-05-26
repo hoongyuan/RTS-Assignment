@@ -21,6 +21,7 @@ public:
     void processStock(const Stock& newStock);
     void processOrder(Stock newStock, vector<User*> users);
     void executeOrder(vector<Order*> ordersToExecute);
+    vector<User*> returnOrderList();
 };
 
 

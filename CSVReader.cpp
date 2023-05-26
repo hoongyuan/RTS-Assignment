@@ -83,7 +83,7 @@ void csvReaderTask(void* pvParameters)
             double price = stod(row[2]);
             Stock stock(symbol, price, timestamp);
             
-            displaypanel.updateTime(timestamp,stockManager->getMap());
+            //displaypanel.updateTime(timestamp,stockManager->getMap());
 
             stockManager->addStock(stock);
 

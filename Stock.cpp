@@ -31,3 +31,8 @@ void Stock::updatePrice(double price) {
     this->previousPrice = this->price;
     this->price = price;
 }
+
+void Stock::updateTime(int timestamp) {
+    this->timestamp = timestamp;
+}
+

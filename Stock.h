@@ -26,6 +26,7 @@ public:
     int getTimestamp() const;
 
     // Setter methods
+    void updateTime(int timestamp);
     void updatePrice(double price);
 };
 

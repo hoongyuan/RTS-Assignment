@@ -18,11 +18,12 @@ void OrderManager::addOrder(string username, string stock, string ordertype, dou
     user->newOrder(order);
 
     orderBStock[stock].push_back(user);
-    displayPanel.printOrderStatus(user);
+    //displayPanel.updateOrderStatus(returnOrderList());
 }
 
 void OrderManager::processStock(const Stock& newStock) 
 {
+    // Filter users based on the given stock
     const vector<User*> users = orderBStock[newStock.getSymbol()];
     processOrder(newStock, users);
 }
@@ -42,6 +43,20 @@ void OrderManager::executeOrder(vector<Order*> ordersToExecute) {
 
         //display notification on panel
     }
+}
+
+vector<User*> OrderManager::returnOrderList() {
+    
+    vector<User*> orderList;
+
+    // Generate a list of users by looping through orderBStock
+    for (const auto& pair : orderBStock) {
+        for (const auto& user : pair.second) {
+            orderList.push_back(user);
+        }
+    }
+
+    return orderList;
 }
 
 

@@ -10,7 +10,6 @@
 #include "queue.h"
 #include "OrderManager.h"
 
-HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 
 void StockManager::setupDisplayPanel(const DisplayPanel& dp) {
     this->displayPanel = dp;
@@ -19,9 +18,13 @@ void StockManager::setupDisplayPanel(const DisplayPanel& dp) {
 void StockManager::addStock(const Stock& stock)
 {
     // Map Stock with Price
+    while (simulatedTime < stock.getTimestamp()) {
+        vTaskDelay(pdMS_TO_TICKS(1000));// wait for 1 second;
+    }
     if (stocks.count(stock.getSymbol()) > 0) {
         //Stock already exists
         stocks[stock.getSymbol()].updatePrice(stock.getPrice());
+        stocks[stock.getSymbol()].updateTime(stock.getTimestamp());
     }
     else {
         //Stock is new
@@ -29,11 +32,10 @@ void StockManager::addStock(const Stock& stock)
     }
 
     // Print stocks data
-    displayPanel.printStocks(stocks);
+    displayPanel.updateStock(stocks);
 
     // Send order to OrderManager
     orderManager.processStock(stock);
-    cout << "Sending Stock Data to Order Manager..." << endl << "Waiting for response.." << endl;
     
 }
 
@@ -51,7 +53,7 @@ void StockManager::loadStockData(const std::string& filename)
 void StockManager::displayData()const {
     system("cls");
 
-    SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
+    //SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
 
     cout << R"(
   ____   ______    ____    ______   _   _
@@ -77,9 +79,9 @@ void StockManager::displayData()const {
 
         cout << left << setw(20) << obj.getTimestamp();
         cout << setw(20) << key;
-        SetConsoleTextAttribute(hConsole, FOREGROUND_GREEN);
+        //SetConsoleTextAttribute(hConsole, FOREGROUND_GREEN);
         cout << setw(20) << obj.getPrice();
-        SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
+        //SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
         cout << endl;
     }
 }
@@ -87,4 +89,5 @@ void StockManager::displayData()const {
 map<string, Stock> StockManager::getMap() {
     return stocks;
 }
+
 
