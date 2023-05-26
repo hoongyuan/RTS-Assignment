@@ -20,7 +20,7 @@ public:
 	void updateStock(map<string, Stock> stocks);
 	void updateOrderStatus(vector<User*> user);
 };
-void readStockArray(string* stockReceived);
+void saveStockArray(string* stockReceived);
 void printAll(void* pvParameters);
 
 #endif

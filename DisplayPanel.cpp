@@ -12,6 +12,7 @@ HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 QueueHandle_t orderQueue = xQueueCreate(10, 100); //10 queue, 100 orders
 QueueHandle_t stockQueue = xQueueCreate(10, 50); //10 queue, 50 stocks
 vector<Stock> stockPanel;
+vector<string> orderPanel;
 
 string DisplayPanel::stockMapToString(const Stock stocks) {
     string result;
@@ -78,6 +79,7 @@ void DisplayPanel::printStocks(const map<string,Stock> stocks) const{
 
 }
 
+// Convert the data from map to string and store in array
 void DisplayPanel::updateStock(const map<string, Stock> stocks) {
     
         const int size = sizeof(stocks);
@@ -93,24 +95,60 @@ void DisplayPanel::updateStock(const map<string, Stock> stocks) {
         string* stockDataArray = new string[size];
         copy(stockArr, stockArr + size, stockDataArray);
 
+        // Send data to display panel
         xQueueSend(stockQueue, &stockDataArray, 0);
 }
 
 void DisplayPanel::updateOrderStatus(vector<User*> users) {
 
-    // Send latest user order list to displaypanel
-    xQueueSend(orderQueue, &users, 0);
+    const int size = sizeof(users);
+    string orderArr[size];
+    int i = 0;
 
-    /*for (const auto& user : users) {
+    // Convert the data from vector to string and store in array
+    for (User* user : users) {
         vector<Order*> orders = user->getOrders();
-        for (const auto& order : orders) {
-            cout << user->getUsername() << " has placed an order: BUY " << order->getStock() << " at " << order->getTargetPrice() << endl;
-            cout << endl;
+
+        for (Order* order : orders) {
+            string stringOrder = 
+                user->getUsername() + "," + 
+                order->getStock() + "," + 
+                order->getOrderType() + "," + 
+                to_string(order->getTargetPrice());
+
+            orderArr[i++] = stringOrder;
         }
-    }*/
+    }
+
+    // Allocate memory for the dynamic array
+    string* orderDataArray = new string[size];
+    copy(orderArr, orderArr + size, orderDataArray);
+
+    // Send data to display panel
+    xQueueSend(orderQueue, &orderDataArray, 0);
 }
 
-void readStockArray(string* stockReceived) {
+void readOrderArray(string* orderReceived) {
+    string username;
+    string stockname;
+    string ordertype;
+    string targetprice;
+
+    for (int i = 0; !orderReceived[i].empty(); i++) {
+        istringstream iss(orderReceived[i]);
+        getline(iss, username, ',');
+        getline(iss, stockname, ',');
+        getline(iss, ordertype, ',');
+        getline(iss, targetprice, ',');
+
+        string line = username + ": " + ordertype + " " + stockname + " at " + targetprice;
+
+        orderPanel.push_back(line);
+    }
+
+}
+
+void saveStockArray(string* stockReceived) {
     Stock stock;
     string timestamp;
     string stockname;
@@ -154,20 +192,23 @@ void printAll(void* pvParameters) {
         cout << "Time: " << simulatedTime << endl << endl;
 
         //print orders
-        vector<User*> orderListReceived;
+        string* orderListReceived;
         cout << "Orders: " << endl;
         cout << "==============================================" << endl;
-        xQueueReceive(orderQueue, &orderListReceived, 0);
 
-        if (!orderListReceived.empty()) {
-            for (const auto& user : orderListReceived) {
-                for (const auto& order : user->getOrders()) {
-                    cout << user->getUsername() << " has placed an order: BUY " << order->getStock() << " at " << order->getTargetPrice() << endl;
-                    cout << endl;
-                }
-            }
+        if (xQueueReceive(orderQueue, &orderListReceived, 0)==pdTRUE) {
+
         }
         else {
+            orderPanel.clear();
+            readOrderArray(orderListReceived);
+        }
+    
+        if (orderPanel.size() != 0) {
+            for (int i = 0; i < orderPanel.size(); i++) {
+                cout << orderPanel[i] << endl;
+            }
+        }else{
             cout << "There are no order!" << endl;
         }
         cout << "==============================================" << endl;
@@ -186,7 +227,7 @@ void printAll(void* pvParameters) {
         }
         else {
             stockPanel.clear();
-            readStockArray(stockReceived);
+            saveStockArray(stockReceived);
         }
 
         for (int i = 0; i < stockPanel.size(); i++) {
@@ -197,20 +238,6 @@ void printAll(void* pvParameters) {
             SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
             cout << endl;
         }
-        /*for (size_t i = 0; !stockReceived[i].empty(); i++) {
-
-            istringstream iss(stockReceived[i]);                
-            getline(iss, timestamp, ',');
-            getline(iss, stockname, ',');
-            getline(iss, price, ',');
-
-            cout << left << setw(20) << timestamp;
-            cout << setw(20) << stockname;
-            SetConsoleTextAttribute(hConsole, FOREGROUND_GREEN);
-            cout << setw(20) << price;
-            SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
-            cout << endl;
-        }*/
 
         if (xQueueReceive(stockQueue, &stockReceived, 0) == pdFALSE) {
             refresh = false;

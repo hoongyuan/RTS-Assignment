@@ -18,7 +18,7 @@ void OrderManager::addOrder(string username, string stock, string ordertype, dou
     user->newOrder(order);
 
     orderBStock[stock].push_back(user);
-    //displayPanel.updateOrderStatus(returnOrderList());
+    displayPanel.updateOrderStatus(returnOrderList());
 }
 
 void OrderManager::processStock(const Stock& newStock) 

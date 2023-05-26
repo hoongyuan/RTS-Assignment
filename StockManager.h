@@ -25,13 +25,10 @@ private:
     QueueHandle_t stockQueue;  // Queue to hold stock data
 
 public:
-    void displayData() const;
     void addStock(const Stock& stock);
-    void loadStockData(const string& filename);
     void setupDisplayPanel(const DisplayPanel& dp);
     map<string, Stock> getMap();
 
 };
-void sendOrderTask(void* pvParameters);
 
 #endif  // STOCKMANAGER_H

@@ -52,16 +52,6 @@ bool CSVReader::readNextRow(vector<string>& rowData)
 
 void csvReaderTask(void* pvParameters)
 {
-    cout << R"(
-  ____   ______    ____    ______   _   _
- / ___| |_    _| /  __  \ /  ____| | | / /
- | |__    |  |   | |  | | | |      | |/ /
- \___ \   |  |   | |  | | | |      |   |
-  ___) |  |  |   | |  | | | |____  | |\ \
- |____/   |__|   \ ____ / \______| |_| \_\
-                                                     
-    )" << endl;
-
     StockManager* stockManager = static_cast<StockManager*>(pvParameters);
     DisplayPanel displaypanel;
     CSVReader csvReader("stocks.txt");
