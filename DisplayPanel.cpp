@@ -13,6 +13,9 @@ QueueHandle_t orderQueue = xQueueCreate(10, 100); //10 queue, 100 orders
 QueueHandle_t stockQueue = xQueueCreate(10, 50); //10 queue, 50 stocks
 vector<Stock> stockPanel;
 vector<string> orderPanel;
+bool refresh = false;
+bool receiveOrder = false;
+bool receiveStock = false;
 
 string DisplayPanel::stockMapToString(const Stock stocks) {
     string result;
@@ -141,7 +144,7 @@ void readOrderArray(string* orderReceived) {
         getline(iss, ordertype, ',');
         getline(iss, targetprice, ',');
 
-        string line = username + ": " + ordertype + " " + stockname + " at " + targetprice;
+        string line = username + ": " + ordertype + " " + stockname + " stock at " + targetprice;
 
         orderPanel.push_back(line);
     }
@@ -171,12 +174,12 @@ void printAll(void* pvParameters) {
     string timestamp;
     string stockname;
     string price;
-    bool refresh = false;
-    bool receive = true;
+    string* orderListReceived;
+    string* stockReceived = nullptr;
+
 
     while (true) {
-        refresh = false;
-        receive = true;
+        refresh = true;
         system("cls");
         cout << R"(
   ____   ______    ____    ______   _   _
@@ -192,18 +195,19 @@ void printAll(void* pvParameters) {
         cout << "Time: " << simulatedTime << endl << endl;
 
         //print orders
-        string* orderListReceived;
         cout << "Orders: " << endl;
         cout << "==============================================" << endl;
 
         if (xQueueReceive(orderQueue, &orderListReceived, 0)==pdTRUE) {
-
-        }
-        else {
             orderPanel.clear();
             readOrderArray(orderListReceived);
+            //refresh = true;
+            continue; //restart the while loop again
         }
-    
+        else {
+            refresh = false;
+        }
+
         if (orderPanel.size() != 0) {
             for (int i = 0; i < orderPanel.size(); i++) {
                 cout << orderPanel[i] << endl;
@@ -215,19 +219,21 @@ void printAll(void* pvParameters) {
 
         //print stocks
         // Display headers
-        string* stockReceived = nullptr;
 
         cout << left << setw(20) << "Last Updated";
         cout << setw(20) << "Stock";
         cout << setw(20) << "Price";
         cout << setw(20) << "%Change" << right << endl;
         
-        if (xQueueReceive(stockQueue, &stockReceived, 0) == pdFALSE) {
-            receive = false;
-        }
-        else {
+
+        if (xQueueReceive(stockQueue, &stockReceived, 0) == pdTRUE) {
             stockPanel.clear();
             saveStockArray(stockReceived);
+            //refresh = true;
+            continue;
+        }
+        else {
+            refresh = false;
         }
 
         for (int i = 0; i < stockPanel.size(); i++) {
@@ -238,15 +244,6 @@ void printAll(void* pvParameters) {
             SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
             cout << endl;
         }
-
-        if (xQueueReceive(stockQueue, &stockReceived, 0) == pdFALSE) {
-            refresh = false;
-        }
-        else {
-            refresh = true;
-        }
-
-        delete[] stockReceived;
 
         if (!refresh) {
             vTaskDelay(pdMS_TO_TICKS(1000));// wait for 1 second
