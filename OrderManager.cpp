@@ -17,7 +17,10 @@ void OrderManager::addOrder(string username, string stock, string ordertype, dou
     Order order = Order(stock, ordertype, price); //MAYBANK BUY 8.30
     user->newOrder(order);
 
+    // Map User with Stock
     orderBStock[stock].push_back(user);
+
+    // Send updated Order List to DisplayPanel
     displayPanel.updateOrderStatus(returnOrderList());
 }
 

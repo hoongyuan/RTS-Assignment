@@ -37,6 +37,15 @@ void Order::setTargetPrice(double targetPrice) {
     this->targetPrice = targetPrice;
 }
 
+// Getter and setter for orderstatus
+bool Order::getOrderStatus() const{
+    return orderStatus;
+}
+
+void Order::setOrderComplete() {
+    this->orderStatus = true;
+}
+
 
 // User class implementation
 // Constructor

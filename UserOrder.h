@@ -12,22 +12,27 @@ private:
     string stock;
     string orderType;
     double targetPrice;
+    bool orderStatus = false;
 
 public:
     // Constructor
-    Order(const std::string& stock, const std::string& orderType, double targetPrice);
+    Order(const string& stock, const string& orderType, double targetPrice);
 
     // Getter and setter for stock
-    std::string getStock() const;
-    void setStock(const std::string& stock);
+    string getStock() const;
+    void setStock(const string& stock);
 
     // Getter and setter for ordertype
-    std::string getOrderType() const;
-    void setOrderType(const std::string& orderType);
+    string getOrderType() const;
+    void setOrderType(const string& orderType);
 
     // Getter and setter for targetprice
     double getTargetPrice() const;
     void setTargetPrice(double targetPrice);
+
+    // Getter and setter for orderstatus
+    bool getOrderStatus() const;
+    void setOrderComplete();
 };
 
 
@@ -40,11 +45,11 @@ private:
 public:
    
     // Constructor
-    User(const std::string& username, double balance);
+    User(const string& username, double balance);
 
     // Getter and setter for username
-    std::string getUsername() const;
-    void setUsername(const std::string& username);
+    string getUsername() const;
+    void setUsername(const string& username);
 
     // Getter and setter for balance
     double getBalance() const;
