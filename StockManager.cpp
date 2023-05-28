@@ -18,7 +18,7 @@ void StockManager::setupDisplayPanel(const DisplayPanel& dp) {
 void StockManager::addStock(const Stock& stock)
 {
     // Map Stock with Price
-    while (simulatedTime < stock.getTimestamp()-1) {
+    while (simulatedTime < stock.getTimestamp()) {
         vTaskDelay(pdMS_TO_TICKS(1000));// wait for 1 second;
     }
     if (stocks.count(stock.getSymbol()) > 0) {
@@ -36,6 +36,7 @@ void StockManager::addStock(const Stock& stock)
 
     // Send order to OrderManager
     orderManager.processStock(stock);
+    vTaskDelay(pdMS_TO_TICKS(100));// wait for 100 ms;
     
 }
 

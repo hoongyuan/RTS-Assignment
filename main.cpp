@@ -34,6 +34,14 @@ int main() {
     //Create file reader task
     xTaskCreate(csvReadOrder, "CSVReadOrder", configMINIMAL_STACK_SIZE, &orderManager, 1, NULL);
 
+    //Create file reader task
+    xTaskCreate(manageOrder, "ManageOrder", configMINIMAL_STACK_SIZE, &orderManager, 1, NULL);
+
+
+
+    //Create file reader task
+    //xTaskCreate(notifyOrder, "NotifyOrder", configMINIMAL_STACK_SIZE, &orderManager, 0, NULL);
+
     //Create display panel task
     xTaskCreate(printAll, "DisplayPanelStart", configMINIMAL_STACK_SIZE, &displayPanel, 1, NULL);
 

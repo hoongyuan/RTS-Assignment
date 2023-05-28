@@ -13,16 +13,16 @@ using namespace std;
 class OrderManager {
 private:
     map<string, vector<Order*>> orderBUser;
-    map<string, vector<User*>> orderBStock;
     DisplayPanel displayPanel;
 
 public:
-    void addOrder(string username, string stock, string ordertype, double price);
+    void addOrder(const string username, const string stock, const string ordertype, const double price);
     void processStock(const Stock& newStock);
-    void processOrder(Stock newStock, vector<User*> users);
-    void executeOrder(vector<Order*> ordersToExecute);
-    vector<User*> returnOrderList();
+    void processOrder(Stock stock);
+    void executeOrder(const User user, vector<Order*> ordersToExecute);
+    vector<User*> getUserOrderList();
 };
-
+void notifyOrder(void* pvParameters);
+void manageOrder(void* pvParameters);
 
 #endif

@@ -46,6 +46,15 @@ void Order::setOrderComplete() {
     this->orderStatus = true;
 }
 
+// Getter and setter for profit
+float Order::getProfitPercentage() {
+    return profitPercentage;
+}
+
+void Order::setProfitPercentage(float stockPrice) {
+    this->profitPercentage = ((stockPrice - targetPrice) / targetPrice) * 100;
+}
+
 
 // User class implementation
 // Constructor
@@ -90,9 +99,11 @@ vector<Order*> User::getOrdersToExecute(const Stock& newStock) {
     for (const auto& order : orderList) {
 
         if (order->getStock() == newStock.getSymbol()) {
-            if (newStock.getPrice() < order->getTargetPrice() < newStock.getPreviousPrice() || 
-                newStock.getPrice() > order->getTargetPrice() > newStock.getPreviousPrice() ||
-                newStock.getPrice() == order->getTargetPrice()) {
+            double currprice = newStock.getPrice();
+            double prevprice = newStock.getPreviousPrice();
+            double targetprice = order->getTargetPrice();
+
+            if ((currprice < targetprice && targetprice < prevprice) || (currprice > targetprice && targetprice > prevprice) || targetprice == currprice) {
                 orderByNewStock.push_back(order);
             }
         }

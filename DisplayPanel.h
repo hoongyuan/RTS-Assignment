@@ -18,7 +18,7 @@ public:
 	void updateTime(int ts, const map<string, Stock> stocks);
 	void printStocks(const map<string, Stock> stock) const;
 	void updateStock(map<string, Stock> stocks);
-	void updateOrderStatus(vector<User*> user);
+	void updateOrderStatus(const Stock receivedStock, vector<User*> user);
 };
 void saveStockArray(string* stockReceived);
 void printAll(void* pvParameters);

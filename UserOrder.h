@@ -13,6 +13,7 @@ private:
     string orderType;
     double targetPrice;
     bool orderStatus = false;
+    float profitPercentage = 0;
 
 public:
     // Constructor
@@ -33,6 +34,10 @@ public:
     // Getter and setter for orderstatus
     bool getOrderStatus() const;
     void setOrderComplete();
+
+    //Getter and setter for profit
+    float getProfitPercentage();
+    void setProfitPercentage(const float stockPrice);
 };
 
 

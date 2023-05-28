@@ -102,7 +102,7 @@ void DisplayPanel::updateStock(const map<string, Stock> stocks) {
         xQueueSend(stockQueue, &stockDataArray, 0);
 }
 
-void DisplayPanel::updateOrderStatus(vector<User*> users) {
+void DisplayPanel::updateOrderStatus(const Stock receivedStock,vector<User*> users) {
 
     const int size = sizeof(users);
     string orderArr[size];
@@ -118,6 +118,12 @@ void DisplayPanel::updateOrderStatus(vector<User*> users) {
                 order->getStock() + "," + 
                 order->getOrderType() + "," + 
                 to_string(order->getTargetPrice());
+
+            if (order->getOrderStatus() == true) {
+                order->setProfitPercentage(receivedStock.getPrice());
+                string profit = to_string(order->getProfitPercentage());
+                stringOrder += ",[Completed]," + profit + "%";
+            }
 
             orderArr[i++] = stringOrder;
         }
@@ -136,6 +142,8 @@ void readOrderArray(string* orderReceived) {
     string stockname;
     string ordertype;
     string targetprice;
+    string orderstatus;
+    string profitpercentage;
 
     for (int i = 0; !orderReceived[i].empty(); i++) {
         istringstream iss(orderReceived[i]);
@@ -144,7 +152,14 @@ void readOrderArray(string* orderReceived) {
         getline(iss, ordertype, ',');
         getline(iss, targetprice, ',');
 
-        string line = username + ": " + ordertype + " " + stockname + " stock at " + targetprice;
+        string line = username + ": " + ordertype + " " + stockname + " stock at " + targetprice + ". ";
+
+        if (getline(iss, orderstatus, ',') && getline(iss, profitpercentage, ',')) {
+            if (stod(profitpercentage) > 0) {
+                profitpercentage = "+" + profitpercentage;
+            }
+            line += orderstatus + " Current Profit = " + profitpercentage;
+        }
 
         orderPanel.push_back(line);
     }
@@ -189,7 +204,7 @@ void printAll(void* pvParameters) {
   ___) |  |  |   | |  | | | |____  | |\ \
  |____/   |__|   \ ____ / \______| |_| \_\
                                                      
-    )" << endl << endl;
+    )" << endl;
 
         //print time
         cout << "Time: " << simulatedTime << endl << endl;
@@ -223,7 +238,7 @@ void printAll(void* pvParameters) {
         cout << left << setw(20) << "Last Updated";
         cout << setw(20) << "Stock";
         cout << setw(20) << "Price";
-        cout << setw(20) << "%Change" << right << endl;
+        cout << right << "%Change"  << endl;
         
 
         if (xQueueReceive(stockQueue, &stockReceived, 0) == pdTRUE) {
@@ -239,8 +254,13 @@ void printAll(void* pvParameters) {
         for (int i = 0; i < stockPanel.size(); i++) {
             cout << left << setw(20) << stockPanel[i].getTimestamp();
             cout << setw(20) << stockPanel[i].getSymbol();
-            SetConsoleTextAttribute(hConsole, FOREGROUND_GREEN);
-            cout << setw(20) << stockPanel[i].getPrice();
+            if (stockPanel[i].getPrice() > stockPanel[i].getPreviousPrice()) {
+                SetConsoleTextAttribute(hConsole, FOREGROUND_GREEN);
+            }
+            else {
+                SetConsoleTextAttribute(hConsole, FOREGROUND_RED);
+            }
+            cout << setw(20) << stockPanel[i].getPrice() << " PREV : " << stockPanel[i].getPreviousPrice();
             SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
             cout << endl;
         }
