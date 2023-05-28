@@ -28,6 +28,7 @@ public:
     // Setter methods
     void updateTime(int timestamp);
     void updatePrice(double price);
+    void setPreviousPrice(double price);
 };
 
 #endif  // STOCK_H

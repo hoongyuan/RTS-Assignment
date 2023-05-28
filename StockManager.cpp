@@ -17,13 +17,14 @@ void StockManager::setupDisplayPanel(const DisplayPanel& dp) {
 
 void StockManager::addStock(const Stock& stock)
 {
+    const double price = stock.getPrice();
     // Map Stock with Price
     while (simulatedTime < stock.getTimestamp()) {
         vTaskDelay(pdMS_TO_TICKS(1000));// wait for 1 second;
     }
     if (stocks.count(stock.getSymbol()) > 0) {
         //Stock already exists
-        stocks[stock.getSymbol()].updatePrice(stock.getPrice());
+        stocks[stock.getSymbol()].updatePrice(price);
         stocks[stock.getSymbol()].updateTime(stock.getTimestamp());
     }
     else {
@@ -35,7 +36,7 @@ void StockManager::addStock(const Stock& stock)
     displayPanel.updateStock(stocks);
 
     // Send order to OrderManager
-    orderManager.processStock(stock);
+    orderManager.processStock(stocks[stock.getSymbol()]);
     vTaskDelay(pdMS_TO_TICKS(100));// wait for 100 ms;
     
 }

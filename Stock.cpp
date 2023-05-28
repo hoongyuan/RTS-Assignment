@@ -27,6 +27,10 @@ int Stock::getTimestamp() const {
 }
 
 // Setter method
+void Stock::setPreviousPrice(double price) {
+    this->previousPrice = price;
+}
+
 void Stock::updatePrice(double price) {
     this->previousPrice = this->price;
     this->price = price;
