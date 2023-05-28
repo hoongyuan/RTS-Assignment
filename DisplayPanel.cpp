@@ -21,7 +21,7 @@ string DisplayPanel::stockMapToString(const Stock stocks) {
     string result;
     Stock stock = stocks;
 
-    result = to_string(stock.getTimestamp()) + "," + stock.getSymbol() + "," + to_string(stock.getPrice());
+    result = to_string(stock.getTimestamp()) + "," + stock.getSymbol() + "," + to_string(stock.getPrice()) + "," + to_string(stock.getPreviousPrice());
 
     // Remove the trailing comma
     if (!result.empty()) {
@@ -171,12 +171,16 @@ void saveStockArray(string* stockReceived) {
     string timestamp;
     string stockname;
     string price;
+    string prevprice;
     for (int i = 0; !stockReceived[i].empty(); i++) {
         istringstream iss(stockReceived[i]);
         getline(iss, timestamp, ',');
         getline(iss, stockname, ',');
         getline(iss, price, ',');
         stock = Stock(stockname, stod(price), stoi(timestamp));
+        if (getline(iss, prevprice, ',')) {
+            stock.setPreviousPrice(stod(prevprice));
+        }
 
         stockPanel.push_back(stock);
     }
@@ -260,7 +264,7 @@ void printAll(void* pvParameters) {
             else {
                 SetConsoleTextAttribute(hConsole, FOREGROUND_RED);
             }
-            cout << setw(20) << stockPanel[i].getPrice() << " PREV : " << stockPanel[i].getPreviousPrice();
+            cout << setw(20) << stockPanel[i].getPrice() << "PREV : " << stockPanel[i].getPreviousPrice();
             SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
             cout << endl;
         }
