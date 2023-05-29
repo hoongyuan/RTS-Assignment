@@ -20,6 +20,7 @@ public:
 };
 
 void csvReaderTask(void* pvParameters);
+void csvParseStock(void* pvParameters);
 void csvReadOrder(void* pvParameters);
 
 #endif  // CSVREADER_H

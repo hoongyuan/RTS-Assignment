@@ -15,12 +15,10 @@ private:
 
 public:
 	string stockMapToString(const Stock stocks);
-	void updateTime(int ts, const map<string, Stock> stocks);
-	void printStocks(const map<string, Stock> stock) const;
-	void updateStock(map<string, Stock> stocks);
+	void updateStock(const Stock stock);
 	void updateOrderStatus(const Stock receivedStock, vector<User*> user);
 };
-void saveStockArray(string* stockReceived);
+void saveStockArray(const string stockReceived);
 void printAll(void* pvParameters);
 
 #endif

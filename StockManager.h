@@ -20,7 +20,6 @@ extern Stock currentStockData;
 class StockManager {
 private:
     OrderManager orderManager;
-    map<string, Stock> stocks;
     DisplayPanel displayPanel;
     QueueHandle_t stockQueue;  // Queue to hold stock data
 

@@ -10,6 +10,7 @@
 #include "queue.h"
 #include "OrderManager.h"
 
+map<string, Stock> stocks;
 
 void StockManager::setupDisplayPanel(const DisplayPanel& dp) {
     this->displayPanel = dp;
@@ -17,29 +18,42 @@ void StockManager::setupDisplayPanel(const DisplayPanel& dp) {
 
 void StockManager::addStock(const Stock& stock)
 {
-    const double price = stock.getPrice();
-    // Map Stock with Price
-    while (simulatedTime < stock.getTimestamp()) {
-        vTaskDelay(pdMS_TO_TICKS(1000));// wait for 1 second;
-    }
-    if (stocks.count(stock.getSymbol()) > 0) {
-        //Stock already exists
-        stocks[stock.getSymbol()].updatePrice(price);
-        stocks[stock.getSymbol()].updateTime(stock.getTimestamp());
-    }
-    else {
-        //Stock is new
-        stocks[stock.getSymbol()] = stock;
-    }
+    try {
+        const int timestamp = stock.getTimestamp();
 
-    // Send new stock data to DisplayPanel
-    displayPanel.updateStock(stocks);
+        while (simulatedTime < timestamp) {
+            //wait = (timestamp - simulatedTime) * 1000;
+            vTaskDelay(pdMS_TO_TICKS(1000));
+        }
+        const string stockSymbol = stock.getSymbol();
+        const double price = stock.getPrice();
 
-    // Send order to OrderManager
-    orderManager.processStock(stocks[stock.getSymbol()]);
-    vTaskDelay(pdMS_TO_TICKS(100));// wait for 100 ms;
-    
+        auto it = stocks.find(stockSymbol);
+        if (it != stocks.end()) {
+            //Stock already exists
+            stocks[stock.getSymbol()].updatePrice(price);
+            stocks[stock.getSymbol()].updateTime(timestamp);
+        }
+        else {
+            //Stock is new
+            stocks[stock.getSymbol()] = stock;
+        }
+
+        // Send new stock data to DisplayPanel
+        displayPanel.updateStock(stocks[stockSymbol]);
+
+        // Send order to OrderManager
+        orderManager.processStock(stocks[stock.getSymbol()]);
+        //vTaskDelay(pdMS_TO_TICKS(200));// wait for 100 ms;
+    }
+    catch (exception& ex) {
+        // Code to handle exception1
+    }
+        
 }
+
+
+
 
 map<string, Stock> StockManager::getMap() {
     return stocks;

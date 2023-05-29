@@ -2,20 +2,6 @@
 #include "task.h"
 #include <fstream>
 #include <sstream>
-
-// Include the header file for your CSVReader implementation
-#include "CSVReader.h"
-#include "Stock.h"
-
-using namespace std;
-
-// Define task handles
-TaskHandle_t csvReaderTaskHandle;
-
-// Define the stack size and priority for the CSV reader task
-#define CSV_READER_TASK_STACK_SIZE    1024
-#define CSV_READER_TASK_PRIORITY      1
-
 #include "CSVReader.h"
 #include "StockManager.h"
 #include <iostream>
@@ -23,7 +9,19 @@ TaskHandle_t csvReaderTaskHandle;
 #include "DisplayPanel.h"
 #include "OrderManager.h"
 
-//volatile uint32_t simulatedTime;
+
+// Include the header file for your CSVReader implementation
+#include "CSVReader.h"
+#include "Stock.h"
+
+using namespace std;
+
+// Define the stack size and priority for the CSV reader task
+#define CSV_READER_TASK_STACK_SIZE    1024
+#define CSV_READER_TASK_PRIORITY      1
+
+Stock stock;
+QueueHandle_t sendParseStock = xQueueCreate(50, 20); //10 queue, 50 stocks
 
 CSVReader::CSVReader(const string& filename)
 {
@@ -57,6 +55,7 @@ void csvReaderTask(void* pvParameters)
     CSVReader csvReader("stocks.txt");
     vector<string> header;
     csvReader.readNextRow(header);
+    int wait = 0;
 
     while (true) {
         vector<string> row;
@@ -71,15 +70,40 @@ void csvReaderTask(void* pvParameters)
             int timestamp = stoi(row[0]);
             string symbol = row[1];
             double price = stod(row[2]);
-            Stock stock(symbol, price, timestamp);
-            
+            Stock* stock = new Stock(symbol, price, timestamp);
+            //string stockCSVString = symbol + "," + to_string(price) + "," + to_string(timestamp);
             //displaypanel.updateTime(timestamp,stockManager->getMap());
 
-            stockManager->addStock(stock);
+            //stockManager->addStock(stock);
+            
+            /*if (uxQueueSpacesAvailable(sendParseStock) == 0) {
+                xQueueReset(sendParseStock);
+            }*/
+
+            xQueueSend(sendParseStock, &stock, 100);
 
             row.clear();
         }
 
+    }
+}
+
+void csvParseStock(void* pvParameters) {
+    Stock* parseStock;
+    StockManager* stockManager = static_cast<StockManager*>(pvParameters);
+    while (true) {
+        if (xQueueReceive(sendParseStock, &parseStock, 0) == pdTRUE) {
+            try {
+                stockManager->addStock(*parseStock);
+                //vTaskDelay(pdMS_TO_TICKS(1000));
+            }
+            catch (exception& ex) {
+                // Code to handle exception1
+            }
+        }
+        else {
+            vTaskDelay(pdMS_TO_TICKS(1000));
+        }
     }
 }
 
