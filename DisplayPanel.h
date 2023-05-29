@@ -20,5 +20,6 @@ public:
 };
 void saveStockArray(const string stockReceived);
 void printAll(void* pvParameters);
+void updateProfit(void* pvParameters);
 
 #endif

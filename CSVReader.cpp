@@ -133,6 +133,9 @@ void csvReadOrder(void* pvParameters) {
 
             row.clear();
         }
+        else {
+            vTaskDelay(pdMS_TO_TICKS(1000));
+        }
 
     }
 }

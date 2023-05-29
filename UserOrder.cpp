@@ -103,7 +103,9 @@ vector<Order*> User::getOrdersToExecute(const Stock& newStock) {
             double prevprice = newStock.getPreviousPrice();
             double targetprice = order->getTargetPrice();
 
-            if ((currprice < targetprice && targetprice < prevprice) || (currprice > targetprice && targetprice > prevprice) || targetprice == currprice) {
+            if ((currprice < targetprice && targetprice < prevprice)
+                || (currprice > targetprice && targetprice > prevprice) 
+                || targetprice == currprice) {
                 orderByNewStock.push_back(order);
             }
         }

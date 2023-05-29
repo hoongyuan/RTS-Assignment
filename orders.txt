@@ -1,3 +1,5 @@
 User,Stock,OrderType,TargetPrice
-Hoong Yuan,MAYBANK,BUY,8.30
-Jordan,MAYBANK,BUY,8.40
+Hoong Yuan,Petronas Gas Berhad,BUY,16.20
+Jordan,Bank Islam Malaysia Berhad,BUY,1.470365843
+Kevin Lim,Kulim (Malaysia) Berhad,BUY,3.788
+Ng Jing Tao,Petronas Holdings Berhad,BUY,11.40

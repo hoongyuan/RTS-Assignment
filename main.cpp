@@ -46,6 +46,9 @@ int main() {
     //Create display panel task
     xTaskCreate(printAll, "DisplayPanelStart", configMINIMAL_STACK_SIZE, &displayPanel, 1, NULL);
 
+    //Create display panel task
+    xTaskCreate(updateProfit, "updateOrderProfit", configMINIMAL_STACK_SIZE, &displayPanel, 1, NULL);
+
     vTaskStartScheduler();
 
     // Use the stockManager and stocks vector as needed
