@@ -129,12 +129,13 @@ void csvReadOrder(void* pvParameters) {
             string ordertype = row[2];
             double targetprice = stod(row[3]);
 
-            orderManager->addOrder(user,stock,ordertype,targetprice);            
+            orderManager->addOrder(user,stock,ordertype,targetprice);    
+
 
             row.clear();
         }
         else {
-            vTaskDelay(pdMS_TO_TICKS(1000));
+            vTaskSuspend(NULL);
         }
 
     }

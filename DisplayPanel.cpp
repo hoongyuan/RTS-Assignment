@@ -10,7 +10,7 @@
 #include <algorithm>
 
 HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-QueueHandle_t orderQueue = xQueueCreate(100, 20); //10 queue, 100 orders
+QueueHandle_t orderQueue = xQueueCreate(50, 50); //10 queue, 100 orders
 QueueHandle_t stockQueue = xQueueCreate(100, 60); //10 queue, 50 stocks
 vector<Stock> stockPanel;
 vector<string> orderPanel;
@@ -48,7 +48,8 @@ void DisplayPanel::updateStock(const Stock stock) {
 void DisplayPanel::updateOrderStatus(const Stock receivedStock, const vector<User*> users)
 {
     const int size = sizeof(users);
-    string orderArr[size];
+    const int SIZE = 100;
+    string orderArr[SIZE];
     int i = 0;
 
     // Convert the data from vector to string and store in array
@@ -87,7 +88,8 @@ void DisplayPanel::updateOrderStatus(const Stock receivedStock, const vector<Use
 
 void DisplayPanel::updateOrderStatus(const double price, const vector<User*> users, const Order* updateOrder) {
     const int size = sizeof(users);
-    string orderArr[size];
+    const int SIZE = 100;
+    string orderArr[SIZE];
     int i = 0;
 
     // Convert the data from vector to string and store in array
@@ -126,6 +128,7 @@ void DisplayPanel::updateOrderStatus(const double price, const vector<User*> use
 }
 
 void readOrderArray(string* orderReceived) {
+    const int size = orderReceived->size();
     string username;
     string stockname;
     string ordertype;
@@ -137,24 +140,28 @@ void readOrderArray(string* orderReceived) {
     for (int i = 0; !orderReceived[i].empty(); i++) {
         orderstatus = "";
         profitpercentage = "";
+        try {
+            istringstream iss(orderReceived[i]);
+            getline(iss, username, ',');
+            getline(iss, stockname, ',');
+            getline(iss, ordertype, ',');
+            getline(iss, targetprice, ',');
 
-        istringstream iss(orderReceived[i]);
-        getline(iss, username, ',');
-        getline(iss, stockname, ',');
-        getline(iss, ordertype, ',');
-        getline(iss, targetprice, ',');
+            string line = username + "," + ordertype + "," + stockname + "," + targetprice;
 
-        string line = username + "," + ordertype + "," + stockname + "," + targetprice;
-
-        if (getline(iss, orderstatus, ',') && getline(iss, profitpercentage, ',')) {
-            if (stod(profitpercentage) > 0) {
-                profitpercentage = "+" + profitpercentage;
+            if (getline(iss, orderstatus, ',') && getline(iss, profitpercentage, ',')) {
+                if (stod(profitpercentage) > 0) {
+                    profitpercentage = "+" + profitpercentage;
+                }
+                getline(iss, timetaken, ',');
+                line += "," + orderstatus + "," + profitpercentage + "," + timetaken;
             }
-            getline(iss, timetaken, ',');
-            line += "," + orderstatus + "," + profitpercentage + "," + timetaken;
-        }
 
-        orderPanel.push_back(line);
+            orderPanel.push_back(line);
+        }
+        catch (exception& ex) {
+            break;
+        }
     }
 
 }
