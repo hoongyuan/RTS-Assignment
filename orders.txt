@@ -3,3 +3,14 @@ Hoong Yuan,Petronas Gas Berhad,BUY,16.20
 Jordan,Bank Islam Malaysia Berhad,BUY,1.470365843
 Kevin Lim,Kulim (Malaysia) Berhad,BUY,3.788
 Ng Jing Tao,Petronas Holdings Berhad,BUY,11.40
+Lennon,UOA Development Berhad,BUY,1.64241416
+Ng Jing Tao,UOA Development Berhad,BUY,1.734241416
+Hoong Yuan,Petronas Gas Berhad,BUY,16.20
+Jordan,Bank Islam Malaysia Berhad,BUY,1.530365843
+Kevin Lim,Kulim (Malaysia) Berhad,BUY,3.788
+Ng Jing Tao,Petronas Holdings Berhad,BUY,11.40
+Lennon,Penang Port Commission,BUY,1.377276941
+Ng Jing Tao,FGV Holdings Berhad,BUY,1.186704702
+Ng Jing Tao,FGV Holdings Berhad,BUY,1.128670
+Kevin Lim,Public Bank Berhad,BUY,5.23256656
+Jordan,Public Bank Berhad,BUY,5.33256656

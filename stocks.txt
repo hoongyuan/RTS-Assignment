@@ -37,6 +37,7 @@ Timeframe,Name,Price
 1624567895,Kulim (Malaysia) Berhad,3.787719151
 1624567895,Petronas Holdings Berhad,10.4471138
 1624567896,MISC Berhad,6.898734295
+1624567896,Petronas Holdings Berhad,11.400000
 1624567896,UMW Holdings Berhad,5.182952157
 1624567896,Malaysia Smelting Corporation Berhad,2.491026785
 1624567896,Scientex Berhad,13.9518171
@@ -51,7 +52,7 @@ Timeframe,Name,Price
 1624567897,Genting Berhad,5.952393492
 1624567897,FGV Holdings Berhad,1.186704702
 1624567898,Malaysia Smelting Corporation Berhad,3.118544076
-1624567898,Petronas Holdings Berhad,11.41704175
+1624567898,Petronas Holdings Berhad,11.4000000
 1624567898,Malaysia Building Society Berhad,1.146422561
 1624567898,DiGi.Com Berhad,3.357057907
 1624567898,Genting Berhad,5.773202452
