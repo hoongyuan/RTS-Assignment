@@ -14,6 +14,8 @@ class OrderManager {
 private:
     map<string, vector<Order*>> orderBUser;
     DisplayPanel displayPanel;
+    clock_t start;
+    clock_t end;
 
 public:
     void addOrder(const string username, const string stock, const string ordertype, const double price);

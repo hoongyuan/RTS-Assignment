@@ -65,7 +65,48 @@ void DisplayPanel::updateOrderStatus(const Stock receivedStock,vector<User*> use
             if (order->getOrderStatus() == true) {
                 order->setProfitPercentage(receivedStock.getPrice());
                 string profit = to_string(order->getProfitPercentage());
-                stringOrder += ",[Completed]," + profit + "%";
+                string timetaken = to_string(order->getExecutionTime());
+                stringOrder += ",[Completed]," + profit + "%," + timetaken;
+            }
+
+            orderArr[i++] = stringOrder;
+        }
+    }
+
+    // Allocate memory for the dynamic array
+    string* orderDataArray = new string[size];
+    copy(orderArr, orderArr + size, orderDataArray);
+
+    // Send data to display panel
+    xQueueSend(orderQueue, &orderDataArray, 0);
+
+    usersList = users;
+}
+
+void DisplayPanel::updateOrderStatus(const double price, const vector<User*> users, const Order* updateOrder) {
+    const int size = sizeof(users);
+    string orderArr[size];
+    int i = 0;
+
+    // Convert the data from vector to string and store in array
+    for (User* user : users) {
+        vector<Order*> orders = user->getOrders();
+
+        for (Order* order : orders) {
+
+            string stringOrder =
+                user->getUsername() + "," +
+                order->getStock() + "," +
+                order->getOrderType() + "," +
+                to_string(order->getTargetPrice());
+
+            if (order->getOrderStatus() == true) {
+                if (order == updateOrder) {
+                    order->setProfitPercentage(price);
+                }
+                string profit = to_string(order->getProfitPercentage());
+                string timetaken = to_string(order->getExecutionTime());
+                stringOrder += ",[Completed]," + profit + "%," + timetaken;
             }
 
             orderArr[i++] = stringOrder;
@@ -89,6 +130,7 @@ void readOrderArray(string* orderReceived) {
     string targetprice;
     string orderstatus;
     string profitpercentage;
+    string timetaken;
 
     for (int i = 0; !orderReceived[i].empty(); i++) {
         orderstatus = "";
@@ -106,7 +148,8 @@ void readOrderArray(string* orderReceived) {
             if (stod(profitpercentage) > 0) {
                 profitpercentage = "+" + profitpercentage;
             }
-            line += "," + orderstatus + "," + profitpercentage;
+            getline(iss, timetaken, ',');
+            line += "," + orderstatus + "," + profitpercentage + "," + timetaken;
         }
 
         orderPanel.push_back(line);
@@ -147,10 +190,26 @@ void saveStockArray(const string stockReceived) {
 void updateProfit(void* pvParameters) {
     DisplayPanel* displaypanel = static_cast<DisplayPanel*>(pvParameters);
     while (true) {
-        for (const auto& stock : stockPanel) {
-            displaypanel->updateOrderStatus(stock, usersList);
+        vTaskDelay(pdMS_TO_TICKS(1000));
+        const vector<Stock> stockList = stockPanel;
+        //displaypanel->updateOrderStatus(stock, usersList);
+        for (const auto& user : usersList) { //Loop through user list
+            
+            for (auto& order : user->getOrders()) { //Loop through all user's order
+
+                if (order->getOrderStatus() == true) { //Find completed orders
+
+                    for (const auto& stock : stockList) {
+                        if (stock.getSymbol() == order->getStock()) {
+                            //order->setProfitPercentage(stock.getPrice());
+                            displaypanel->updateOrderStatus(stock.getPrice(), usersList, order);
+                            break;
+                        }
+                    }
+
+                }
+            }
         }
-        vTaskDelay(pdMS_TO_TICKS(2000));
     }
 }
 
@@ -191,15 +250,15 @@ void printAll(void* pvParameters) {
         }
 
         system("cls");
-        /*cout << R"(
-  ____   ______    ____    ______   _   _
- / ___| |_    _| /  __  \ /  ____| | | / /
- | |__    |  |   | |  | | | |      | |/ /
- \___ \   |  |   | |  | | | |      |   |
-  ___) |  |  |   | |  | | | |____  | |\ \
- |____/   |__|   \ ____ / \______| |_| \_\
-                                                     
-    )" << endl;*/
+ //       cout << R"(
+ // ____   ______    ____    ______   _   _
+ /// ___| |_    _| /  __  \ /  ____| | | / /
+ //| |__    |  |   | |  | | | |      | |/ /
+ //\___ \   |  |   | |  | | | |      |   |
+ // ___) |  |  |   | |  | | | |____  | |\ \
+ //|____/   |__|   \ ____ / \______| |_| \_\
+ //                                                    
+ //   )" << endl;
 
         //print time
         cout << "Time: " << simulatedTime << endl << endl;
@@ -223,11 +282,13 @@ void printAll(void* pvParameters) {
             string targetprice;
             string orderstatus;
             string profit;
+            string timetaken;
 
             for (int i = 0; i < orderPanel.size(); i++) {
                 //cout << orderPanel[i] << endl;
                 orderstatus = "";
                 profit = "";
+                timetaken = "";
                 istringstream iss(orderPanel[i]);
 
                 getline(iss, username, ',');
@@ -236,6 +297,7 @@ void printAll(void* pvParameters) {
                 getline(iss, targetprice, ',');
                 getline(iss, orderstatus, ',');
                 getline(iss, profit, ',');
+                getline(iss, timetaken, ',');
 
                 cout << left << setw(14) << username
                     << setw(10) << ordertype
@@ -245,6 +307,7 @@ void printAll(void* pvParameters) {
                 if (orderstatus == "[Completed]") {
                     cout << left << setw(15) << orderstatus;
                     cout << setw(15) << profit;
+                    cout << setw(10) << timetaken;
                 }
                 cout << endl;
             }

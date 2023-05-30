@@ -17,6 +17,7 @@ public:
 	string stockMapToString(const Stock stocks);
 	void updateStock(const Stock stock);
 	void updateOrderStatus(const Stock receivedStock, vector<User*> user);
+	void updateOrderStatus(const double price, const vector<User*> users, const Order* order);
 };
 void saveStockArray(const string stockReceived);
 void printAll(void* pvParameters);

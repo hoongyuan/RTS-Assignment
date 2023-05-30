@@ -41,6 +41,7 @@ void OrderManager::processStock(const Stock& newStock)
 }
 
 void OrderManager::processOrder(const Stock newStock) {
+    start = clock();
     const vector<User*> users = orderBStock[newStock.getSymbol()];
     for (const auto& user : users) {
         // Loop through users' orderlist to filter stocks the match the order condition
@@ -52,7 +53,15 @@ void OrderManager::processOrder(const Stock newStock) {
 void OrderManager::executeOrder(const User user, vector<Order*> ordersToExecute) {
     for (const auto& order : ordersToExecute) {
         order->setOrderComplete();
+
         displayPanel.updateOrderStatus(receivedStock, getUserOrderList());
+        end = clock();
+
+
+        double duration = static_cast<double>(end - start) / CLOCKS_PER_SEC;
+
+        order->setExecutionTime(duration);
+
     }
 }
 
