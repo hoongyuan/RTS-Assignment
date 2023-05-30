@@ -51,8 +51,17 @@ float Order::getProfitPercentage() {
     return profitPercentage;
 }
 
-void Order::setProfitPercentage(float stockPrice) {
-    this->profitPercentage = ((stockPrice - targetPrice) / targetPrice) * 100;
+void Order::setProfitPercentage(const double stockPrice) {
+    this->profitPercentage = (stockPrice - targetPrice)/ targetPrice * 100;
+}
+
+// Getter and setter for ExecutionTime
+double
+Order::getExecutionTime() const{
+    return executionTime;
+}
+void Order::setExecutionTime(const double duration) {
+    this->executionTime = duration;
 }
 
 

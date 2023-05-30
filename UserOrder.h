@@ -13,7 +13,8 @@ private:
     string orderType;
     double targetPrice;
     bool orderStatus = false;
-    float profitPercentage = 0;
+    double profitPercentage = 0.00;
+    double executionTime = 0;
 
 public:
     // Constructor
@@ -37,7 +38,11 @@ public:
 
     //Getter and setter for profit
     float getProfitPercentage();
-    void setProfitPercentage(const float stockPrice);
+    void setProfitPercentage(const double stockPrice);
+
+    // // Getter and setter for executionTime
+    double getExecutionTime() const;
+    void setExecutionTime(const double duration);
 };
 
 
