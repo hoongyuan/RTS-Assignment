@@ -1,2 +1,11 @@
-﻿  StockManager.cpp
-  RTS-StockTradingSystem.vcxproj -> C:\Users\hoong\source\repos\RTS-StockTradingSystem\x64\Debug\RTS-StockTradingSystem.exe
+﻿  CSVReader.cpp
+C:\Users\hoong\source\repos\RTS-Assignment\CSVReader.cpp(100,31): warning C4101: 'ex': unreferenced local variable
+  main.cpp
+  OrderManager.cpp
+  Stock.cpp
+  StockManager.cpp
+C:\Users\hoong\source\repos\RTS-Assignment\StockManager.cpp(24,30): warning C4018: '<': signed/unsigned mismatch
+C:\Users\hoong\source\repos\RTS-Assignment\StockManager.cpp(49,23): warning C4101: 'ex': unreferenced local variable
+  TimeSimulationTask.cpp
+c1xx : fatal  error C1083: Cannot open source file: 'TimeSimulationTask.cpp': No such file or directory
+  Generating Code...

@@ -10,7 +10,7 @@
 #include <algorithm>
 
 HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-QueueHandle_t orderQueue = xQueueCreate(10, 20); //10 queue, 100 orders
+QueueHandle_t orderQueue = xQueueCreate(100, 20); //10 queue, 100 orders
 QueueHandle_t stockQueue = xQueueCreate(100, 60); //10 queue, 50 stocks
 vector<Stock> stockPanel;
 vector<string> orderPanel;
@@ -36,17 +36,17 @@ string DisplayPanel::stockMapToString(const Stock stocks) {
 // Convert the data from map to string and store in array
 void DisplayPanel::updateStock(const Stock stock) {
 
-        string stockString = to_string(stock.getTimestamp()) + "," + stock.getSymbol() + "," + to_string(stock.getPrice());
-        if (stock.getPreviousPrice()>0) {
-            stockString += to_string(stock.getPreviousPrice());
-        }
+    string stockString = to_string(stock.getTimestamp()) + "," + stock.getSymbol() + "," + to_string(stock.getPrice());
+    if (stock.getPreviousPrice() > 0) {
+        stockString += to_string(stock.getPreviousPrice());
+    }
 
-        // Send data to display panel
-        xQueueSend(stockQueue, stockString.c_str(), 1000);
+    // Send data to display panel
+    xQueueSend(stockQueue, stockString.c_str(), 1000);
 }
 
-void DisplayPanel::updateOrderStatus(const Stock receivedStock,vector<User*> users) {
-
+void DisplayPanel::updateOrderStatus(const Stock receivedStock, const vector<User*> users)
+{
     const int size = sizeof(users);
     string orderArr[size];
     int i = 0;
@@ -56,10 +56,10 @@ void DisplayPanel::updateOrderStatus(const Stock receivedStock,vector<User*> use
         vector<Order*> orders = user->getOrders();
 
         for (Order* order : orders) {
-            string stringOrder = 
-                user->getUsername() + "," + 
-                order->getStock() + "," + 
-                order->getOrderType() + "," + 
+            string stringOrder =
+                user->getUsername() + "," +
+                order->getStock() + "," +
+                order->getOrderType() + "," +
                 to_string(order->getTargetPrice());
 
             if (order->getOrderStatus() == true) {
@@ -81,7 +81,9 @@ void DisplayPanel::updateOrderStatus(const Stock receivedStock,vector<User*> use
     xQueueSend(orderQueue, &orderDataArray, 0);
 
     usersList = users;
+
 }
+
 
 void DisplayPanel::updateOrderStatus(const double price, const vector<User*> users, const Order* updateOrder) {
     const int size = sizeof(users);
@@ -182,7 +184,7 @@ void saveStockArray(const string stockReceived) {
     }
 
     if (!found) {
-        Stock stock = Stock(stockname,stod(price),stoi(timestamp));
+        Stock stock = Stock(stockname, stod(price), stoi(timestamp));
         stockPanel.push_back(stock);
     }
 }
@@ -194,7 +196,7 @@ void updateProfit(void* pvParameters) {
         const vector<Stock> stockList = stockPanel;
         //displaypanel->updateOrderStatus(stock, usersList);
         for (const auto& user : usersList) { //Loop through user list
-            
+
             for (auto& order : user->getOrders()) { //Loop through all user's order
 
                 if (order->getOrderStatus() == true) { //Find completed orders
@@ -214,7 +216,7 @@ void updateProfit(void* pvParameters) {
 }
 
 void printAll(void* pvParameters) {
-    
+
     DisplayPanel* displaypanel = static_cast<DisplayPanel*>(pvParameters);
 
     string timestamp;
@@ -250,17 +252,17 @@ void printAll(void* pvParameters) {
         }
 
         system("cls");
- //       cout << R"(
- // ____   ______    ____    ______   _   _
- /// ___| |_    _| /  __  \ /  ____| | | / /
- //| |__    |  |   | |  | | | |      | |/ /
- //\___ \   |  |   | |  | | | |      |   |
- // ___) |  |  |   | |  | | | |____  | |\ \
- //|____/   |__|   \ ____ / \______| |_| \_\
- //                                                    
- //   )" << endl;
+        //       cout << R"(
+        // ____   ______    ____    ______   _   _
+        /// ___| |_    _| /  __  \ /  ____| | | / /
+        //| |__    |  |   | |  | | | |      | |/ /
+        //\___ \   |  |   | |  | | | |      |   |
+        // ___) |  |  |   | |  | | | |____  | |\ \
+        //|____/   |__|   \ ____ / \______| |_| \_\
+        //                                                    
+        //   )" << endl;
 
-        //print time
+               //print time
         cout << "Time: " << simulatedTime << endl << endl;
 
         cout << left << setw(14) << "User";
@@ -275,7 +277,7 @@ void printAll(void* pvParameters) {
         cout << "==========================================================================================================" << endl;
 
         if (orderPanel.size() != 0) {
-            
+
             string username;
             string ordertype;
             string stock;
@@ -311,7 +313,8 @@ void printAll(void* pvParameters) {
                 }
                 cout << endl;
             }
-        }else{
+        }
+        else {
             cout << "There are no order!" << endl;
         }
         cout << "==========================================================================================================" << endl;
@@ -321,26 +324,66 @@ void printAll(void* pvParameters) {
 
         cout << left << setw(20) << "Last Updated";
         cout << setw(40) << "Stock";
-        cout << setw(20) << "Price" << endl;
+        cout << setw(20) << "Price";
         //cout << "%Change"  << endl;
-       
+
+        cout << left << setw(20) << "Last Updated";
+        cout << setw(40) << "Stock";
+        cout << setw(20) << "Price" << endl;
+
         sort(stockPanel.begin(), stockPanel.end(), [](const Stock& a, const Stock& b) {
             return a.getSymbol() < b.getSymbol();
             });
 
+        //for (int i = 0; i < stockPanel.size(); i++) {
+        //    cout << left << setw(20) << stockPanel[i].getTimestamp();
+        //    cout << setw(40) << stockPanel[i].getSymbol();
+        //    if (stockPanel[i].getPrice() > stockPanel[i].getPreviousPrice()) {
+        //        SetConsoleTextAttribute(hConsole, FOREGROUND_GREEN);
+        //    }
+        //    else {
+        //        SetConsoleTextAttribute(hConsole, FOREGROUND_RED);
+        //    }
+        //    cout << setw(40) << stockPanel[i].getPrice();
+        //    SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
+        //    cout << endl;
+        //}
+
         for (int i = 0; i < stockPanel.size(); i++) {
+            //print timestamp
             cout << left << setw(20) << stockPanel[i].getTimestamp();
+            //print stock name
             cout << setw(40) << stockPanel[i].getSymbol();
+            //price color
             if (stockPanel[i].getPrice() > stockPanel[i].getPreviousPrice()) {
                 SetConsoleTextAttribute(hConsole, FOREGROUND_GREEN);
             }
             else {
                 SetConsoleTextAttribute(hConsole, FOREGROUND_RED);
             }
-            cout << setw(40) << stockPanel[i].getPrice();
+            //print price
+            cout << setw(20) << stockPanel[i].getPrice();
+
+            //reset color
             SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
+
+            if (i + 1 < stockPanel.size()) {
+                cout << left << setw(20) << stockPanel[i + 1].getTimestamp();
+                cout << setw(40) << stockPanel[i + 1].getSymbol();
+                if (stockPanel[i + 1].getPrice() > stockPanel[i + 1].getPreviousPrice()) {
+                    SetConsoleTextAttribute(hConsole, FOREGROUND_GREEN);
+                }
+                else {
+                    SetConsoleTextAttribute(hConsole, FOREGROUND_RED);
+                }
+                cout << setw(40) << stockPanel[i + 1].getPrice();
+                SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
+                i++;
+            }
+
             cout << endl;
         }
+
 
         if (!refresh) {
             vTaskDelay(pdMS_TO_TICKS(1000));// wait for 1 second
