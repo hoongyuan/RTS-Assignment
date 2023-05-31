@@ -16,13 +16,34 @@ const double USER_INITIAL_BALANCE = 100.00;
 map<string, vector<User*>> orderBStock;
 
 void OrderManager::addOrder(const string username, const string stock, const string ordertype, const double price) {
+    
     // Map User with Order
-    User* user = new User(username, USER_INITIAL_BALANCE); //Hoong 100
+    bool found = false;
+    User* userFound;
     Order order = Order(stock, ordertype, price); //MAYBANK BUY 8.30
-    user->newOrder(order);
 
-    // Map User with Stock
-    orderBStock[stock].push_back(user);
+    for (const auto& pair : orderBStock) {
+        for (const auto& user : pair.second) {
+            if (user->getUsername() == username) {
+                found = true;
+                userFound = user;
+                break;
+            }
+        }
+        if (found) {
+            break;
+        }
+    }
+
+    if (found) {
+        userFound->newOrder(order);
+    }
+    else {
+        User* user = new User(username, USER_INITIAL_BALANCE); //Hoong 100
+        user->newOrder(order);
+        // Map User with Stock
+        orderBStock[stock].push_back(user);
+    }
 
     // Send updated Order List to DisplayPanel
     displayPanel.updateOrderStatus(receivedStock, getUserOrderList());
@@ -45,24 +66,42 @@ void OrderManager::processOrder(const Stock newStock) {
     const vector<User*> users = orderBStock[newStock.getSymbol()];
     for (const auto& user : users) {
         // Loop through users' orderlist to filter stocks the match the order condition
-        vector<Order*> ordersToExecute = user->getOrdersToExecute(newStock);
-        executeOrder(*user, ordersToExecute);
+        vector<Order*> buyOrdersToExecute = user->getBuyOrdersToExecute(newStock);
+        executeOrder(*user, buyOrdersToExecute, true);
+
+        vector<Order*> sellOrdersToExecute = user->getSellOrdersToExecute(newStock);
+        executeOrder(*user, sellOrdersToExecute, false);
+
     }
 }
 
-void OrderManager::executeOrder(const User user, vector<Order*> ordersToExecute) {
-    for (const auto& order : ordersToExecute) {
-        order->setOrderComplete();
+void OrderManager::executeOrder(const User user, vector<Order*> ordersToExecute, const bool orderType) {
+    
+    if (orderType) { //for BUY orders
+        for (const auto& order : ordersToExecute) {
+            order->setOrderComplete();
+            displayPanel.updateOrderStatus(receivedStock, getUserOrderList());
+            end = clock();
 
-        displayPanel.updateOrderStatus(receivedStock, getUserOrderList());
-        end = clock();
+            double duration = static_cast<double>(end - start) / CLOCKS_PER_SEC;
 
+            order->setExecutionTime(duration);
 
-        double duration = static_cast<double>(end - start) / CLOCKS_PER_SEC;
-
-        order->setExecutionTime(duration);
-
+        }
     }
+    else if (!orderType){ //for SELL orders
+        for (const auto& order : ordersToExecute) {
+            order->setOrderComplete();
+            order->setOrderCloseStatus();
+            displayPanel.updateOrderStatus(receivedStock, getUserOrderList());
+            end = clock();
+
+            double duration = static_cast<double>(end - start) / CLOCKS_PER_SEC;
+
+            order->setExecutionTime(duration);
+        }
+    }
+    
 }
 
 vector<User*> OrderManager::getUserOrderList() {
@@ -78,15 +117,6 @@ vector<User*> OrderManager::getUserOrderList() {
     return orderList;
 }
 
-//void notifyOrder(void* pvParameters) {
-//    while (true) {
-//        if (notify = true) {
-//            // Send a notification to the receiver task
-//            xTaskNotify(receiverTaskHandle, 0, eNoAction);
-//        }
-//    }
-//}
-
 void manageOrder(void* pvParameters) {
     OrderManager* orderManager = static_cast<OrderManager*>(pvParameters);
     while (true) {
@@ -95,6 +125,7 @@ void manageOrder(void* pvParameters) {
             orderManager->processOrder(receivedStock);
             notify = false;
         }
+
     }
 }
 

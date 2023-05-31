@@ -64,6 +64,24 @@ void Order::setExecutionTime(const double duration) {
     this->executionTime = duration;
 }
 
+// Getter and setter for OrderCloseStatus
+bool Order::getOrderCloseStatus() const{
+    return orderCloseStatus;
+}
+
+void Order::setOrderCloseStatus() {
+    this->orderCloseStatus = true;
+}
+
+// Getter and setter for closeProfit
+double Order::getCloseProfit()const {
+    return closeProfit;
+}
+
+void Order::setCloseProfit(const double profit) {
+    this->closeProfit = profit;
+}
+
 
 // User class implementation
 // Constructor
@@ -100,25 +118,62 @@ void User::newOrder(Order order) {
     this->orders.push_back(newOrder);
 }
 
-vector<Order*> User::getOrdersToExecute(const Stock& newStock) {
+vector<Order*> User::getBuyOrdersToExecute(const Stock& newStock) {
     
     vector<Order*> orderList = this->orders;
-    vector<Order*> orderByNewStock;
+    vector<Order*> orderBuyList;
 
     for (const auto& order : orderList) {
+        if (order->getOrderType() == "BUY") {
+            if (order->getStock() == newStock.getSymbol()) {
+                double currprice = newStock.getPrice();
+                double prevprice = newStock.getPreviousPrice();
+                double targetprice = order->getTargetPrice();
 
-        if (order->getStock() == newStock.getSymbol()) {
-            double currprice = newStock.getPrice();
-            double prevprice = newStock.getPreviousPrice();
-            double targetprice = order->getTargetPrice();
-
-            if ((currprice < targetprice && targetprice < prevprice)
-                || (currprice > targetprice && targetprice > prevprice) 
-                || targetprice == currprice) {
-                orderByNewStock.push_back(order);
+                if ((currprice < targetprice && targetprice < prevprice)
+                    || (currprice > targetprice && targetprice > prevprice)
+                    || targetprice == currprice) {
+                    orderBuyList.push_back(order);
+                }
             }
         }
     }
 
-    return orderByNewStock;
+    return orderBuyList;
 }
+
+vector<Order*> User::getSellOrdersToExecute(const Stock& newStock) {
+    vector<Order*> orderList = this->orders;
+    vector<Order*> orderSellList;
+    double currprice = newStock.getPrice();
+    double prevprice = newStock.getPreviousPrice();
+
+    for (const auto& completedOrder : orderList) {
+        if (completedOrder->getOrderStatus() && completedOrder->getOrderType() == "BUY") {
+
+            if (completedOrder->getStock() == newStock.getSymbol()) {
+
+                for (const auto& sellOrder : orderList) {
+
+                    if (sellOrder->getOrderType() == "SELL" && completedOrder->getStock() == sellOrder->getStock() ) {
+                        double sellprice = sellOrder->getTargetPrice();
+
+                        if ((currprice < sellprice && sellprice < prevprice) || (currprice > sellprice && sellprice > prevprice)|| sellprice == currprice) {
+
+                            completedOrder->setOrderCloseStatus();
+                            sellOrder->setOrderCloseStatus();
+                            double buyprice = completedOrder->getTargetPrice();
+                            double closeprofit = (sellprice - buyprice)/buyprice * 100;
+                            sellOrder->setCloseProfit(closeprofit);
+                            orderSellList.push_back(sellOrder);
+                        }
+                    }
+                }
+            }
+         }
+    }
+
+    return orderSellList;
+}
+
+

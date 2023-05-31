@@ -15,6 +15,8 @@ private:
     bool orderStatus = false;
     double profitPercentage = 0.00;
     double executionTime = 0;
+    bool orderCloseStatus = false;
+    double closeProfit = 0;
 
 public:
     // Constructor
@@ -43,6 +45,14 @@ public:
     // // Getter and setter for executionTime
     double getExecutionTime() const;
     void setExecutionTime(const double duration);
+
+    // // Getter and setter for orderClose
+    bool getOrderCloseStatus() const;
+    void setOrderCloseStatus();
+
+    // // Getter and setter for closeProfit
+    double getCloseProfit() const;
+    void setCloseProfit(const double profit);
 };
 
 
@@ -68,7 +78,8 @@ public:
     // Getter and setter for orders array
     vector<Order*> getOrders() const;
     void newOrder(Order order);
-    vector<Order*> getOrdersToExecute(const Stock& newStock);
+    vector<Order*> getBuyOrdersToExecute(const Stock& newStock);
+    vector<Order*> getSellOrdersToExecute(const Stock& newStock);
 };
 
 

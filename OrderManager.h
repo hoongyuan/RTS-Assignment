@@ -21,7 +21,7 @@ public:
     void addOrder(const string username, const string stock, const string ordertype, const double price);
     void processStock(const Stock& newStock);
     void processOrder(Stock stock);
-    void executeOrder(const User user, vector<Order*> ordersToExecute);
+    void executeOrder(const User user, vector<Order*> ordersToExecute, const bool orderType);
     vector<User*> getUserOrderList();
 };
 void notifyOrder(void* pvParameters);

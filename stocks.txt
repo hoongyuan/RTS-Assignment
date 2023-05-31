@@ -1,539 +1,1500 @@
 Timeframe,Name,Price
-1624567890,Genting Malaysia Berhad,3.213759091
-1624567890,KLCC Property Holdings Berhad,7.744144618
-1624567890,Malaysia Airports Holdings Berhad,7.101180381
-1624567890,UOA Development Berhad,1.734241416
-1624567890,Genting Berhad,5.922734867
-1624567890,Petronas Holdings Berhad,11.18957899
-1624567890,Scientex Berhad,11.47020664
-1624567890,Proton Holdings Berhad,0.933813679
-1624567891,Genting Malaysia Berhad,3.14721582
-1624567891,Dutch Lady Milk Industries Berhad,42.55140015
-1624567891,Lotus Group Holdings Berhad,0.687261952
-1624567891,Bank Islam Malaysia Berhad,1.470365843
-1624567892,Telekom Malaysia Berhad,3.49879468
-1624567892,Sapura Energy Berhad,0.737850163
-1624567892,Genting Malaysia Berhad,2.93375473
-1624567892,Nestle (Malaysia) Berhad,143.6280621
-1624567892,PLUS Malaysia Berhad,5.56786991
-1624567892,Telekom Malaysia Berhad,2.849114036
-1624567893,Genting Berhad,5.892312508
-1624567893,Petronas Dagangan Berhad,17.24618564
-1624567893,Digi.Com Berhad,3.548479673
-1624567893,IGB Real Estate Investment Trust,1.693075531
-1624567893,Genting Berhad,5.464196248
-1624567893,Ambank Group Berhad,2.51564403
-1624567893,Malaysia Smelting Corporation Berhad,3.055270662
-1624567893,Scientex Berhad,13.84142805
-1624567894,CIMB Group Holdings Berhad,4.174891332
-1624567894,Malayan Banking Berhad,7.522558505
-1624567894,Malayan Banking Berhad,7.361540984
-1624567894,IOI Properties Group Berhad,1.06308506
-1624567894,IOI Properties Group Berhad,1.127516824
-1624567894,DiGi.Com Berhad,3.983407246
-1624567895,Tenaga Nasional Berhad,10.58173502
-1624567895,Kulim (Malaysia) Berhad,3.65248836
-1624567895,Petronas Dagangan Berhad,17.27605821
-1624567895,Kulim (Malaysia) Berhad,3.787719151
-1624567895,Petronas Holdings Berhad,10.4471138
-1624567896,MISC Berhad,6.898734295
-1624567896,Petronas Holdings Berhad,11.400000
-1624567896,UMW Holdings Berhad,5.182952157
-1624567896,Malaysia Smelting Corporation Berhad,2.491026785
-1624567896,Scientex Berhad,13.9518171
-1624567896,Hartalega Holdings Berhad,9.440176147
-1624567896,Malayan Banking Berhad,9.12814495
-1624567896,Malaysia Building Society Berhad,1.186247375
-1624567896,Sunway Berhad,1.54564322
-1624567896,Axiata Group Berhad,3.581828774
-1624567896,YTL Power International Berhad,1.382278972
-1624567896,Sapura Energy Berhad,0.805345886
-1624567896,Tenaga Nasional Berhad,10.63055263
-1624567897,Genting Berhad,5.952393492
-1624567897,FGV Holdings Berhad,1.186704702
-1624567898,Malaysia Smelting Corporation Berhad,3.118544076
-1624567898,Petronas Holdings Berhad,11.4000000
-1624567898,Malaysia Building Society Berhad,1.146422561
-1624567898,DiGi.Com Berhad,3.357057907
-1624567898,Genting Berhad,5.773202452
-1624567898,Genting Berhad,5.609404702
-1624567899,Sime Darby Plantation Berhad,3.948068345
-1624567899,Penang Port Commission,1.377276941
-1624567899,UMW Holdings Berhad,5.800712931
-1624567899,KLCC Property Holdings Berhad,7.652201977
-1624567899,Scientex Berhad,14.21822786
-1624567899,YTL Corporation Berhad,0.958940136
-1624567900,UOA Development Berhad,1.943671756
-1624567900,Sime Darby Berhad,2.158045939
-1624567901,UMW Holdings Berhad,5.288814774
-1624567901,Public Bank Berhad,5.23256656
-1624567901,Bank Islam Malaysia Berhad,1.397422209
-1624567901,Kulim (Malaysia) Berhad,3.898963909
-1624567901,Berjaya Corporation Berhad,0.870258944
-1624567901,Malaysia Smelting Corporation Berhad,2.979403189
-1624567901,UMW Holdings Berhad,6.089705758
-1624567902,Genting Berhad,6.504986362
-1624567902,Sapura Energy Berhad,0.796165639
-1624567902,Berjaya Corporation Berhad,0.918566369
-1624567902,Public Bank Berhad,5.34284684
-1624567902,Malaysia Smelting Corporation Berhad,2.530533163
-1624567902,Bank Islam Malaysia Berhad,1.524294206
-1624567903,Top Glove Corporation Berhad,2.112873729
-1624567903,IGB Real Estate Investment Trust,2.109440378
-1624567903,Berjaya Sports Toto Berhad,3.4393746
-1624567903,Genting Malaysia Berhad,2.659007021
-1624567903,Astro Malaysia Holdings Berhad,1.107004113
-1624567904,Petronas Gas Berhad,18.56062879
-1624567904,Sapura Energy Berhad,0.684824009
-1624567904,FGV Holdings Berhad,1.128652937
-1624567904,Ambank Group Berhad,2.47271527
-1624567904,AirAsia Group Berhad,2.343029329
-1624567905,Sapura Energy Berhad,0.706056598
-1624567906,IOI Corporation Berhad,2.627308184
-1624567906,Scientex Berhad,14.03159347
-1624567906,Genting Malaysia Berhad,2.989160299
-1624567906,Prestariang Berhad,0.954018461
-1624567906,Malaysia Smelting Corporation Berhad,2.501161074
-1624567906,IOI Corporation Berhad,2.752086656
-1624567907,FGV Holdings Berhad,1.026781679
-1624567907,IOI Properties Group Berhad,1.237980326
-1624567907,MISC Berhad,6.55528842
-1624567908,Hartalega Holdings Berhad,7.885590767
-1624567909,Digi.Com Berhad,3.466434314
-1624567909,Kulim (Malaysia) Berhad,3.82764955
-1624567909,Maybank Berhad,7.368091496
-1624567910,Kulim (Malaysia) Berhad,3.653385262
-1624567910,Axiata Group Berhad,4.198934471
-1624567910,AirAsia Group Berhad,2.440827992
-1624567910,Malaysia Smelting Corporation Berhad,2.434277439
-1624567910,Telekom Malaysia Berhad,2.962635618
-1624567911,MISC Berhad,7.061479514
-1624567911,Dutch Lady Milk Industries Berhad,45.00430296
-1624567911,Digi.Com Berhad,3.18567126
-1624567911,Lotus Group Holdings Berhad,0.693514959
-1624567911,Berjaya Sports Toto Berhad,2.701699911
-1624567911,Malaysia Smelting Corporation Berhad,2.901349178
-1624567912,DiGi.Com Berhad,4.078853117
-1624567913,Petronas Chemicals Group Berhad,7.029585969
-1624567913,Telekom Malaysia Berhad,3.430667025
-1624567913,IOI Properties Group Berhad,1.283332714
-1624567913,Dutch Lady Milk Industries Berhad,39.28730543
-1624567913,Astro Malaysia Holdings Berhad,1.059142617
-1624567914,UOA Development Berhad,1.933261099
-1624567914,Tasco Berhad,2.338008356
-1624567914,Public Bank Berhad,5.3599778
-1624567915,Genting Berhad,5.804916732
-1624567915,PLUS Malaysia Berhad,5.784989015
-1624567915,Lotus Group Holdings Berhad,0.734910246
-1624567915,Berjaya Sports Toto Berhad,2.999920532
-1624567915,Nestle (Malaysia) Berhad,163.941989
-1624567915,DiGi.Com Berhad,4.243914431
-1624567916,Ambank Group Berhad,2.626006354
-1624567916,Malaysia Building Society Berhad,0.996062531
-1624567916,KLCC Property Holdings Berhad,7.08665363
-1624567916,FGV Holdings Berhad,1.022884525
-1624567917,Dutch Lady Milk Industries Berhad,37.17694843
-1624567917,Penang Port Commission,1.213808907
-1624567918,Maxis Berhad,5.074366862
-1624567918,Digi.Com Berhad,3.465271795
-1624567919,Hartalega Holdings Berhad,8.106283686
-1624567919,Penang Port Commission,1.309791587
-1624567919,Malaysia Airports Holdings Berhad,7.038626043
-1624567919,Bank Islam Malaysia Berhad,1.587201406
-1624567919,Telekom Malaysia Berhad,3.029510031
-1624567919,Digi.Com Berhad,4.135789416
-1624567919,Scientex Berhad,13.0788346
-1624567919,Petronas Dagangan Berhad,16.09003862
-1624567919,Scientex Berhad,13.87509361
-1624567919,UMW Holdings Berhad,5.281718999
-1624567919,Malayan Banking Berhad,7.71045917
-1624567920,UOA Development Berhad,1.555673271
-1624567920,Sunway Berhad,1.32114565
-1624567920,PLUS Malaysia Berhad,4.727315952
-1624567921,Malaysia Airports Holdings Berhad,6.39497063
-1624567921,Tasco Berhad,2.007765637
-1624567921,Astro Malaysia Holdings Berhad,1.150330341
-1624567922,Ambank Group Berhad,3.077443247
-1624567922,AirAsia Group Berhad,2.453691432
-1624567922,Berjaya Sports Toto Berhad,2.96557417
-1624567922,Tenaga Nasional Berhad,11.08938109
-1624567922,Tenaga Nasional Berhad,10.83253867
-1624567922,KLCC Property Holdings Berhad,8.135939248
-1624567922,Ambank Group Berhad,2.596243271
-1624567923,Sunway Berhad,1.525742954
-1624567923,YTL Corporation Berhad,0.943100404
-1624567923,UOA Development Berhad,1.693521253
-1624567923,UOA Development Berhad,1.680936268
-1624567923,KLCC Property Holdings Berhad,8.090086865
-1624567924,Malaysia Airports Holdings Berhad,7.659608294
-1624567924,Sime Darby Berhad,2.568988172
-1624567924,Malaysia Airports Holdings Berhad,7.287746292
-1624567924,Malaysia Airports Holdings Berhad,6.194770257
-1624567925,Malaysia Airports Holdings Berhad,7.21532141
-1624567925,PLUS Malaysia Berhad,4.807285031
-1624567925,Petronas Gas Berhad,16.11546393
-1624567926,Genting Malaysia Berhad,3.055131224
-1624567926,Hartalega Holdings Berhad,7.887164872
-1624567926,UMW Holdings Berhad,5.269753766
-1624567926,Public Bank Berhad,4.633751109
-1624567926,Proton Holdings Berhad,1.009809302
-1624567926,Astro Malaysia Holdings Berhad,1.151661948
-1624567926,Petronas Chemicals Group Berhad,6.807799803
-1624567927,Telekom Malaysia Berhad,2.914148675
-1624567927,Maybank Berhad,7.820219307
-1624567927,Malaysia Smelting Corporation Berhad,2.408857336
-1624567927,Petronas Dagangan Berhad,16.61810937
-1624567927,Tasco Berhad,2.33664361
-1624567927,DiGi.Com Berhad,3.233928103
-1624567927,AirAsia Group Berhad,2.363046156
-1624567927,Public Bank Berhad,5.299452025
-1624567928,Penang Port Commission,1.088814878
-1624567928,PLUS Malaysia Berhad,4.857807047
-1624567928,DiGi.Com Berhad,3.411294893
-1624567928,Genting Berhad,6.554326721
-1624567928,Berjaya Sports Toto Berhad,3.262140503
-1624567928,Ambank Group Berhad,2.931120725
-1624567928,Malaysia Smelting Corporation Berhad,2.617321811
-1624567928,IOI Corporation Berhad,3.262672123
-1624567929,FGV Holdings Berhad,1.08805243
-1624567929,Ambank Group Berhad,2.593100735
-1624567930,Ambank Group Berhad,2.60027374
-1624567930,Padini Holdings Berhad,2.67493512
-1624567930,Tenaga Nasional Berhad,10.47385065
-1624567931,DiGi.Com Berhad,3.999395663
-1624567931,Maxis Berhad,4.461910853
-1624567931,IOI Properties Group Berhad,1.323678787
-1624567931,Axiata Group Berhad,4.088837876
-1624567931,AirAsia Group Berhad,2.31271251
-1624567931,Kulim (Malaysia) Berhad,3.869727816
-1624567931,Malaysia Smelting Corporation Berhad,2.554163699
-1624567931,Sime Darby Berhad,2.60222085
-1624567932,Dutch Lady Milk Industries Berhad,36.58312975
-1624567932,Sime Darby Berhad,2.559541955
-1624567932,Petronas Gas Berhad,15.67311239
-1624567932,Padini Holdings Berhad,2.457348704
-1624567932,PLUS Malaysia Berhad,5.769156232
-1624567932,IOI Properties Group Berhad,1.094236415
-1624567932,Berjaya Sports Toto Berhad,2.962501983
-1624567932,Lotus Group Holdings Berhad,0.684403694
-1624567933,Dutch Lady Milk Industries Berhad,37.18058799
-1624567933,Proton Holdings Berhad,0.969332777
-1624567933,Proton Holdings Berhad,1.095975632
-1624567933,Petronas Chemicals Group Berhad,6.617668785
-1624567933,AirAsia Group Berhad,2.753377747
-1624567933,YTL Corporation Berhad,1.126689159
-1624567933,UOA Development Berhad,1.924289552
-1624567934,UMW Holdings Berhad,5.828620883
-1624567934,Petronas Chemicals Group Berhad,6.762189734
-1624567934,Sunway Berhad,1.609587247
-1624567934,KLCC Property Holdings Berhad,6.603529974
-1624567934,Malaysia Smelting Corporation Berhad,3.061915394
-1624567935,Proton Holdings Berhad,0.92335231
-1624567935,Malaysia Building Society Berhad,1.046673594
-1624567935,Berjaya Sports Toto Berhad,3.560158412
-1624567935,UOA Development Berhad,1.93405894
-1624567935,MISC Berhad,6.036949646
-1624567935,Maybank Berhad,7.540698158
-1624567936,Maybank Berhad,8.920091938
-1624567936,Public Bank Berhad,5.28560638
-1624567936,Malaysia Building Society Berhad,1.108698823
-1624567936,Hartalega Holdings Berhad,7.729063029
-1624567936,Sime Darby Berhad,2.47529347
-1624567937,Astro Malaysia Holdings Berhad,1.307939312
-1624567937,Tasco Berhad,1.943333261
-1624567937,Kulim (Malaysia) Berhad,3.330682479
-1624567937,Petronas Gas Berhad,19.41755562
-1624567937,Tenaga Nasional Berhad,10.40216957
-1624567937,Petronas Holdings Berhad,11.44301579
-1624567937,Dutch Lady Milk Industries Berhad,42.3887175
-1624567937,FGV Holdings Berhad,1.291482321
-1624567937,MISC Berhad,7.174298115
-1624567937,MISC Berhad,7.109923125
-1624567937,Telekom Malaysia Berhad,3.425847485
-1624567938,CIMB Group Holdings Berhad,3.996833442
-1624567938,Prestariang Berhad,0.81241685
-1624567938,IGB Real Estate Investment Trust,1.822197799
-1624567938,Tenaga Nasional Berhad,10.64485724
-1624567938,Scientex Berhad,12.08680088
-1624567938,Malaysia Smelting Corporation Berhad,2.596381114
-1624567938,Digi.Com Berhad,3.974545281
-1624567939,Petronas Dagangan Berhad,17.76714745
-1624567939,UMW Holdings Berhad,5.777113543
-1624567940,YTL Power International Berhad,1.31574078
-1624567940,YTL Power International Berhad,1.296678239
-1624567940,Sime Darby Plantation Berhad,4.059401493
-1624567940,Sime Darby Plantation Berhad,3.562655472
-1624567940,Malaysia Building Society Berhad,1.17087358
-1624567941,Telekom Malaysia Berhad,2.843810984
-1624567941,Bank Islam Malaysia Berhad,1.497777056
-1624567941,IOI Corporation Berhad,2.703316742
-1624567941,Padini Holdings Berhad,2.143688096
-1624567941,Genting Malaysia Berhad,2.460391573
-1624567942,Digi.Com Berhad,4.124695069
-1624567942,UOA Development Berhad,2.008837259
-1624567942,Proton Holdings Berhad,1.026220272
-1624567942,Malaysia Smelting Corporation Berhad,3.041575702
-1624567942,AirAsia Group Berhad,2.289466037
-1624567942,DiGi.Com Berhad,3.240306644
-1624567943,Petronas Chemicals Group Berhad,8.238137936
-1624567943,DiGi.Com Berhad,3.911899216
-1624567943,Sime Darby Plantation Berhad,3.866977221
-1624567943,Sunway Berhad,1.238468694
-1624567943,KLCC Property Holdings Berhad,6.695380927
-1624567943,Malaysia Building Society Berhad,0.96629384
-1624567943,Maxis Berhad,4.265335794
-1624567943,Malaysia Airports Holdings Berhad,7.27746424
-1624567944,Malaysia Airports Holdings Berhad,7.165155274
-1624567944,Malaysia Airports Holdings Berhad,6.378871293
-1624567944,Kulim (Malaysia) Berhad,3.872363464
-1624567944,Sunway Berhad,1.43443215
-1624567945,AirAsia Group Berhad,2.444483027
-1624567945,Berjaya Sports Toto Berhad,2.835480566
-1624567945,AirAsia Group Berhad,2.716213772
-1624567945,Malaysia Smelting Corporation Berhad,2.992290133
-1624567946,PLUS Malaysia Berhad,5.012094774
-1624567946,Tasco Berhad,2.434614228
-1624567946,CIMB Group Holdings Berhad,3.995684309
-1624567946,IOI Corporation Berhad,3.266462437
-1624567946,Sime Darby Berhad,2.145630991
-1624567946,KLCC Property Holdings Berhad,7.63255012
-1624567946,Petronas Dagangan Berhad,18.74540325
-1624567946,Bank Islam Malaysia Berhad,1.713429413
-1624567947,IOI Properties Group Berhad,1.287145051
-1624567947,PLUS Malaysia Berhad,5.898057742
-1624567947,Malaysia Building Society Berhad,1.008301024
-1624567947,UOA Development Berhad,1.731673874
-1624567947,Axiata Group Berhad,3.534155684
-1624567948,Malayan Banking Berhad,9.154458082
-1624567948,YTL Corporation Berhad,0.93286442
-1624567948,Petronas Gas Berhad,14.70491358
-1624567948,Bank Islam Malaysia Berhad,1.442627376
-1624567948,Dutch Lady Milk Industries Berhad,44.79763007
-1624567949,Padini Holdings Berhad,2.347430832
-1624567949,CIMB Group Holdings Berhad,4.767842056
-1624567949,Astro Malaysia Holdings Berhad,1.328744576
-1624567949,Maxis Berhad,4.729018198
-1624567949,DiGi.Com Berhad,3.970169272
-1624567949,Dutch Lady Milk Industries Berhad,44.51790896
-1624567949,Petronas Dagangan Berhad,16.40692662
-1624567949,Maxis Berhad,4.964356866
-1624567950,Petronas Holdings Berhad,11.47443602
-1624567950,Berjaya Corporation Berhad,1.006744695
-1624567950,IOI Corporation Berhad,2.725366888
-1624567950,Maxis Berhad,4.815555224
-1624567950,Sapura Energy Berhad,0.741816421
-1624567951,Genting Berhad,6.764581852
-1624567951,Sunway Berhad,1.440473399
-1624567951,PLUS Malaysia Berhad,5.893118237
-1624567951,MISC Berhad,6.134928927
-1624567951,IGB Real Estate Investment Trust,2.230537135
-1624567952,IOI Corporation Berhad,3.288729207
-1624567952,Sime Darby Berhad,2.250182872
-1624567952,Sapura Energy Berhad,0.852002371
-1624567952,Lotus Group Holdings Berhad,0.683032205
-1624567953,Public Bank Berhad,4.75706169
-1624567953,Malaysia Airports Holdings Berhad,7.39154927
-1624567953,Petronas Gas Berhad,17.92437887
-1624567953,Hartalega Holdings Berhad,9.408732106
-1624567953,Malaysia Building Society Berhad,1.222424003
-1624567953,Malaysia Smelting Corporation Berhad,3.009592787
-1624567953,Petronas Chemicals Group Berhad,7.942080349
-1624567954,Berjaya Sports Toto Berhad,3.36644119
-1624567954,Ambank Group Berhad,2.529898735
-1624567954,Kulim (Malaysia) Berhad,3.451409855
-1624567955,Berjaya Corporation Berhad,0.821023313
-1624567955,Dutch Lady Milk Industries Berhad,35.89307789
-1624567955,Padini Holdings Berhad,2.722476192
-1624567955,FGV Holdings Berhad,1.10877241
-1624567955,Penang Port Commission,1.349477988
-1624567955,Penang Port Commission,1.370129436
-1624567955,Hartalega Holdings Berhad,7.446164212
-1624567956,Bank Islam Malaysia Berhad,1.434912711
-1624567956,IOI Corporation Berhad,2.683306728
-1624567956,CIMB Group Holdings Berhad,4.136162108
-1624567956,Petronas Dagangan Berhad,15.31614953
-1624567956,Scientex Berhad,11.06175379
-1624567957,Ambank Group Berhad,2.528725819
-1624567957,Dutch Lady Milk Industries Berhad,42.59007878
-1624567957,Tasco Berhad,2.322152107
-1624567957,Dutch Lady Milk Industries Berhad,36.60722048
-1624567957,Tasco Berhad,1.962532693
-1624567958,Sime Darby Berhad,2.520660787
-1624567958,Genting Berhad,6.589700857
-1624567959,Berjaya Sports Toto Berhad,3.32327785
-1624567959,Penang Port Commission,1.189448683
-1624567959,Padini Holdings Berhad,2.822176868
-1624567959,UOA Development Berhad,1.983327977
-1624567959,PLUS Malaysia Berhad,4.940691468
-1624567960,Petronas Holdings Berhad,11.52354411
-1624567960,Digi.Com Berhad,3.998449464
-1624567960,Sapura Energy Berhad,0.842716923
-1624567960,Ambank Group Berhad,3.117853669
-1624567960,Petronas Dagangan Berhad,16.01134769
-1624567960,YTL Power International Berhad,1.588709005
-1624567961,Maybank Berhad,8.653748406
-1624567961,Top Glove Corporation Berhad,2.173112511
-1624567961,DiGi.Com Berhad,3.796165497
-1624567961,Penang Port Commission,1.340680668
-1624567961,IGB Real Estate Investment Trust,2.157441354
-1624567962,Nestle (Malaysia) Berhad,167.9920709
-1624567962,Genting Malaysia Berhad,3.054370974
-1624567962,Petronas Holdings Berhad,9.431590657
-1624567962,Lotus Group Holdings Berhad,0.726749772
-1624567963,CIMB Group Holdings Berhad,3.767669971
-1624567963,Bank Islam Malaysia Berhad,1.759072896
-1624567963,AirAsia Group Berhad,2.348402182
-1624567963,PLUS Malaysia Berhad,5.24263655
-1624567963,YTL Corporation Berhad,1.092014926
-1624567963,Genting Malaysia Berhad,3.042771792
-1624567964,MISC Berhad,7.327002076
-1624567964,Penang Port Commission,1.211240814
-1624567964,UMW Holdings Berhad,6.394131961
-1624567965,Hartalega Holdings Berhad,7.910451004
-1624567965,IGB Real Estate Investment Trust,1.705447144
-1624567965,FGV Holdings Berhad,1.002643794
-1624567966,FGV Holdings Berhad,1.038580268
-1624567966,Malaysia Airports Holdings Berhad,6.010873007
-1624567966,Maybank Berhad,9.102368071
-1624567967,Top Glove Corporation Berhad,2.430594059
-1624567967,Scientex Berhad,10.98565271
-1624567968,Dutch Lady Milk Industries Berhad,42.81693107
-1624567968,IOI Properties Group Berhad,1.367777916
-1624567968,UOA Development Berhad,1.683753481
-1624567969,Sime Darby Plantation Berhad,3.279161944
-1624567969,UMW Holdings Berhad,6.107970668
-1624567969,Scientex Berhad,11.69773468
-1624567969,Scientex Berhad,13.50898943
-1624567969,IGB Real Estate Investment Trust,1.911483896
-1624567969,Dutch Lady Milk Industries Berhad,45.73535825
-1624567970,Nestle (Malaysia) Berhad,145.3065655
-1624567970,Petronas Holdings Berhad,10.70483023
-1624567970,Top Glove Corporation Berhad,2.116371407
-1624567971,Malaysia Smelting Corporation Berhad,2.985045145
-1624567971,IGB Real Estate Investment Trust,2.043334206
-1624567971,Scientex Berhad,11.79437555
-1624567971,Petronas Chemicals Group Berhad,8.040619068
-1624567971,Lotus Group Holdings Berhad,0.590037582
-1624567971,Malayan Banking Berhad,7.685293278
-1624567971,Berjaya Sports Toto Berhad,2.827029582
-1624567972,IGB Real Estate Investment Trust,1.752982513
-1624567972,Public Bank Berhad,5.299570767
-1624567972,Sapura Energy Berhad,0.802283167
-1624567972,Malaysia Smelting Corporation Berhad,2.561138718
-1624567972,Astro Malaysia Holdings Berhad,1.068401635
-1624567972,YTL Corporation Berhad,1.162289534
-1624567972,Top Glove Corporation Berhad,2.436289055
-1624567972,Sime Darby Berhad,2.108962834
-1624567973,Scientex Berhad,13.95228611
-1624567973,Digi.Com Berhad,3.186499428
-1624567973,Dutch Lady Milk Industries Berhad,36.4966479
-1624567973,Prestariang Berhad,0.874355497
-1624567973,IOI Corporation Berhad,3.007104408
-1624567974,DiGi.Com Berhad,3.495085662
-1624567974,Nestle (Malaysia) Berhad,136.3630364
-1624567974,YTL Corporation Berhad,1.119963747
-1624567974,Digi.Com Berhad,3.97025441
-1624567975,Tasco Berhad,2.345684101
-1624567975,Tenaga Nasional Berhad,10.70030054
-1624567975,Genting Malaysia Berhad,2.537539411
-1624567975,Public Bank Berhad,4.767401486
-1624567975,Petronas Chemicals Group Berhad,7.060484707
-1624567976,IOI Properties Group Berhad,1.019734773
-1624567976,Maxis Berhad,4.018713852
-1624567976,Kulim (Malaysia) Berhad,3.225731629
-1624567976,MISC Berhad,7.11372864
-1624567976,DiGi.Com Berhad,3.904454523
-1624567976,YTL Corporation Berhad,0.982106895
-1624567977,Proton Holdings Berhad,0.97347419
-1624567977,Tasco Berhad,2.34625284
-1624567977,Berjaya Corporation Berhad,1.018845202
-1624567977,Petronas Holdings Berhad,11.45191876
-1624567977,Petronas Chemicals Group Berhad,8.218131464
-1624567978,IOI Corporation Berhad,2.762128998
-1624567978,Berjaya Sports Toto Berhad,2.932075757
-1624567978,Padini Holdings Berhad,2.681884516
-1624567979,Kulim (Malaysia) Berhad,3.129274155
-1624567979,YTL Power International Berhad,1.663642924
-1624567979,MISC Berhad,7.053316593
-1624567980,PLUS Malaysia Berhad,4.970298521
-1624567980,AirAsia Group Berhad,2.254218404
-1624567981,Genting Berhad,5.72509207
-1624567981,Proton Holdings Berhad,0.977415025
-1624567981,UMW Holdings Berhad,4.911184147
-1624567982,Dutch Lady Milk Industries Berhad,34.38267887
-1624567982,Sunway Berhad,1.326216165
-1624567983,Malaysia Smelting Corporation Berhad,3.084401692
-1624567983,CIMB Group Holdings Berhad,4.420819073
-1624567983,Sunway Berhad,1.540925642
-1624567984,Petronas Dagangan Berhad,16.80469961
-1624567984,UMW Holdings Berhad,5.109883932
-1624567984,Maybank Berhad,7.659636574
-1624567984,CIMB Group Holdings Berhad,4.795022999
-1624567984,Genting Malaysia Berhad,3.179231138
-1624567984,Ambank Group Berhad,3.092401663
-1624567984,YTL Power International Berhad,1.633268521
-1624567984,AirAsia Group Berhad,2.80664129
-1624567986,Petronas Dagangan Berhad,19.25556223
-1624567987,FGV Holdings Berhad,1.031493589
-1624567987,Maxis Berhad,4.223626382
-1624567987,Sapura Energy Berhad,0.809562348
-1624567987,Proton Holdings Berhad,1.102517674
-1624567987,IOI Corporation Berhad,3.244389567
-1624567988,UMW Holdings Berhad,5.945274635
-1624567988,Top Glove Corporation Berhad,2.186271975
-1624567989,Maxis Berhad,4.432909693
-1624567989,Nestle (Malaysia) Berhad,141.3119368
-1624567989,Tenaga Nasional Berhad,10.6539095
-1624567989,Prestariang Berhad,0.898951595
-1624567989,Genting Malaysia Berhad,2.758778488
-1624567989,Malaysia Building Society Berhad,1.187789207
-1624567989,Proton Holdings Berhad,0.965478221
-1624567990,MISC Berhad,7.484481831
-1624567990,Genting Berhad,5.697965155
-1624567990,Berjaya Corporation Berhad,0.798161881
-1624567990,Public Bank Berhad,4.278611076
-1624567990,Ambank Group Berhad,3.152299445
-1624567990,IOI Properties Group Berhad,1.254045698
-1624567990,FGV Holdings Berhad,1.26967808
-1624567990,IOI Corporation Berhad,2.715178272
-1624567990,Ambank Group Berhad,2.524744573
-1624567992,Padini Holdings Berhad,2.629648689
-1624567992,CIMB Group Holdings Berhad,4.705870356
-1624567992,KLCC Property Holdings Berhad,6.449294186
-1624567992,Malaysia Airports Holdings Berhad,7.395791809
-1624567992,IOI Properties Group Berhad,1.072027094
-1624567992,Sapura Energy Berhad,0.688339507
-1624567992,Dutch Lady Milk Industries Berhad,37.97952044
-1624567993,Lotus Group Holdings Berhad,0.678293131
-1624567993,Petronas Gas Berhad,16.1902009
-1624567993,PLUS Malaysia Berhad,4.639772812
-1624567993,Top Glove Corporation Berhad,2.399972213
-1624567993,Malaysia Building Society Berhad,1.004165532
-1624567993,Padini Holdings Berhad,2.433161868
-1624567993,Axiata Group Berhad,3.269712984
-1624567993,Scientex Berhad,11.89446448
-1624567993,Axiata Group Berhad,3.606398816
-1624567993,Tasco Berhad,1.970663935
-1624567993,AirAsia Group Berhad,2.355300037
-1624567995,Prestariang Berhad,0.78877794
-1624567995,Prestariang Berhad,0.878750932
-1624567995,Berjaya Sports Toto Berhad,3.539478049
-1624567995,Sime Darby Berhad,2.50086841
-1624567996,Sime Darby Berhad,2.450583191
-1624567996,Kulim (Malaysia) Berhad,3.320082302
-1624567996,Tasco Berhad,2.176108619
-1624567996,Malaysia Airports Holdings Berhad,5.760428969
-1624567996,UOA Development Berhad,1.905852348
-1624567997,Tasco Berhad,1.938095732
-1624567998,Berjaya Sports Toto Berhad,3.327133134
-1624567998,Petronas Holdings Berhad,9.938218686
-1624567998,Axiata Group Berhad,3.505225386
-1624567999,IOI Properties Group Berhad,1.302802585
-1624567999,Ambank Group Berhad,2.613638505
-1624567999,Digi.Com Berhad,3.580932286
-1624567999,Petronas Gas Berhad,18.44952158
-1624567999,Nestle (Malaysia) Berhad,166.7715865
-1624568000,Petronas Dagangan Berhad,19.32132882
-1624568000,Malayan Banking Berhad,8.913931355
-1624568000,Petronas Holdings Berhad,9.618730018
-1624568000,Prestariang Berhad,0.966452305
+1624567892,UMW Holdings Berhad,5.454878506
+1624567893,Digi.Com Berhad,3.941909262
+1624567894,Telekom Malaysia Berhad,3.014548966
+1624567894,Maybank Berhad,8.815363129
+1624567894,Bank Islam Malaysia Berhad,1.702841348
+1624567895,Scientex Berhad,12.05318004
+1624567895,Genting Malaysia Berhad,2.577862341
+1624567895,Sime Darby Plantation Berhad,3.469148433
+1624567897,Sime Darby Berhad,2.483215132
+1624567897,Sime Darby Berhad,2.586919795
+1624567899,Sapura Energy Berhad,0.712060066
+1624567900,Kulim (Malaysia) Berhad,3.682418321
+1624567901,Malaysia Airports Holdings Berhad,6.591329608
+1624567902,Sunway Berhad,1.438836292
+1624567905,Prestariang Berhad,0.737335829
+1624567906,IOI Corporation Berhad,3.326488612
+1624567906,Ambank Group Berhad,2.978145588
+1624567906,UMW Holdings Berhad,5.163414956
+1624567907,Hartalega Holdings Berhad,7.565827382
+1624567908,Tenaga Nasional Berhad,8.699487175
+1624567910,KLCC Property Holdings Berhad,6.30858105
+1624567911,Berjaya Corporation Berhad,0.795096515
+1624567912,Dutch Lady Milk Industries Berhad,44.04750679
+1624567912,Bank Islam Malaysia Berhad,1.801790746
+1624567913,Malaysia Building Society Berhad,0.999584275
+1624567916,KLCC Property Holdings Berhad,7.489350753
+1624567918,IOI Corporation Berhad,2.771638735
+1624567920,Digi.Com Berhad,4.034162399
+1624567921,DiGi.Com Berhad,3.812724769
+1624567921,Hartalega Holdings Berhad,7.839100423
+1624567922,Genting Malaysia Berhad,3.019285014
+1624567923,Hartalega Holdings Berhad,8.406819958
+1624567923,IOI Corporation Berhad,2.807468969
+1624567924,Maxis Berhad,4.121030195
+1624567925,Penang Port Commission,1.109039863
+1624567926,Digi.Com Berhad,4.201051856
+1624567926,Sime Darby Plantation Berhad,4.083087096
+1624567928,Petronas Gas Berhad,15.75104323
+1624567928,Top Glove Corporation Berhad,2.086971149
+1624567934,Petronas Gas Berhad,18.43854766
+1624567937,Maxis Berhad,4.881895258
+1624567939,Berjaya Sports Toto Berhad,3.405089487
+1624567939,Proton Holdings Berhad,0.948847487
+1624567944,Scientex Berhad,13.98364423
+1624567947,Malaysia Smelting Corporation Berhad,2.689062876
+1624567947,Lotus Group Holdings Berhad,0.715126667
+1624567948,Nestle (Malaysia) Berhad,153.1966596
+1624567949,Digi.Com Berhad,4.063401232
+1624567949,Telekom Malaysia Berhad,3.410746774
+1624567949,Genting Malaysia Berhad,2.854078811
+1624567950,Sunway Berhad,1.538872695
+1624567950,IGB Real Estate Investment Trust,2.008475469
+1624567951,Maybank Berhad,7.383452131
+1624567953,Malayan Banking Berhad,7.621763392
+1624567953,Kulim (Malaysia) Berhad,3.686193391
+1624567953,Proton Holdings Berhad,0.95527562
+1624567955,Petronas Holdings Berhad,10.64712012
+1624567955,UMW Holdings Berhad,5.395097562
+1624567956,Sime Darby Berhad,2.064467698
+1624567956,UMW Holdings Berhad,5.037076024
+1624567957,Sime Darby Berhad,2.667487263
+1624567958,IGB Real Estate Investment Trust,1.795485464
+1624567962,IGB Real Estate Investment Trust,2.018987632
+1624567963,KLCC Property Holdings Berhad,7.525229938
+1624567964,Prestariang Berhad,0.944534086
+1624567964,Sunway Berhad,1.522009623
+1624567965,Axiata Group Berhad,4.188601037
+1624567966,Petronas Holdings Berhad,8.646816979
+1624567967,Astro Malaysia Holdings Berhad,1.093016634
+1624567967,DiGi.Com Berhad,3.975977137
+1624567968,UOA Development Berhad,2.020687484
+1624567969,Sapura Energy Berhad,0.705929117
+1624567970,Public Bank Berhad,4.489236849
+1624567972,Sime Darby Plantation Berhad,4.047703084
+1624567972,Maxis Berhad,4.639529314
+1624567972,Petronas Dagangan Berhad,19.53769771
+1624567972,Axiata Group Berhad,3.557174179
+1624567974,Sunway Berhad,1.322911114
+1624567976,MISC Berhad,6.059370389
+1624567979,Penang Port Commission,1.377971948
+1624567980,DiGi.Com Berhad,3.641546526
+1624567981,Scientex Berhad,13.14951842
+1624567981,Maybank Berhad,9.152713499
+1624567981,Scientex Berhad,12.96424491
+1624567982,Malaysia Airports Holdings Berhad,5.953138318
+1624567982,Sime Darby Plantation Berhad,4.044801197
+1624567983,Penang Port Commission,1.202552647
+1624567984,Petronas Dagangan Berhad,16.7608083
+1624567984,Sunway Berhad,1.306555851
+1624567984,PLUS Malaysia Berhad,5.079346903
+1624567984,Scientex Berhad,14.13724399
+1624567984,UMW Holdings Berhad,5.453454484
+1624567985,Malayan Banking Berhad,7.904622602
+1624567986,Malaysia Building Society Berhad,0.994532237
+1624567987,Sunway Berhad,1.293502099
+1624567988,Ambank Group Berhad,2.496626906
+1624567988,Maxis Berhad,5.132407384
+1624567989,Nestle (Malaysia) Berhad,135.0324774
+1624567990,FGV Holdings Berhad,1.243381361
+1624567990,Padini Holdings Berhad,2.263757202
+1624567990,IOI Corporation Berhad,2.997005109
+1624567990,Astro Malaysia Holdings Berhad,1.180085631
+1624567990,IOI Properties Group Berhad,1.041702065
+1624567991,AirAsia Group Berhad,2.320026318
+1624567991,Sime Darby Berhad,2.520409062
+1624567993,Padini Holdings Berhad,2.623405106
+1624567993,UMW Holdings Berhad,6.102500016
+1624567994,Axiata Group Berhad,3.556555249
+1624567996,Kulim (Malaysia) Berhad,3.119348304
+1624567996,CIMB Group Holdings Berhad,4.981367718
+1624567997,MISC Berhad,7.14319443
+1624567998,Ambank Group Berhad,2.673541284
+1624567998,Lotus Group Holdings Berhad,0.703006541
+1624567999,Digi.Com Berhad,3.391347531
+1624567999,Ambank Group Berhad,2.605036398
+1624568000,Sunway Berhad,1.531258011
+1624568000,CIMB Group Holdings Berhad,4.031961742
+1624568002,UOA Development Berhad,1.628393698
+1624568003,Astro Malaysia Holdings Berhad,1.155466041
+1624568003,IGB Real Estate Investment Trust,2.036895822
+1624568003,Petronas Chemicals Group Berhad,6.831326686
+1624568003,YTL Corporation Berhad,1.116982744
+1624568004,Sunway Berhad,1.491340967
+1624568006,IOI Properties Group Berhad,1.096877092
+1624568006,PLUS Malaysia Berhad,4.794253057
+1624568007,Sime Darby Plantation Berhad,3.595472509
+1624568007,Kulim (Malaysia) Berhad,3.730583192
+1624568007,AirAsia Group Berhad,2.862881256
+1624568007,Petronas Holdings Berhad,9.124992469
+1624568011,Hartalega Holdings Berhad,9.335714875
+1624568011,Petronas Holdings Berhad,10.88366773
+1624568012,Kulim (Malaysia) Berhad,4.043634188
+1624568012,Tasco Berhad,2.322331785
+1624568013,YTL Corporation Berhad,0.905176804
+1624568013,PLUS Malaysia Berhad,5.603106598
+1624568014,Sime Darby Plantation Berhad,3.43770869
+1624568014,Proton Holdings Berhad,1.173649101
+1624568015,UMW Holdings Berhad,5.995073841
+1624568015,Sapura Energy Berhad,0.702969171
+1624568015,Ambank Group Berhad,2.545313339
+1624568016,Lotus Group Holdings Berhad,0.602136357
+1624568016,Berjaya Corporation Berhad,0.84288421
+1624568017,Maybank Berhad,7.490450086
+1624568017,Dutch Lady Milk Industries Berhad,37.66145847
+1624568018,Telekom Malaysia Berhad,3.364186944
+1624568019,FGV Holdings Berhad,1.071177827
+1624568019,Telekom Malaysia Berhad,3.475998496
+1624568019,AirAsia Group Berhad,2.895146366
+1624568020,YTL Power International Berhad,1.61316888
+1624568020,MISC Berhad,6.994260351
+1624568021,Dutch Lady Milk Industries Berhad,37.24120436
+1624568023,Maxis Berhad,4.685298578
+1624568024,Maybank Berhad,8.970332641
+1624568025,Malaysia Building Society Berhad,1.23478814
+1624568026,Telekom Malaysia Berhad,3.58627766
+1624568026,Top Glove Corporation Berhad,2.564743275
+1624568028,Malayan Banking Berhad,8.038395186
+1624568028,Lotus Group Holdings Berhad,0.605157197
+1624568029,Prestariang Berhad,0.795092104
+1624568029,Top Glove Corporation Berhad,2.334143571
+1624568029,Malaysia Smelting Corporation Berhad,3.065314896
+1624568030,Sime Darby Berhad,2.216856536
+1624568030,AirAsia Group Berhad,2.718118408
+1624568032,Scientex Berhad,13.61484983
+1624568034,Petronas Dagangan Berhad,15.93748933
+1624568034,YTL Power International Berhad,1.33919166
+1624568035,Malaysia Building Society Berhad,1.254087462
+1624568036,YTL Power International Berhad,1.610706826
+1624568036,Genting Berhad,6.68162551
+1624568037,Tenaga Nasional Berhad,11.19654609
+1624568037,Petronas Dagangan Berhad,15.31193202
+1624568037,Tenaga Nasional Berhad,10.11636769
+1624568038,IOI Properties Group Berhad,1.275096153
+1624568038,Prestariang Berhad,0.909236269
+1624568038,IOI Properties Group Berhad,1.302112264
+1624568039,Tenaga Nasional Berhad,9.22847876
+1624568040,Maybank Berhad,8.408400862
+1624568042,Digi.Com Berhad,4.042734627
+1624568043,Berjaya Sports Toto Berhad,2.923988747
+1624568043,YTL Corporation Berhad,1.067852697
+1624568044,Dutch Lady Milk Industries Berhad,37.15675463
+1624568044,Sime Darby Plantation Berhad,4.209413933
+1624568045,Maxis Berhad,4.928868304
+1624568045,Maybank Berhad,8.922936644
+1624568046,Tasco Berhad,2.244594005
+1624568047,Bank Islam Malaysia Berhad,1.438553973
+1624568048,Berjaya Sports Toto Berhad,3.559053472
+1624568053,Lotus Group Holdings Berhad,0.671578186
+1624568054,UOA Development Berhad,1.629147595
+1624568055,Malayan Banking Berhad,9.007704844
+1624568055,Kulim (Malaysia) Berhad,3.066019468
+1624568057,IGB Real Estate Investment Trust,1.65708142
+1624568057,Sime Darby Berhad,2.064954896
+1624568057,Petronas Gas Berhad,15.42445545
+1624568057,Sime Darby Plantation Berhad,3.354107915
+1624568058,Sapura Energy Berhad,0.711687937
+1624568058,Tenaga Nasional Berhad,9.331462592
+1624568059,Nestle (Malaysia) Berhad,158.438236
+1624568061,Prestariang Berhad,0.934134207
+1624568063,Tenaga Nasional Berhad,8.517317329
+1624568064,Nestle (Malaysia) Berhad,167.6016167
+1624568066,Proton Holdings Berhad,1.108150788
+1624568066,Berjaya Sports Toto Berhad,2.934408137
+1624568067,Sapura Energy Berhad,0.687356434
+1624568069,Prestariang Berhad,0.922509638
+1624568072,Kulim (Malaysia) Berhad,3.726867792
+1624568074,Nestle (Malaysia) Berhad,168.6375018
+1624568074,CIMB Group Holdings Berhad,4.006577344
+1624568074,KLCC Property Holdings Berhad,7.969262732
+1624568075,Tasco Berhad,2.4119516
+1624568075,UOA Development Berhad,1.727802955
+1624568075,UOA Development Berhad,1.710286822
+1624568076,KLCC Property Holdings Berhad,6.89002334
+1624568077,Lotus Group Holdings Berhad,0.61362004
+1624568077,Tenaga Nasional Berhad,10.81603316
+1624568078,UOA Development Berhad,1.956652561
+1624568078,Petronas Gas Berhad,16.2552601
+1624568078,Berjaya Corporation Berhad,0.871983125
+1624568079,Malaysia Building Society Berhad,1.164235684
+1624568082,Genting Malaysia Berhad,3.237850437
+1624568083,IOI Properties Group Berhad,1.318326047
+1624568083,Top Glove Corporation Berhad,2.349583209
+1624568086,Berjaya Sports Toto Berhad,3.275431583
+1624568087,IOI Properties Group Berhad,1.115919109
+1624568087,Sapura Energy Berhad,0.777190057
+1624568087,KLCC Property Holdings Berhad,7.908019371
+1624568088,Nestle (Malaysia) Berhad,170.0622042
+1624568089,Top Glove Corporation Berhad,2.107918855
+1624568090,Nestle (Malaysia) Berhad,154.5540189
+1624568090,Digi.Com Berhad,3.603066528
+1624568091,IOI Properties Group Berhad,1.297847285
+1624568092,Nestle (Malaysia) Berhad,137.307266
+1624568093,MISC Berhad,6.284284678
+1624568093,Malayan Banking Berhad,7.651953837
+1624568094,Axiata Group Berhad,4.059513118
+1624568094,CIMB Group Holdings Berhad,4.708009719
+1624568095,Astro Malaysia Holdings Berhad,1.382139607
+1624568097,Ambank Group Berhad,2.971226307
+1624568097,Proton Holdings Berhad,1.073332506
+1624568099,Genting Berhad,6.795637316
+1624568099,DiGi.Com Berhad,3.954979275
+1624568100,Berjaya Sports Toto Berhad,2.89407011
+1624568100,CIMB Group Holdings Berhad,3.845547949
+1624568100,IGB Real Estate Investment Trust,1.842017043
+1624568101,Astro Malaysia Holdings Berhad,1.143118735
+1624568101,Sime Darby Plantation Berhad,3.338400092
+1624568103,Ambank Group Berhad,2.605374029
+1624568105,UOA Development Berhad,1.976156584
+1624568106,Petronas Chemicals Group Berhad,7.916455758
+1624568107,Malaysia Smelting Corporation Berhad,2.632263352
+1624568109,Genting Berhad,6.40973516
+1624568110,Malaysia Building Society Berhad,1.176245365
+1624568111,Petronas Chemicals Group Berhad,6.545810439
+1624568114,Petronas Chemicals Group Berhad,8.157000639
+1624568114,Lotus Group Holdings Berhad,0.686586774
+1624568115,CIMB Group Holdings Berhad,4.668236676
+1624568115,Malaysia Building Society Berhad,1.247524706
+1624568116,Maybank Berhad,9.294987587
+1624568116,Sime Darby Plantation Berhad,3.844365499
+1624568116,Malaysia Airports Holdings Berhad,7.1287497
+1624568117,Petronas Dagangan Berhad,16.09996455
+1624568117,Ambank Group Berhad,2.840531907
+1624568117,FGV Holdings Berhad,1.035825408
+1624568117,Ambank Group Berhad,2.999169829
+1624568119,Petronas Holdings Berhad,10.9091415
+1624568120,Petronas Holdings Berhad,9.315729768
+1624568121,Sapura Energy Berhad,0.775961574
+1624568122,Telekom Malaysia Berhad,2.787108427
+1624568125,IOI Corporation Berhad,3.159575607
+1624568126,Proton Holdings Berhad,0.958739467
+1624568126,YTL Corporation Berhad,0.986740486
+1624568127,Sime Darby Berhad,2.212511263
+1624568127,Malaysia Building Society Berhad,1.185080514
+1624568129,IGB Real Estate Investment Trust,1.760864598
+1624568129,Hartalega Holdings Berhad,9.742524079
+1624568130,MISC Berhad,7.031080637
+1624568130,Scientex Berhad,13.86963386
+1624568135,Padini Holdings Berhad,2.240550177
+1624568136,IOI Corporation Berhad,2.706017885
+1624568139,Kulim (Malaysia) Berhad,3.876469547
+1624568140,Petronas Gas Berhad,17.43004878
+1624568140,PLUS Malaysia Berhad,4.79013467
+1624568141,YTL Power International Berhad,1.634700654
+1624568142,Malaysia Building Society Berhad,0.963230368
+1624568143,DiGi.Com Berhad,3.430606522
+1624568143,MISC Berhad,7.247424624
+1624568145,PLUS Malaysia Berhad,5.705707673
+1624568146,PLUS Malaysia Berhad,5.495335918
+1624568149,UOA Development Berhad,1.98910253
+1624568151,Sapura Energy Berhad,0.678427936
+1624568151,Genting Berhad,5.700912201
+1624568151,Astro Malaysia Holdings Berhad,1.341269424
+1624568155,YTL Corporation Berhad,1.005645868
+1624568156,Maxis Berhad,4.970533307
+1624568156,Dutch Lady Milk Industries Berhad,43.07480983
+1624568157,DiGi.Com Berhad,4.100348906
+1624568157,Bank Islam Malaysia Berhad,1.647280444
+1624568157,Astro Malaysia Holdings Berhad,1.150783838
+1624568158,Genting Malaysia Berhad,3.036459881
+1624568160,Malaysia Airports Holdings Berhad,6.217979646
+1624568160,Tenaga Nasional Berhad,10.84958209
+1624568160,Berjaya Sports Toto Berhad,3.643109194
+1624568160,Malaysia Smelting Corporation Berhad,3.035176027
+1624568161,Astro Malaysia Holdings Berhad,1.380699273
+1624568162,YTL Power International Berhad,1.609948699
+1624568164,Public Bank Berhad,5.445894485
+1624568164,IOI Properties Group Berhad,1.377284475
+1624568164,Ambank Group Berhad,2.994591542
+1624568165,Petronas Gas Berhad,17.95934949
+1624568167,Kulim (Malaysia) Berhad,3.82832215
+1624568167,Genting Malaysia Berhad,2.985298776
+1624568170,Tasco Berhad,2.00517125
+1624568171,Sunway Berhad,1.5288984
+1624568171,CIMB Group Holdings Berhad,4.040644811
+1624568171,Telekom Malaysia Berhad,3.003612429
+1624568171,FGV Holdings Berhad,1.24541306
+1624568172,MISC Berhad,6.134819014
+1624568174,Petronas Gas Berhad,17.10932633
+1624568175,Nestle (Malaysia) Berhad,152.1123524
+1624568175,Sime Darby Plantation Berhad,4.206362558
+1624568175,Astro Malaysia Holdings Berhad,1.181745499
+1624568179,Top Glove Corporation Berhad,2.130451206
+1624568180,Sunway Berhad,1.294762128
+1624568181,YTL Corporation Berhad,0.941317654
+1624568181,PLUS Malaysia Berhad,5.904591045
+1624568182,Proton Holdings Berhad,1.105682172
+1624568183,Maybank Berhad,8.571236501
+1624568183,Malaysia Smelting Corporation Berhad,2.93830433
+1624568185,PLUS Malaysia Berhad,5.979582704
+1624568185,Berjaya Sports Toto Berhad,2.714927854
+1624568185,UOA Development Berhad,1.955882434
+1624568186,Scientex Berhad,12.02165839
+1624568186,Astro Malaysia Holdings Berhad,1.383015483
+1624568189,Malaysia Smelting Corporation Berhad,2.732815278
+1624568189,Petronas Dagangan Berhad,18.94799655
+1624568189,Malaysia Smelting Corporation Berhad,2.637907305
+1624568190,Sime Darby Plantation Berhad,3.328546395
+1624568191,Lotus Group Holdings Berhad,0.62665782
+1624568191,Nestle (Malaysia) Berhad,163.820676
+1624568191,Lotus Group Holdings Berhad,0.590876391
+1624568191,Nestle (Malaysia) Berhad,140.40404
+1624568193,Proton Holdings Berhad,1.17191768
+1624568193,YTL Corporation Berhad,1.026905765
+1624568193,Penang Port Commission,1.338839292
+1624568196,Malaysia Airports Holdings Berhad,6.245941668
+1624568197,Maxis Berhad,4.849794765
+1624568199,Sime Darby Plantation Berhad,3.572449551
+1624568202,UMW Holdings Berhad,6.017581227
+1624568202,IOI Corporation Berhad,2.662341624
+1624568204,Sime Darby Berhad,2.408978345
+1624568206,Penang Port Commission,1.171859165
+1624568208,Dutch Lady Milk Industries Berhad,45.37884913
+1624568208,MISC Berhad,6.007725026
+1624568209,Digi.Com Berhad,3.835666395
+1624568209,Malayan Banking Berhad,8.911594472
+1624568210,UOA Development Berhad,1.644719744
+1624568210,Dutch Lady Milk Industries Berhad,43.53345908
+1624568211,MISC Berhad,6.880279389
+1624568213,Proton Holdings Berhad,0.996412661
+1624568213,Sime Darby Plantation Berhad,3.951143124
+1624568213,Petronas Dagangan Berhad,18.82880926
+1624568215,Genting Malaysia Berhad,2.73298377
+1624568216,AirAsia Group Berhad,2.809086549
+1624568217,Public Bank Berhad,4.365677048
+1624568218,Hartalega Holdings Berhad,9.421177408
+1624568218,Malaysia Smelting Corporation Berhad,2.610079383
+1624568219,Berjaya Sports Toto Berhad,2.87920541
+1624568221,Kulim (Malaysia) Berhad,3.144586659
+1624568222,Hartalega Holdings Berhad,9.707139255
+1624568223,Bank Islam Malaysia Berhad,1.504097367
+1624568224,KLCC Property Holdings Berhad,6.660359564
+1624568224,MISC Berhad,6.670422786
+1624568228,Sime Darby Berhad,2.048967904
+1624568228,DiGi.Com Berhad,3.598142159
+1624568229,Dutch Lady Milk Industries Berhad,43.02985482
+1624568229,YTL Corporation Berhad,0.918417258
+1624568231,Prestariang Berhad,0.760872403
+1624568231,Berjaya Sports Toto Berhad,3.122502116
+1624568232,AirAsia Group Berhad,2.289149616
+1624568234,Ambank Group Berhad,3.031744872
+1624568235,Malayan Banking Berhad,8.822022491
+1624568236,Sapura Energy Berhad,0.781730719
+1624568240,Malayan Banking Berhad,8.010183612
+1624568240,Malaysia Smelting Corporation Berhad,2.674773905
+1624568243,MISC Berhad,6.532894668
+1624568245,Public Bank Berhad,4.677363271
+1624568247,Dutch Lady Milk Industries Berhad,37.91967027
+1624568247,KLCC Property Holdings Berhad,7.865134462
+1624568249,KLCC Property Holdings Berhad,7.696914902
+1624568249,Ambank Group Berhad,3.093350555
+1624568249,Petronas Chemicals Group Berhad,6.909371021
+1624568252,Bank Islam Malaysia Berhad,1.657163536
+1624568253,Tenaga Nasional Berhad,8.64782034
+1624568253,Petronas Chemicals Group Berhad,6.734838116
+1624568254,Petronas Gas Berhad,17.63445107
+1624568255,Proton Holdings Berhad,1.198778105
+1624568255,Hartalega Holdings Berhad,8.723014421
+1624568255,Scientex Berhad,13.37304826
+1624568256,Digi.Com Berhad,4.193669331
+1624568257,UMW Holdings Berhad,5.214425365
+1624568257,Petronas Holdings Berhad,9.126779633
+1624568257,Petronas Gas Berhad,18.18562276
+1624568257,Public Bank Berhad,5.513480744
+1624568257,Malaysia Airports Holdings Berhad,5.975351983
+1624568257,IOI Properties Group Berhad,1.320161948
+1624568261,YTL Power International Berhad,1.414995815
+1624568261,Sapura Energy Berhad,0.796266268
+1624568262,Maxis Berhad,4.104245304
+1624568262,Nestle (Malaysia) Berhad,160.3213289
+1624568264,Top Glove Corporation Berhad,2.599866981
+1624568264,Ambank Group Berhad,3.070010931
+1624568265,Padini Holdings Berhad,2.330611319
+1624568266,IGB Real Estate Investment Trust,1.986717316
+1624568266,Astro Malaysia Holdings Berhad,1.093620244
+1624568269,Digi.Com Berhad,4.026321605
+1624568269,Lotus Group Holdings Berhad,0.696951683
+1624568273,UMW Holdings Berhad,6.082599211
+1624568273,Penang Port Commission,1.275982824
+1624568274,IOI Corporation Berhad,3.007624018
+1624568275,Prestariang Berhad,0.873954589
+1624568276,Malaysia Building Society Berhad,0.983108
+1624568276,Tasco Berhad,2.166511905
+1624568277,UOA Development Berhad,1.661716726
+1624568277,Malayan Banking Berhad,7.759833257
+1624568277,Scientex Berhad,14.31600136
+1624568278,Sunway Berhad,1.281818495
+1624568278,Sime Darby Berhad,2.271375169
+1624568280,Penang Port Commission,1.089080354
+1624568283,Malaysia Smelting Corporation Berhad,3.082886523
+1624568283,Proton Holdings Berhad,1.018348039
+1624568284,Proton Holdings Berhad,0.942285608
+1624568284,IOI Corporation Berhad,2.683246405
+1624568284,Bank Islam Malaysia Berhad,1.73937576
+1624568285,Scientex Berhad,13.27174077
+1624568285,Axiata Group Berhad,3.222344821
+1624568286,Scientex Berhad,13.79260764
+1624568287,Astro Malaysia Holdings Berhad,1.10901824
+1624568288,YTL Corporation Berhad,0.985458726
+1624568288,Hartalega Holdings Berhad,7.768566124
+1624568288,Sime Darby Plantation Berhad,3.533923333
+1624568288,Malaysia Smelting Corporation Berhad,2.444145615
+1624568288,Malaysia Smelting Corporation Berhad,2.890055694
+1624568288,Petronas Holdings Berhad,9.684532315
+1624568289,Lotus Group Holdings Berhad,0.662757742
+1624568289,Tasco Berhad,2.07976385
+1624568289,PLUS Malaysia Berhad,4.610949576
+1624568290,Tasco Berhad,1.971887011
+1624568290,UMW Holdings Berhad,5.969475957
+1624568291,Sime Darby Berhad,2.13486568
+1624568291,Malayan Banking Berhad,7.307843741
+1624568291,Axiata Group Berhad,3.406920124
+1624568292,Hartalega Holdings Berhad,8.503320356
+1624568293,Hartalega Holdings Berhad,9.008996614
+1624568294,KLCC Property Holdings Berhad,6.286938612
+1624568294,KLCC Property Holdings Berhad,6.654301322
+1624568294,Maxis Berhad,4.341402852
+1624568295,Malaysia Building Society Berhad,1.220870461
+1624568295,Petronas Dagangan Berhad,18.45593977
+1624568296,Astro Malaysia Holdings Berhad,1.14697127
+1624568296,Digi.Com Berhad,4.26106365
+1624568297,Petronas Chemicals Group Berhad,6.602783936
+1624568298,Petronas Chemicals Group Berhad,6.770747624
+1624568298,MISC Berhad,5.794407737
+1624568299,MISC Berhad,7.287215355
+1624568300,Astro Malaysia Holdings Berhad,1.311229356
+1624568300,Sunway Berhad,1.280556719
+1624568301,CIMB Group Holdings Berhad,4.935976272
+1624568302,Scientex Berhad,11.53787705
+1624568304,Nestle (Malaysia) Berhad,156.9783842
+1624568304,Prestariang Berhad,0.88177649
+1624568306,Genting Malaysia Berhad,2.730464872
+1624568308,Sapura Energy Berhad,0.699292951
+1624568308,Petronas Chemicals Group Berhad,6.424366278
+1624568309,Tenaga Nasional Berhad,10.26530494
+1624568310,Tenaga Nasional Berhad,10.82248035
+1624568311,Tasco Berhad,2.354500766
+1624568311,Petronas Chemicals Group Berhad,7.929313779
+1624568312,Sapura Energy Berhad,0.725229306
+1624568313,Scientex Berhad,12.47453879
+1624568314,Prestariang Berhad,0.764847756
+1624568314,Berjaya Corporation Berhad,0.971068973
+1624568315,YTL Power International Berhad,1.374160999
+1624568317,Petronas Dagangan Berhad,16.15151107
+1624568318,FGV Holdings Berhad,1.233644408
+1624568320,Proton Holdings Berhad,0.941919329
+1624568322,Scientex Berhad,12.22618987
+1624568322,IGB Real Estate Investment Trust,1.779837207
+1624568323,DiGi.Com Berhad,3.832405108
+1624568323,Sime Darby Plantation Berhad,3.802502614
+1624568323,Malaysia Smelting Corporation Berhad,3.154275095
+1624568324,Nestle (Malaysia) Berhad,138.3378827
+1624568324,Dutch Lady Milk Industries Berhad,36.74240197
+1624568327,Tasco Berhad,1.971158006
+1624568328,Scientex Berhad,12.16989747
+1624568328,Maxis Berhad,4.265094178
+1624568329,Proton Holdings Berhad,1.105163975
+1624568332,Sime Darby Plantation Berhad,3.421392038
+1624568332,Maybank Berhad,7.224198049
+1624568332,Hartalega Holdings Berhad,9.26614413
+1624568334,Sime Darby Plantation Berhad,3.447409945
+1624568335,Top Glove Corporation Berhad,2.378531786
+1624568337,Malayan Banking Berhad,9.239051277
+1624568337,IGB Real Estate Investment Trust,1.862463934
+1624568337,Petronas Gas Berhad,15.60301923
+1624568338,Berjaya Sports Toto Berhad,3.538465218
+1624568339,Penang Port Commission,1.108291159
+1624568340,Ambank Group Berhad,2.69691343
+1624568340,UMW Holdings Berhad,4.906582036
+1624568341,PLUS Malaysia Berhad,4.862307306
+1624568341,Telekom Malaysia Berhad,3.359023138
+1624568341,KLCC Property Holdings Berhad,7.95910366
+1624568342,Digi.Com Berhad,4.062457288
+1624568343,Tasco Berhad,1.983846815
+1624568343,Top Glove Corporation Berhad,2.395493043
+1624568345,PLUS Malaysia Berhad,5.026990331
+1624568345,Malayan Banking Berhad,7.783061977
+1624568345,Dutch Lady Milk Industries Berhad,43.64911927
+1624568348,KLCC Property Holdings Berhad,7.703907555
+1624568349,Genting Berhad,6.776369132
+1624568349,Hartalega Holdings Berhad,8.074393014
+1624568350,Prestariang Berhad,0.778962353
+1624568351,Top Glove Corporation Berhad,2.578082583
+1624568352,Malaysia Building Society Berhad,1.17952239
+1624568353,Axiata Group Berhad,3.485428682
+1624568353,Sime Darby Plantation Berhad,3.349176135
+1624568355,IOI Properties Group Berhad,1.088886659
+1624568355,PLUS Malaysia Berhad,4.72788116
+1624568356,Genting Malaysia Berhad,3.079615797
+1624568357,Tasco Berhad,2.400270979
+1624568358,Nestle (Malaysia) Berhad,156.8423574
+1624568358,Malaysia Building Society Berhad,1.215030152
+1624568359,Hartalega Holdings Berhad,9.822470669
+1624568360,DiGi.Com Berhad,4.06388021
+1624568360,Hartalega Holdings Berhad,7.938543299
+1624568364,Padini Holdings Berhad,2.635719566
+1624568366,UMW Holdings Berhad,5.8742704
+1624568367,Malaysia Building Society Berhad,1.214010444
+1624568367,Petronas Gas Berhad,18.63915859
+1624568370,Astro Malaysia Holdings Berhad,1.079388007
+1624568371,Maybank Berhad,8.290278302
+1624568372,DiGi.Com Berhad,3.562153402
+1624568373,UOA Development Berhad,1.903043991
+1624568373,Ambank Group Berhad,2.919243306
+1624568375,PLUS Malaysia Berhad,5.45567364
+1624568379,DiGi.Com Berhad,3.447939414
+1624568380,Genting Berhad,6.125765416
+1624568382,FGV Holdings Berhad,1.281137086
+1624568382,Prestariang Berhad,0.799635671
+1624568382,Malaysia Airports Holdings Berhad,5.940280309
+1624568382,Kulim (Malaysia) Berhad,3.943009444
+1624568382,Sime Darby Berhad,2.571708241
+1624568384,DiGi.Com Berhad,3.947445789
+1624568384,Penang Port Commission,1.179500323
+1624568385,Sunway Berhad,1.343340713
+1624568385,Penang Port Commission,1.137354025
+1624568386,Malayan Banking Berhad,7.278714975
+1624568387,Malayan Banking Berhad,7.772156285
+1624568389,Sapura Energy Berhad,0.667842785
+1624568390,IOI Corporation Berhad,2.805897529
+1624568392,Nestle (Malaysia) Berhad,140.9800421
+1624568395,Ambank Group Berhad,3.018533214
+1624568395,UMW Holdings Berhad,6.212512686
+1624568397,AirAsia Group Berhad,2.653983632
+1624568398,Kulim (Malaysia) Berhad,3.322339158
+1624568398,CIMB Group Holdings Berhad,4.705172083
+1624568398,IGB Real Estate Investment Trust,2.000503164
+1624568399,Malaysia Smelting Corporation Berhad,2.372013538
+1624568400,Maybank Berhad,9.310602063
+1624568400,Astro Malaysia Holdings Berhad,1.341250726
+1624568401,CIMB Group Holdings Berhad,4.806347784
+1624568402,Top Glove Corporation Berhad,2.328433733
+1624568402,Sime Darby Berhad,2.650216219
+1624568403,Lotus Group Holdings Berhad,0.665238279
+1624568404,Maxis Berhad,4.248524551
+1624568405,IOI Corporation Berhad,3.165359541
+1624568406,Nestle (Malaysia) Berhad,141.036077
+1624568406,Astro Malaysia Holdings Berhad,1.322331895
+1624568407,Proton Holdings Berhad,1.119110037
+1624568408,Genting Malaysia Berhad,2.732442548
+1624568409,Public Bank Berhad,5.189680649
+1624568410,FGV Holdings Berhad,1.051249201
+1624568410,CIMB Group Holdings Berhad,3.990014704
+1624568411,CIMB Group Holdings Berhad,4.584372808
+1624568412,Penang Port Commission,1.349492557
+1624568414,Astro Malaysia Holdings Berhad,1.136579206
+1624568418,Astro Malaysia Holdings Berhad,1.175228158
+1624568419,PLUS Malaysia Berhad,5.686532196
+1624568421,Scientex Berhad,13.86277486
+1624568421,Axiata Group Berhad,3.32873179
+1624568422,Petronas Holdings Berhad,9.16205516
+1624568422,Berjaya Sports Toto Berhad,3.515395933
+1624568423,UMW Holdings Berhad,5.132798483
+1624568423,KLCC Property Holdings Berhad,6.410677055
+1624568423,UOA Development Berhad,1.926109974
+1624568424,IGB Real Estate Investment Trust,2.077788821
+1624568425,Dutch Lady Milk Industries Berhad,38.67656829
+1624568425,Padini Holdings Berhad,2.825230601
+1624568426,Ambank Group Berhad,3.040298978
+1624568428,Berjaya Sports Toto Berhad,2.965332056
+1624568429,Nestle (Malaysia) Berhad,130.3413407
+1624568431,Petronas Chemicals Group Berhad,7.970364583
+1624568431,YTL Power International Berhad,1.308503588
+1624568432,Scientex Berhad,11.83218246
+1624568439,Genting Berhad,5.731124426
+1624568439,Malaysia Building Society Berhad,1.033320082
+1624568440,Padini Holdings Berhad,2.650835851
+1624568441,Genting Malaysia Berhad,3.15120304
+1624568442,PLUS Malaysia Berhad,5.196874719
+1624568442,Tasco Berhad,2.174624194
+1624568444,Sime Darby Berhad,2.18775117
+1624568444,Hartalega Holdings Berhad,7.61728713
+1624568445,Bank Islam Malaysia Berhad,1.729198071
+1624568445,Kulim (Malaysia) Berhad,3.245951286
+1624568446,DiGi.Com Berhad,3.240394216
+1624568447,Malayan Banking Berhad,7.780061209
+1624568447,Hartalega Holdings Berhad,7.893867413
+1624568448,CIMB Group Holdings Berhad,4.778283972
+1624568450,KLCC Property Holdings Berhad,6.397592989
+1624568450,YTL Power International Berhad,1.330647644
+1624568453,Maxis Berhad,5.041849207
+1624568454,Sime Darby Plantation Berhad,3.497594004
+1624568458,YTL Corporation Berhad,1.178915195
+1624568458,DiGi.Com Berhad,4.036258598
+1624568465,FGV Holdings Berhad,1.17701428
+1624568465,Telekom Malaysia Berhad,2.755639018
+1624568466,Top Glove Corporation Berhad,2.485466093
+1624568467,Penang Port Commission,1.139945555
+1624568468,Penang Port Commission,1.153777754
+1624568468,Lotus Group Holdings Berhad,0.670198206
+1624568468,Penang Port Commission,1.215506011
+1624568468,Penang Port Commission,1.231803477
+1624568472,DiGi.Com Berhad,4.051303751
+1624568474,Axiata Group Berhad,3.436343869
+1624568474,Penang Port Commission,1.30157931
+1624568475,Top Glove Corporation Berhad,1.990560864
+1624568476,PLUS Malaysia Berhad,5.925760719
+1624568476,Petronas Dagangan Berhad,15.84369439
+1624568477,Dutch Lady Milk Industries Berhad,38.94795278
+1624568478,PLUS Malaysia Berhad,5.470898311
+1624568478,Penang Port Commission,1.34174299
+1624568479,Tenaga Nasional Berhad,10.57134181
+1624568480,Bank Islam Malaysia Berhad,1.425118402
+1624568480,Maybank Berhad,9.393529478
+1624568481,MISC Berhad,7.273630065
+1624568482,Ambank Group Berhad,2.698732575
+1624568483,Digi.Com Berhad,3.95518469
+1624568484,AirAsia Group Berhad,2.272675204
+1624568485,Top Glove Corporation Berhad,2.464055489
+1624568486,Telekom Malaysia Berhad,2.99646923
+1624568486,Bank Islam Malaysia Berhad,1.835760381
+1624568488,Maxis Berhad,3.882044151
+1624568488,Berjaya Corporation Berhad,0.922293758
+1624568489,IOI Corporation Berhad,3.063348713
+1624568490,UOA Development Berhad,1.689450318
+1624568491,Genting Berhad,5.963955146
+1624568492,Tenaga Nasional Berhad,10.37971499
+1624568495,Petronas Holdings Berhad,8.939358909
+1624568496,Genting Berhad,5.982107002
+1624568497,Nestle (Malaysia) Berhad,169.780215
+1624568500,Top Glove Corporation Berhad,2.103791097
+1624568501,AirAsia Group Berhad,2.796348099
+1624568502,Scientex Berhad,11.82869065
+1624568503,Tasco Berhad,1.869645322
+1624568504,Sapura Energy Berhad,0.70975017
+1624568506,Penang Port Commission,1.089563978
+1624568506,UMW Holdings Berhad,4.918299343
+1624568506,Telekom Malaysia Berhad,3.01746293
+1624568507,Sapura Energy Berhad,0.673996108
+1624568508,Kulim (Malaysia) Berhad,3.317123622
+1624568509,UOA Development Berhad,1.75573306
+1624568512,Telekom Malaysia Berhad,3.516178087
+1624568512,Digi.Com Berhad,3.407267833
+1624568513,Malaysia Smelting Corporation Berhad,3.109552387
+1624568515,IOI Properties Group Berhad,1.157412476
+1624568516,CIMB Group Holdings Berhad,3.756146687
+1624568517,Tasco Berhad,2.443807656
+1624568520,Axiata Group Berhad,3.262085278
+1624568521,PLUS Malaysia Berhad,5.406266988
+1624568521,Top Glove Corporation Berhad,2.410546986
+1624568522,Genting Malaysia Berhad,2.698431696
+1624568529,Petronas Holdings Berhad,10.28397456
+1624568529,Kulim (Malaysia) Berhad,3.118452785
+1624568530,Sunway Berhad,1.538083994
+1624568531,MISC Berhad,6.178864325
+1624568532,Malaysia Building Society Berhad,1.014272414
+1624568534,UMW Holdings Berhad,6.241158118
+1624568535,UOA Development Berhad,1.737971649
+1624568538,Prestariang Berhad,0.904188955
+1624568540,Axiata Group Berhad,3.281522374
+1624568540,Dutch Lady Milk Industries Berhad,45.40681575
+1624568541,Tasco Berhad,1.943152679
+1624568541,Malaysia Smelting Corporation Berhad,2.593358014
+1624568542,Nestle (Malaysia) Berhad,157.0160506
+1624568543,Kulim (Malaysia) Berhad,3.792752232
+1624568544,Public Bank Berhad,5.213794593
+1624568545,Sunway Berhad,1.48000741
+1624568545,Sapura Energy Berhad,0.798727726
+1624568546,Top Glove Corporation Berhad,2.352336971
+1624568547,Petronas Holdings Berhad,8.99128071
+1624568550,Genting Berhad,6.835120603
+1624568551,IOI Properties Group Berhad,1.312086462
+1624568552,Tenaga Nasional Berhad,10.52397475
+1624568553,Penang Port Commission,1.318465933
+1624568555,Padini Holdings Berhad,2.333984014
+1624568558,Prestariang Berhad,0.897520844
+1624568559,Genting Malaysia Berhad,3.112564619
+1624568559,FGV Holdings Berhad,1.070666328
+1624568561,Hartalega Holdings Berhad,7.795461059
+1624568561,Telekom Malaysia Berhad,3.606431648
+1624568562,Sunway Berhad,1.518526249
+1624568562,YTL Power International Berhad,1.338793522
+1624568563,Tenaga Nasional Berhad,10.72786369
+1624568564,YTL Corporation Berhad,0.98423395
+1624568567,Sunway Berhad,1.383545892
+1624568567,Petronas Gas Berhad,15.55046325
+1624568570,Genting Berhad,6.033079994
+1624568572,UOA Development Berhad,1.688098338
+1624568573,Scientex Berhad,14.22935644
+1624568573,Astro Malaysia Holdings Berhad,1.306193025
+1624568573,Padini Holdings Berhad,2.348051392
+1624568574,CIMB Group Holdings Berhad,4.507125974
+1624568574,Petronas Chemicals Group Berhad,7.626194778
+1624568575,Astro Malaysia Holdings Berhad,1.390774097
+1624568575,Petronas Dagangan Berhad,18.3570829
+1624568577,Petronas Holdings Berhad,10.35061168
+1624568577,Prestariang Berhad,0.811262554
+1624568579,Petronas Gas Berhad,16.0207112
+1624568580,Sapura Energy Berhad,0.686299757
+1624568581,CIMB Group Holdings Berhad,3.909616669
+1624568582,Digi.Com Berhad,3.608826652
+1624568582,IGB Real Estate Investment Trust,2.10218551
+1624568583,Telekom Malaysia Berhad,2.865513987
+1624568584,Petronas Chemicals Group Berhad,6.838671603
+1624568585,Sapura Energy Berhad,0.721052806
+1624568586,Prestariang Berhad,0.955058287
+1624568586,IGB Real Estate Investment Trust,2.156845322
+1624568587,Sime Darby Plantation Berhad,4.034141268
+1624568587,UOA Development Berhad,1.953967608
+1624568588,UOA Development Berhad,1.691805097
+1624568590,Tenaga Nasional Berhad,10.33390995
+1624568590,CIMB Group Holdings Berhad,4.7956062
+1624568590,YTL Corporation Berhad,0.920726245
+1624568592,Nestle (Malaysia) Berhad,138.1220456
+1624568592,Lotus Group Holdings Berhad,0.58557152
+1624568592,Dutch Lady Milk Industries Berhad,43.15583058
+1624568593,Malaysia Building Society Berhad,0.960082992
+1624568593,Axiata Group Berhad,4.264338997
+1624568594,AirAsia Group Berhad,2.605625168
+1624568594,Top Glove Corporation Berhad,2.071164832
+1624568594,Tasco Berhad,1.810453938
+1624568597,Lotus Group Holdings Berhad,0.585582316
+1624568598,Prestariang Berhad,0.795000172
+1624568598,Bank Islam Malaysia Berhad,1.570881644
+1624568599,Bank Islam Malaysia Berhad,1.836295766
+1624568599,YTL Corporation Berhad,1.038367483
+1624568600,Penang Port Commission,1.1180321
+1624568603,FGV Holdings Berhad,1.112539936
+1624568603,Petronas Dagangan Berhad,15.2239657
+1624568603,Berjaya Sports Toto Berhad,2.917150129
+1624568605,Bank Islam Malaysia Berhad,1.738076109
+1624568606,IOI Corporation Berhad,3.141447798
+1624568608,Astro Malaysia Holdings Berhad,1.092665655
+1624568608,AirAsia Group Berhad,2.72985141
+1624568610,Malaysia Building Society Berhad,1.136317224
+1624568611,Sapura Energy Berhad,0.823861466
+1624568611,Kulim (Malaysia) Berhad,3.184909549
+1624568615,Top Glove Corporation Berhad,2.228108885
+1624568618,Maybank Berhad,8.721613544
+1624568619,YTL Power International Berhad,1.571047745
+1624568620,KLCC Property Holdings Berhad,6.392523058
+1624568620,Berjaya Sports Toto Berhad,3.408899888
+1624568621,Bank Islam Malaysia Berhad,1.719868478
+1624568621,Petronas Holdings Berhad,9.820232206
+1624568624,Penang Port Commission,1.145687616
+1624568624,KLCC Property Holdings Berhad,7.371564485
+1624568625,IGB Real Estate Investment Trust,2.097828561
+1624568626,IOI Properties Group Berhad,1.061873693
+1624568628,FGV Holdings Berhad,1.200236377
+1624568628,Genting Malaysia Berhad,3.117801256
+1624568630,AirAsia Group Berhad,2.341649745
+1624568632,Genting Berhad,5.808708219
+1624568632,Tasco Berhad,2.047476387
+1624568635,Proton Holdings Berhad,0.986382332
+1624568636,UMW Holdings Berhad,5.904295212
+1624568639,Maxis Berhad,4.047838023
+1624568644,IGB Real Estate Investment Trust,1.684732158
+1624568644,KLCC Property Holdings Berhad,6.923722617
+1624568644,Berjaya Sports Toto Berhad,3.077514804
+1624568646,Lotus Group Holdings Berhad,0.718159777
+1624568646,Bank Islam Malaysia Berhad,1.468986451
+1624568647,Sunway Berhad,1.514926637
+1624568648,Padini Holdings Berhad,2.656609718
+1624568648,Malaysia Airports Holdings Berhad,5.684906306
+1624568652,Tasco Berhad,2.345545842
+1624568652,Maxis Berhad,4.811379967
+1624568653,Maxis Berhad,4.093997675
+1624568655,UMW Holdings Berhad,6.107398387
+1624568655,PLUS Malaysia Berhad,4.882400599
+1624568655,Genting Berhad,5.732278478
+1624568655,CIMB Group Holdings Berhad,3.971939084
+1624568657,CIMB Group Holdings Berhad,4.803351821
+1624568660,AirAsia Group Berhad,2.781112998
+1624568661,Petronas Dagangan Berhad,18.87743277
+1624568664,Petronas Holdings Berhad,9.804189338
+1624568665,Digi.Com Berhad,3.399265797
+1624568667,Kulim (Malaysia) Berhad,3.876726666
+1624568669,YTL Corporation Berhad,0.957698457
+1624568669,Maybank Berhad,7.481208656
+1624568672,Petronas Chemicals Group Berhad,6.593278343
+1624568672,Proton Holdings Berhad,1.114456373
+1624568673,Malaysia Building Society Berhad,1.211101893
+1624568673,Maxis Berhad,4.797645568
+1624568674,Sunway Berhad,1.518036535
+1624568675,Petronas Holdings Berhad,11.17513928
+1624568676,AirAsia Group Berhad,2.750533635
+1624568676,YTL Power International Berhad,1.374730989
+1624568676,Maybank Berhad,7.908196735
+1624568676,Berjaya Sports Toto Berhad,2.878918547
+1624568677,Tenaga Nasional Berhad,8.518329688
+1624568677,Petronas Holdings Berhad,9.545697103
+1624568680,Proton Holdings Berhad,1.16935881
+1624568681,Sunway Berhad,1.476515544
+1624568682,Axiata Group Berhad,3.598143148
+1624568682,Maxis Berhad,4.95013632
+1624568682,Malaysia Building Society Berhad,1.236333164
+1624568683,Axiata Group Berhad,3.604316839
+1624568683,KLCC Property Holdings Berhad,7.453253962
+1624568683,Axiata Group Berhad,3.550500181
+1624568684,Petronas Gas Berhad,17.65267127
+1624568685,Sapura Energy Berhad,0.687753406
+1624568685,UMW Holdings Berhad,4.99290218
+1624568685,Top Glove Corporation Berhad,2.010451006
+1624568686,Petronas Chemicals Group Berhad,7.470257531
+1624568686,Genting Malaysia Berhad,3.227030961
+1624568686,Nestle (Malaysia) Berhad,164.3996783
+1624568688,Digi.Com Berhad,3.540680847
+1624568688,Tasco Berhad,2.262698889
+1624568689,Scientex Berhad,11.44495336
+1624568689,MISC Berhad,6.397780223
+1624568689,Penang Port Commission,1.33603307
+1624568690,CIMB Group Holdings Berhad,3.712969361
+1624568694,Digi.Com Berhad,4.311237069
+1624568694,Malaysia Smelting Corporation Berhad,2.624574869
+1624568695,Sime Darby Berhad,2.558508812
+1624568698,Petronas Chemicals Group Berhad,6.883744123
+1624568700,AirAsia Group Berhad,2.600805429
+1624568701,Malayan Banking Berhad,7.831792388
+1624568702,Genting Malaysia Berhad,2.522338653
+1624568702,PLUS Malaysia Berhad,5.536696782
+1624568703,Prestariang Berhad,0.835157263
+1624568705,Astro Malaysia Holdings Berhad,1.125923626
+1624568707,Padini Holdings Berhad,2.235693314
+1624568708,Berjaya Corporation Berhad,0.828943473
+1624568709,Nestle (Malaysia) Berhad,162.6245875
+1624568709,Petronas Dagangan Berhad,19.45000699
+1624568710,Digi.Com Berhad,4.103085927
+1624568710,IOI Properties Group Berhad,1.145581377
+1624568711,IOI Properties Group Berhad,1.091648221
+1624568712,Public Bank Berhad,4.497305724
+1624568712,Petronas Dagangan Berhad,15.05754049
+1624568712,Sunway Berhad,1.225754563
+1624568712,KLCC Property Holdings Berhad,7.00585544
+1624568713,Petronas Holdings Berhad,9.55138268
+1624568713,AirAsia Group Berhad,2.41840079
+1624568713,Astro Malaysia Holdings Berhad,1.181451779
+1624568713,Sime Darby Berhad,2.593924391
+1624568713,DiGi.Com Berhad,4.140664824
+1624568714,DiGi.Com Berhad,3.912274036
+1624568714,IOI Corporation Berhad,2.751605647
+1624568716,Petronas Chemicals Group Berhad,8.501933535
+1624568718,Sime Darby Berhad,2.5795077
+1624568718,Petronas Dagangan Berhad,15.7426245
+1624568719,CIMB Group Holdings Berhad,4.551872346
+1624568723,Malayan Banking Berhad,8.92545539
+1624568723,Berjaya Corporation Berhad,0.975534856
+1624568724,YTL Corporation Berhad,1.157889462
+1624568724,Sunway Berhad,1.500940033
+1624568725,Berjaya Sports Toto Berhad,3.232312148
+1624568725,Sunway Berhad,1.526674049
+1624568727,FGV Holdings Berhad,1.009215352
+1624568727,Genting Malaysia Berhad,3.210113596
+1624568728,Scientex Berhad,11.43889543
+1624568730,Dutch Lady Milk Industries Berhad,35.91398659
+1624568730,Malaysia Building Society Berhad,0.971805007
+1624568731,UMW Holdings Berhad,5.956055305
+1624568734,IGB Real Estate Investment Trust,1.973643614
+1624568735,CIMB Group Holdings Berhad,3.943419776
+1624568735,Petronas Holdings Berhad,11.11925926
+1624568736,PLUS Malaysia Berhad,4.789066202
+1624568738,Petronas Dagangan Berhad,18.6974448
+1624568739,Petronas Holdings Berhad,8.792565247
+1624568739,YTL Power International Berhad,1.594342855
+1624568740,CIMB Group Holdings Berhad,4.187413091
+1624568741,Petronas Gas Berhad,14.93874161
+1624568742,Lotus Group Holdings Berhad,0.572464513
+1624568742,Sime Darby Plantation Berhad,3.90047387
+1624568743,Maybank Berhad,7.742137547
+1624568743,AirAsia Group Berhad,2.796732507
+1624568744,Tenaga Nasional Berhad,10.91242072
+1624568745,Sunway Berhad,1.347966479
+1624568745,Petronas Dagangan Berhad,15.63334481
+1624568745,Sime Darby Plantation Berhad,4.038513809
+1624568747,Padini Holdings Berhad,2.690970027
+1624568748,Lotus Group Holdings Berhad,0.61755073
+1624568748,Padini Holdings Berhad,2.377365783
+1624568748,Genting Berhad,5.490168266
+1624568749,Tasco Berhad,2.282234718
+1624568753,Berjaya Corporation Berhad,0.959184891
+1624568753,Genting Berhad,5.606906331
+1624568756,UMW Holdings Berhad,6.242331018
+1624568756,Penang Port Commission,1.154555703
+1624568756,Nestle (Malaysia) Berhad,170.8722126
+1624568756,CIMB Group Holdings Berhad,4.854055923
+1624568756,Axiata Group Berhad,3.265385072
+1624568759,Axiata Group Berhad,4.092244987
+1624568759,Sunway Berhad,1.466130042
+1624568760,Scientex Berhad,12.41510193
+1624568761,Tasco Berhad,1.954940713
+1624568761,Digi.Com Berhad,4.061643042
+1624568761,Malaysia Airports Holdings Berhad,5.746176746
+1624568761,IGB Real Estate Investment Trust,1.72346666
+1624568762,Astro Malaysia Holdings Berhad,1.197459954
+1624568764,Ambank Group Berhad,2.594508383
+1624568765,Malaysia Building Society Berhad,1.088172125
+1624568766,Petronas Dagangan Berhad,18.77694792
+1624568767,Maxis Berhad,4.434404306
+1624568769,Digi.Com Berhad,4.106525494
+1624568771,YTL Power International Berhad,1.303319004
+1624568772,Lotus Group Holdings Berhad,0.581847015
+1624568772,Scientex Berhad,11.84937802
+1624568772,YTL Power International Berhad,1.396983161
+1624568772,Top Glove Corporation Berhad,2.409131765
+1624568773,Telekom Malaysia Berhad,3.069809863
+1624568773,Top Glove Corporation Berhad,2.400571575
+1624568774,Maybank Berhad,8.924413654
+1624568775,Hartalega Holdings Berhad,7.713763691
+1624568776,Malaysia Building Society Berhad,1.143744877
+1624568780,Malaysia Building Society Berhad,1.026558404
+1624568780,KLCC Property Holdings Berhad,7.813770097
+1624568781,Malaysia Airports Holdings Berhad,6.226137734
+1624568781,Axiata Group Berhad,3.23007936
+1624568787,Berjaya Sports Toto Berhad,3.056494199
+1624568787,Petronas Holdings Berhad,9.39238571
+1624568787,Kulim (Malaysia) Berhad,3.718512775
+1624568788,YTL Corporation Berhad,1.122984392
+1624568789,Malaysia Airports Holdings Berhad,6.096411008
+1624568790,Tasco Berhad,2.086438216
+1624568793,Petronas Holdings Berhad,10.52029046
+1624568793,Top Glove Corporation Berhad,2.362085807
+1624568794,Ambank Group Berhad,2.966878265
+1624568795,Astro Malaysia Holdings Berhad,1.133222957
+1624568798,Penang Port Commission,1.183554297
+1624568800,Petronas Gas Berhad,15.16936345
+1624568801,Ambank Group Berhad,2.600868581
+1624568804,Petronas Gas Berhad,17.47420583
+1624568806,UMW Holdings Berhad,5.920135255
+1624568808,Petronas Holdings Berhad,11.02859465
+1624568809,Sime Darby Berhad,2.163310805
+1624568810,Malaysia Building Society Berhad,1.182459994
+1624568810,KLCC Property Holdings Berhad,7.781585449
+1624568811,Malayan Banking Berhad,9.28462112
+1624568811,Public Bank Berhad,4.324184209
+1624568812,Telekom Malaysia Berhad,2.910096911
+1624568814,Malaysia Airports Holdings Berhad,5.919014715
+1624568814,Lotus Group Holdings Berhad,0.723830803
+1624568816,IOI Corporation Berhad,2.703290455
+1624568817,Malaysia Smelting Corporation Berhad,3.000499898
+1624568817,Telekom Malaysia Berhad,2.841789106
+1624568819,YTL Corporation Berhad,0.941113959
+1624568819,CIMB Group Holdings Berhad,4.238735732
+1624568819,Astro Malaysia Holdings Berhad,1.153064684
+1624568820,Sime Darby Plantation Berhad,3.972605258
+1624568820,Petronas Chemicals Group Berhad,6.913486147
+1624568820,Berjaya Sports Toto Berhad,3.424390767
+1624568821,Berjaya Corporation Berhad,1.020158529
+1624568821,PLUS Malaysia Berhad,5.853737959
+1624568823,Malaysia Building Society Berhad,0.970268241
+1624568823,YTL Power International Berhad,1.629066408
+1624568825,Digi.Com Berhad,3.556157112
+1624568826,Penang Port Commission,1.139714031
+1624568826,DiGi.Com Berhad,3.329567668
+1624568827,Maxis Berhad,5.017700009
+1624568827,Petronas Dagangan Berhad,19.08774099
+1624568828,DiGi.Com Berhad,3.3631803
+1624568828,Genting Malaysia Berhad,2.439634909
+1624568830,YTL Power International Berhad,1.348988225
+1624568831,Maybank Berhad,7.499043207
+1624568833,Sime Darby Plantation Berhad,3.172725254
+1624568834,Proton Holdings Berhad,1.099740169
+1624568835,DiGi.Com Berhad,3.421588996
+1624568836,IOI Properties Group Berhad,1.269608362
+1624568838,Axiata Group Berhad,4.071632546
+1624568838,Maxis Berhad,4.88767633
+1624568839,Malayan Banking Berhad,9.015291738
+1624568842,CIMB Group Holdings Berhad,3.957320433
+1624568844,AirAsia Group Berhad,2.339865014
+1624568845,Public Bank Berhad,5.262550326
+1624568845,Proton Holdings Berhad,0.972606963
+1624568846,Padini Holdings Berhad,2.721011868
+1624568847,Maybank Berhad,7.865873636
+1624568849,Top Glove Corporation Berhad,2.523164248
+1624568850,Sime Darby Plantation Berhad,3.440437136
+1624568850,Proton Holdings Berhad,1.113373898
+1624568850,Sime Darby Plantation Berhad,3.454806083
+1624568850,KLCC Property Holdings Berhad,6.585228752
+1624568851,Sunway Berhad,1.255229784
+1624568851,AirAsia Group Berhad,2.731430076
+1624568851,Prestariang Berhad,0.944993452
+1624568852,Sapura Energy Berhad,0.80886088
+1624568852,KLCC Property Holdings Berhad,6.953084411
+1624568854,Maxis Berhad,4.171039169
+1624568855,PLUS Malaysia Berhad,5.131237735
+1624568855,Lotus Group Holdings Berhad,0.589151662
+1624568856,FGV Holdings Berhad,1.24157441
+1624568858,Astro Malaysia Holdings Berhad,1.120105591
+1624568862,Malayan Banking Berhad,9.371567518
+1624568863,Sunway Berhad,1.210894532
+1624568864,Ambank Group Berhad,2.906356054
+1624568865,Proton Holdings Berhad,1.173120259
+1624568866,Nestle (Malaysia) Berhad,137.0042752
+1624568866,Proton Holdings Berhad,0.982654512
+1624568867,DiGi.Com Berhad,4.148619295
+1624568867,Kulim (Malaysia) Berhad,3.792098963
+1624568868,Maybank Berhad,8.896000655
+1624568869,Penang Port Commission,1.232929157
+1624568869,IOI Properties Group Berhad,1.318230411
+1624568870,Hartalega Holdings Berhad,8.13445972
+1624568870,Top Glove Corporation Berhad,1.947680393
+1624568871,UMW Holdings Berhad,5.174128891
+1624568871,FGV Holdings Berhad,1.117866075
+1624568871,Berjaya Sports Toto Berhad,3.242966267
+1624568871,KLCC Property Holdings Berhad,6.525009594
+1624568871,Malaysia Airports Holdings Berhad,6.272339584
+1624568872,Public Bank Berhad,4.53540618
+1624568873,Malaysia Airports Holdings Berhad,6.481652877
+1624568873,Malaysia Smelting Corporation Berhad,2.969923626
+1624568873,Hartalega Holdings Berhad,9.252392421
+1624568873,Malaysia Smelting Corporation Berhad,2.458000339
+1624568874,Maxis Berhad,4.860777904
+1624568874,Malayan Banking Berhad,9.021700058
+1624568874,Lotus Group Holdings Berhad,0.605967189
+1624568876,Kulim (Malaysia) Berhad,3.756707234
+1624568876,Berjaya Corporation Berhad,0.939782023
+1624568878,Axiata Group Berhad,4.001554783
+1624568878,Prestariang Berhad,0.926733377
+1624568878,Malayan Banking Berhad,9.115598691
+1624568878,Malaysia Airports Holdings Berhad,5.970712365
+1624568879,FGV Holdings Berhad,1.299121184
+1624568879,Sapura Energy Berhad,0.776134885
+1624568880,Petronas Chemicals Group Berhad,6.894310999
+1624568882,Proton Holdings Berhad,1.131570621
+1624568882,UMW Holdings Berhad,5.078282112
+1624568883,Tasco Berhad,2.372728146
+1624568886,Padini Holdings Berhad,2.704122405
+1624568887,Malayan Banking Berhad,7.661664447
+1624568888,Ambank Group Berhad,2.461891512
+1624568888,Digi.Com Berhad,4.027644353
+1624568889,Nestle (Malaysia) Berhad,166.8938905
+1624568890,Berjaya Sports Toto Berhad,2.901461848
+1624568890,Genting Malaysia Berhad,2.955665854
+1624568892,Nestle (Malaysia) Berhad,145.4681427
+1624568892,IGB Real Estate Investment Trust,2.239294925
+1624568892,Petronas Holdings Berhad,10.59360013
+1624568893,Sunway Berhad,1.222232453
+1624568895,CIMB Group Holdings Berhad,4.77649236
+1624568896,DiGi.Com Berhad,3.300143778
+1624568896,Public Bank Berhad,4.166145639
+1624568896,Kulim (Malaysia) Berhad,3.10357911
+1624568897,Proton Holdings Berhad,1.141102961
+1624568901,Berjaya Sports Toto Berhad,2.919014289
+1624568902,Sapura Energy Berhad,0.638284934
+1624568902,Malaysia Airports Holdings Berhad,7.463205592
+1624568904,Petronas Gas Berhad,17.8361554
+1624568905,Petronas Dagangan Berhad,15.66088041
+1624568905,PLUS Malaysia Berhad,4.930895432
+1624568905,Maxis Berhad,4.217233558
+1624568906,Genting Berhad,6.925626618
+1624568909,Sime Darby Plantation Berhad,3.304816484
+1624568910,Telekom Malaysia Berhad,2.979925027
+1624568910,Proton Holdings Berhad,1.156224383
+1624568912,MISC Berhad,6.37490728
+1624568915,Sime Darby Plantation Berhad,3.966492062
+1624568917,MISC Berhad,6.845518511
+1624568917,Kulim (Malaysia) Berhad,3.692992338
+1624568918,Sime Darby Berhad,2.54587293
+1624568918,Digi.Com Berhad,4.147106356
+1624568919,Lotus Group Holdings Berhad,0.708121735
+1624568920,Hartalega Holdings Berhad,7.752418961
+1624568921,Malayan Banking Berhad,7.567362309
+1624568921,Tenaga Nasional Berhad,11.1625601
+1624568921,Maxis Berhad,5.1335248
+1624568922,DiGi.Com Berhad,4.211672994
+1624568923,UOA Development Berhad,2.030380937
+1624568924,Lotus Group Holdings Berhad,0.585843009
+1624568925,Kulim (Malaysia) Berhad,3.174267808
+1624568928,Maxis Berhad,4.167150735
+1624568930,Maybank Berhad,7.688647742
+1624568931,DiGi.Com Berhad,3.359999509
+1624568932,Petronas Chemicals Group Berhad,8.229556267
+1624568932,YTL Corporation Berhad,0.957387755
+1624568932,Malaysia Airports Holdings Berhad,6.096996549
+1624568934,Genting Malaysia Berhad,2.905237385
+1624568934,Telekom Malaysia Berhad,2.840590667
+1624568935,Astro Malaysia Holdings Berhad,1.129109881
+1624568936,UMW Holdings Berhad,5.133691631
+1624568936,FGV Holdings Berhad,1.253801926
+1624568937,Malaysia Building Society Berhad,0.968367592
+1624568938,Kulim (Malaysia) Berhad,3.388021161
+1624568938,Malaysia Building Society Berhad,1.221058696
+1624568939,Digi.Com Berhad,3.360973475
+1624568940,KLCC Property Holdings Berhad,7.09666418
+1624568940,Nestle (Malaysia) Berhad,134.6593209
+1624568940,Sunway Berhad,1.575011828
+1624568940,Petronas Dagangan Berhad,19.55144969
+1624568942,Nestle (Malaysia) Berhad,137.9114668
+1624568943,Public Bank Berhad,4.502217381
+1624568943,Dutch Lady Milk Industries Berhad,36.81313835
+1624568945,Bank Islam Malaysia Berhad,1.756287529
+1624568946,MISC Berhad,5.751025488
+1624568947,Malaysia Building Society Berhad,1.027658812
+1624568947,Petronas Chemicals Group Berhad,6.779003629
+1624568948,Petronas Chemicals Group Berhad,7.759061649
+1624568949,Telekom Malaysia Berhad,3.4580141
+1624568950,Genting Berhad,6.689332541
+1624568950,Prestariang Berhad,0.919917462
+1624568951,UMW Holdings Berhad,5.365619416
+1624568952,IGB Real Estate Investment Trust,1.756526603
+1624568954,Sime Darby Plantation Berhad,3.294989277
+1624568955,UMW Holdings Berhad,5.209572667
+1624568957,Nestle (Malaysia) Berhad,136.1174915
+1624568958,YTL Corporation Berhad,0.900548773
+1624568959,Nestle (Malaysia) Berhad,164.4260956
+1624568959,Penang Port Commission,1.359686879
+1624568960,Malaysia Airports Holdings Berhad,7.221987616
+1624568961,Tenaga Nasional Berhad,8.681791949
+1624568961,IOI Corporation Berhad,3.212487041
+1624568962,Lotus Group Holdings Berhad,0.60653632
+1624568964,KLCC Property Holdings Berhad,7.795904903
+1624568967,Malaysia Smelting Corporation Berhad,2.447459299
+1624568967,Axiata Group Berhad,3.328476894
+1624568968,Scientex Berhad,13.95968434
+1624568968,Nestle (Malaysia) Berhad,172.1938174
+1624568968,Dutch Lady Milk Industries Berhad,45.70588755
+1624568969,Kulim (Malaysia) Berhad,3.063231672
+1624568970,Tasco Berhad,2.20721564
+1624568972,DiGi.Com Berhad,3.846936515
+1624568972,Kulim (Malaysia) Berhad,3.906133823
+1624568973,Malaysia Airports Holdings Berhad,6.053355153
+1624568973,IOI Properties Group Berhad,1.123735187
+1624568975,Tenaga Nasional Berhad,9.393017949
+1624568976,MISC Berhad,6.190106982
+1624568976,CIMB Group Holdings Berhad,3.807215484
+1624568977,Sime Darby Berhad,2.517930043
+1624568978,IGB Real Estate Investment Trust,2.208786557
+1624568979,YTL Corporation Berhad,1.030322888
+1624568979,Padini Holdings Berhad,2.282154475
+1624568982,Penang Port Commission,1.345406962
+1624568983,Penang Port Commission,1.369446851
+1624568984,Sime Darby Plantation Berhad,3.307982392
+1624568984,KLCC Property Holdings Berhad,6.617051152
+1624568986,Public Bank Berhad,4.456851814
+1624568987,Tasco Berhad,1.967138789
+1624568988,FGV Holdings Berhad,1.046054315
+1624568988,Genting Berhad,5.517549965
+1624568990,Astro Malaysia Holdings Berhad,1.335662283
+1624568991,Scientex Berhad,12.64777683
+1624568992,Digi.Com Berhad,3.385520491
+1624568992,Sapura Energy Berhad,0.702688574
+1624568992,Bank Islam Malaysia Berhad,1.74966677
+1624568993,Malaysia Airports Holdings Berhad,6.093206938
+1624568993,Lotus Group Holdings Berhad,0.684040377
+1624568994,Genting Berhad,5.894778043
+1624568994,Genting Malaysia Berhad,2.746117137
+1624568995,Malaysia Smelting Corporation Berhad,2.993431425
+1624568996,Petronas Chemicals Group Berhad,8.011151093
+1624568997,Public Bank Berhad,5.189939467
+1624568997,IOI Properties Group Berhad,1.266819321
+1624569000,Sime Darby Plantation Berhad,4.112522957
+1624569001,Scientex Berhad,11.66966103
+1624569002,Malayan Banking Berhad,8.198611776
+1624569004,Nestle (Malaysia) Berhad,132.66367
+1624569006,MISC Berhad,6.923730041
+1624569007,UOA Development Berhad,1.917977141
+1624569007,KLCC Property Holdings Berhad,7.797001049
+1624569008,Petronas Dagangan Berhad,18.73729805
+1624569008,Telekom Malaysia Berhad,2.908024594
+1624569010,Genting Berhad,5.51830558
+1624569013,Sime Darby Berhad,2.528057384
+1624569014,DiGi.Com Berhad,3.899692865
+1624569015,UOA Development Berhad,1.962599683
+1624569015,Maybank Berhad,8.140745324
+1624569016,Top Glove Corporation Berhad,2.106307636
+1624569016,Hartalega Holdings Berhad,7.850598958
+1624569017,Hartalega Holdings Berhad,9.067616071
+1624569019,Proton Holdings Berhad,1.1713183
+1624569019,Prestariang Berhad,0.767907914
+1624569019,Public Bank Berhad,5.137979428
+1624569021,Petronas Chemicals Group Berhad,8.558243305
+1624569021,PLUS Malaysia Berhad,4.789053776
+1624569023,YTL Corporation Berhad,0.916752521
+1624569023,Berjaya Corporation Berhad,0.943097887
+1624569023,YTL Power International Berhad,1.57814226
+1624569023,Maxis Berhad,5.033824121
+1624569023,PLUS Malaysia Berhad,5.100082204
+1624569024,DiGi.Com Berhad,3.42263087
+1624569024,DiGi.Com Berhad,4.008866304
+1624569025,IOI Corporation Berhad,3.108683974
+1624569026,Astro Malaysia Holdings Berhad,1.378230666
+1624569026,Kulim (Malaysia) Berhad,3.242424982
+1624569027,Top Glove Corporation Berhad,2.038516322
+1624569027,Telekom Malaysia Berhad,3.354207074
+1624569027,Berjaya Sports Toto Berhad,3.440847838
+1624569028,FGV Holdings Berhad,1.240661108
+1624569028,Petronas Dagangan Berhad,16.66522466
+1624569030,Petronas Gas Berhad,15.18937051
+1624569031,Tenaga Nasional Berhad,10.58339533
+1624569031,MISC Berhad,5.991606746
+1624569031,Axiata Group Berhad,3.446697746
+1624569033,Ambank Group Berhad,2.607586428
+1624569034,UOA Development Berhad,1.874497649
+1624569034,Prestariang Berhad,0.814889704
+1624569034,Public Bank Berhad,5.166139426
+1624569034,IOI Corporation Berhad,3.090087925
+1624569037,Telekom Malaysia Berhad,3.408557622
+1624569037,Malayan Banking Berhad,7.288233804
+1624569038,Malaysia Smelting Corporation Berhad,3.087879405
+1624569038,Penang Port Commission,1.158285164
+1624569039,AirAsia Group Berhad,2.785031804
+1624569039,AirAsia Group Berhad,2.766188826
+1624569040,Genting Malaysia Berhad,2.887920514
+1624569041,Sunway Berhad,1.245881476
+1624569041,AirAsia Group Berhad,2.4113659
+1624569041,Petronas Chemicals Group Berhad,7.03204365
+1624569042,Ambank Group Berhad,2.564216163
+1624569042,IOI Corporation Berhad,3.323362016
+1624569044,Penang Port Commission,1.368235451
+1624569044,Malayan Banking Berhad,7.690310454
+1624569044,Astro Malaysia Holdings Berhad,1.340082161
+1624569046,Malaysia Building Society Berhad,1.239689619
+1624569047,Malaysia Smelting Corporation Berhad,2.962257189
+1624569048,Penang Port Commission,1.168947862
+1624569049,Malaysia Smelting Corporation Berhad,2.896155117
+1624569050,IOI Corporation Berhad,2.801443337
+1624569051,Genting Malaysia Berhad,2.443229409
+1624569052,Berjaya Sports Toto Berhad,2.850830815
+1624569052,Lotus Group Holdings Berhad,0.561999188
+1624569053,Penang Port Commission,1.193157832
+1624569056,Top Glove Corporation Berhad,2.015136863
+1624569057,Ambank Group Berhad,2.540121557
+1624569057,Scientex Berhad,14.64089035
+1624569058,FGV Holdings Berhad,1.231067395
+1624569059,Hartalega Holdings Berhad,8.980383492
+1624569065,Tenaga Nasional Berhad,9.121455871
+1624569066,Bank Islam Malaysia Berhad,1.499992583
+1624569066,Digi.Com Berhad,4.05501755
+1624569067,YTL Power International Berhad,1.360827288
+1624569068,Berjaya Sports Toto Berhad,2.881978077
+1624569072,UMW Holdings Berhad,4.970104254
+1624569072,Maybank Berhad,7.841033098
+1624569074,Nestle (Malaysia) Berhad,134.7375556
+1624569074,Telekom Malaysia Berhad,3.01280955
+1624569075,Sime Darby Plantation Berhad,4.013071841
+1624569075,Maybank Berhad,8.787409052
+1624569075,UMW Holdings Berhad,5.072257853
+1624569075,Public Bank Berhad,4.581569272
+1624569075,UMW Holdings Berhad,5.837391097
+1624569076,Berjaya Sports Toto Berhad,3.019001485
+1624569077,IOI Corporation Berhad,2.648981847
+1624569078,PLUS Malaysia Berhad,5.877000031
+1624569079,Genting Berhad,6.594969669
+1624569080,CIMB Group Holdings Berhad,3.914763136
+1624569082,Dutch Lady Milk Industries Berhad,44.54669682
+1624569083,Axiata Group Berhad,4.290871499
+1624569083,Telekom Malaysia Berhad,3.055931448
+1624569084,Public Bank Berhad,4.2799975
+1624569085,Petronas Holdings Berhad,10.18955715
+1624569085,FGV Holdings Berhad,1.100918536
+1624569086,Petronas Gas Berhad,17.33376505
+1624569086,Dutch Lady Milk Industries Berhad,42.75302323
+1624569087,MISC Berhad,6.089943773
+1624569089,YTL Corporation Berhad,1.152622873
+1624569089,Sime Darby Plantation Berhad,3.236587704
+1624569089,KLCC Property Holdings Berhad,8.198676124
+1624569090,Astro Malaysia Holdings Berhad,1.394250253
+1624569090,PLUS Malaysia Berhad,4.770094731
+1624569091,Berjaya Sports Toto Berhad,2.960386533
+1624569091,Petronas Chemicals Group Berhad,6.545864689
+1624569091,Petronas Gas Berhad,18.99480206
+1624569094,Malaysia Airports Holdings Berhad,7.697172715
+1624569095,Sime Darby Berhad,2.544685736
+1624569097,Top Glove Corporation Berhad,2.007789698
+1624569098,Maxis Berhad,4.741943365
+1624569101,Digi.Com Berhad,3.538840977
+1624569102,Top Glove Corporation Berhad,2.460236355
+1624569103,MISC Berhad,6.081025032
+1624569105,Digi.Com Berhad,3.349211279
+1624569105,Nestle (Malaysia) Berhad,163.0207416
+1624569105,Dutch Lady Milk Industries Berhad,45.43066101
+1624569106,Ambank Group Berhad,2.552927873
+1624569107,Digi.Com Berhad,4.098879552
+1624569107,Sapura Energy Berhad,0.705229639
+1624569108,Malayan Banking Berhad,7.723764491
+1624569108,Genting Malaysia Berhad,2.603064439
+1624569109,Kulim (Malaysia) Berhad,3.981186965
+1624569111,Sapura Energy Berhad,0.780011083
+1624569111,Kulim (Malaysia) Berhad,3.14705124
+1624569113,YTL Power International Berhad,1.443534171
+1624569113,Petronas Holdings Berhad,10.30096572
+1624569113,IOI Properties Group Berhad,1.349384817
+1624569113,Top Glove Corporation Berhad,2.355246461
+1624569116,Scientex Berhad,13.38219939
+1624569116,Kulim (Malaysia) Berhad,3.110718806
+1624569119,Sime Darby Berhad,2.178106174
+1624569120,Top Glove Corporation Berhad,1.968443609
+1624569121,Ambank Group Berhad,2.910436631
+1624569121,Astro Malaysia Holdings Berhad,1.068222798
+1624569122,Genting Berhad,5.723119089
+1624569124,KLCC Property Holdings Berhad,7.808656299
+1624569124,YTL Power International Berhad,1.609832507
+1624569124,DiGi.Com Berhad,4.148320323
+1624569126,Sime Darby Berhad,2.451400307
+1624569126,Malaysia Building Society Berhad,1.064866615
+1624569127,Sime Darby Plantation Berhad,3.92875689
+1624569127,CIMB Group Holdings Berhad,4.166313089
+1624569127,Padini Holdings Berhad,2.813197239
+1624569129,Proton Holdings Berhad,1.102437447
+1624569130,IGB Real Estate Investment Trust,2.156097562
+1624569132,Malaysia Airports Holdings Berhad,7.202688333
+1624569133,Top Glove Corporation Berhad,2.050628603
+1624569135,Digi.Com Berhad,3.470801157
+1624569136,DiGi.Com Berhad,3.534789243
+1624569137,IOI Corporation Berhad,2.66395922
+1624569139,Top Glove Corporation Berhad,2.136000682
+1624569140,Genting Malaysia Berhad,2.912605662
+1624569141,Dutch Lady Milk Industries Berhad,44.31173598
+1624569142,MISC Berhad,7.227619092
+1624569143,KLCC Property Holdings Berhad,7.799122939
+1624569145,FGV Holdings Berhad,1.066221961
+1624569146,Ambank Group Berhad,2.993453149
+1624569147,KLCC Property Holdings Berhad,7.70087199
+1624569148,Hartalega Holdings Berhad,8.814086854
+1624569148,FGV Holdings Berhad,1.108606527
+1624569150,Proton Holdings Berhad,1.155850726
+1624569151,Maxis Berhad,5.084817874
+1624569151,YTL Corporation Berhad,0.975457006
+1624569154,Malayan Banking Berhad,8.709340388
+1624569158,Public Bank Berhad,4.302090137
+1624569159,Tenaga Nasional Berhad,10.90134487
+1624569160,MISC Berhad,6.001840062
+1624569160,UMW Holdings Berhad,6.220997468
+1624569160,PLUS Malaysia Berhad,4.860989145
+1624569160,Penang Port Commission,1.156987665
+1624569162,Padini Holdings Berhad,2.459742806
+1624569163,Tenaga Nasional Berhad,11.05321458
+1624569164,IOI Corporation Berhad,2.706667504
+1624569165,PLUS Malaysia Berhad,4.884021864
+1624569165,MISC Berhad,6.101601336
+1624569165,FGV Holdings Berhad,1.203665097
+1624569166,Petronas Holdings Berhad,9.858921794
+1624569167,Malaysia Smelting Corporation Berhad,2.954291407
+1624569167,KLCC Property Holdings Berhad,7.963062188
+1624569171,Digi.Com Berhad,4.123040192
+1624569172,Petronas Gas Berhad,15.75838051
+1624569172,Axiata Group Berhad,4.142147814
+1624569172,Ambank Group Berhad,2.940405304
+1624569175,Padini Holdings Berhad,2.274346397
+1624569175,Telekom Malaysia Berhad,3.074866037
+1624569177,AirAsia Group Berhad,2.354650395
+1624569178,Sapura Energy Berhad,0.658182947
+1624569179,FGV Holdings Berhad,1.053162939
+1624569179,YTL Power International Berhad,1.465194111
+1624569179,Berjaya Corporation Berhad,0.974806309
+1624569179,Ambank Group Berhad,2.937802072
+1624569179,Petronas Gas Berhad,14.60250758
+1624569180,UMW Holdings Berhad,6.109813038
+1624569180,Malaysia Smelting Corporation Berhad,2.948002133
+1624569180,Sime Darby Plantation Berhad,4.020728757
+1624569182,Malaysia Smelting Corporation Berhad,2.979221831
+1624569186,Berjaya Sports Toto Berhad,2.908833759
+1624569187,Axiata Group Berhad,3.621793175
+1624569189,Proton Holdings Berhad,1.130117201
+1624569190,Proton Holdings Berhad,1.116547965
+1624569191,Proton Holdings Berhad,0.964014163
+1624569194,Sime Darby Berhad,2.629472749
+1624569195,Petronas Holdings Berhad,11.2109868
+1624569199,Sapura Energy Berhad,0.698676647
+1624569199,Petronas Holdings Berhad,10.97224902
+1624569199,Malaysia Smelting Corporation Berhad,2.96369739
+1624569202,UMW Holdings Berhad,6.255249357
+1624569202,Petronas Gas Berhad,17.99080034
+1624569203,FGV Holdings Berhad,1.201181847
+1624569204,YTL Corporation Berhad,0.96329807
+1624569205,Telekom Malaysia Berhad,2.795586971
+1624569205,UMW Holdings Berhad,6.162355197
+1624569206,YTL Corporation Berhad,1.125377693
+1624569206,Sime Darby Plantation Berhad,3.64386184
+1624569207,Tasco Berhad,2.205257476
+1624569208,Astro Malaysia Holdings Berhad,1.306724925
+1624569209,Malaysia Building Society Berhad,0.992129631
+1624569211,KLCC Property Holdings Berhad,6.452181397
+1624569212,Sime Darby Plantation Berhad,3.416384839
+1624569213,Public Bank Berhad,5.217695854
+1624569214,DiGi.Com Berhad,3.332685384
+1624569215,PLUS Malaysia Berhad,4.593024394
+1624569216,Berjaya Corporation Berhad,0.982296115
+1624569217,Dutch Lady Milk Industries Berhad,42.6862114
+1624569218,Sapura Energy Berhad,0.689949975
+1624569219,Top Glove Corporation Berhad,2.449218893
+1624569221,Axiata Group Berhad,4.07103477
+1624569221,DiGi.Com Berhad,4.054315572
+1624569222,UOA Development Berhad,1.935300273
+1624569223,Genting Berhad,6.762232263
+1624569223,Petronas Holdings Berhad,8.979244223
+1624569224,Berjaya Corporation Berhad,0.960441664
+1624569224,YTL Power International Berhad,1.622240635
+1624569225,Genting Malaysia Berhad,3.129625339
+1624569226,Malaysia Smelting Corporation Berhad,3.01396542
+1624569226,Bank Islam Malaysia Berhad,1.658184372
+1624569227,Sunway Berhad,1.375291492
+1624569227,Maybank Berhad,9.209685999
+1624569229,Maxis Berhad,4.91594068
+1624569229,IOI Corporation Berhad,3.40465943
+1624569229,Ambank Group Berhad,2.533764897
+1624569229,MISC Berhad,6.16580241
+1624569229,Dutch Lady Milk Industries Berhad,36.93806027
+1624569230,Bank Islam Malaysia Berhad,1.699179091
+1624569230,Padini Holdings Berhad,2.669625018
+1624569231,IOI Corporation Berhad,3.397877868
+1624569234,Petronas Gas Berhad,15.09307667
+1624569235,Penang Port Commission,1.196238673
+1624569236,Maybank Berhad,8.995476896
+1624569236,Telekom Malaysia Berhad,2.921925548
+1624569236,Bank Islam Malaysia Berhad,1.636897789
+1624569236,Maxis Berhad,3.900560291
+1624569237,Axiata Group Berhad,4.329804761
+1624569238,Top Glove Corporation Berhad,2.355943525
+1624569240,Kulim (Malaysia) Berhad,3.188329505
+1624569241,Tenaga Nasional Berhad,10.21229041
+1624569242,IGB Real Estate Investment Trust,1.674802256
+1624569243,Tasco Berhad,1.87803791
+1624569243,Berjaya Corporation Berhad,0.98240918
+1624569243,IOI Properties Group Berhad,1.276118781
+1624569245,KLCC Property Holdings Berhad,6.56300906
+1624569245,Public Bank Berhad,4.711819666
+1624569246,Malayan Banking Berhad,7.627300012
+1624569248,Scientex Berhad,11.81261954
+1624569250,MISC Berhad,7.441567642
+1624569250,Malaysia Smelting Corporation Berhad,2.682801007
+1624569250,Telekom Malaysia Berhad,3.523767488
+1624569251,Sunway Berhad,1.440124433
+1624569252,Sapura Energy Berhad,0.806219692
+1624569253,Berjaya Corporation Berhad,0.998108561
+1624569256,Sime Darby Plantation Berhad,3.534812039
+1624569258,Petronas Holdings Berhad,10.57025198
+1624569259,Top Glove Corporation Berhad,1.933748046
+1624569260,Genting Malaysia Berhad,3.081105998
+1624569260,Sime Darby Berhad,2.085590866
+1624569262,Hartalega Holdings Berhad,8.286147533
+1624569262,Petronas Holdings Berhad,10.99051276
+1624569263,Sunway Berhad,1.501258689
+1624569266,Astro Malaysia Holdings Berhad,1.089547581
+1624569266,Malaysia Smelting Corporation Berhad,2.424950804
+1624569266,Hartalega Holdings Berhad,7.77311691
+1624569266,Malaysia Building Society Berhad,1.17678177
+1624569267,Petronas Dagangan Berhad,16.46918183
+1624569268,UMW Holdings Berhad,6.064226746
+1624569269,Berjaya Sports Toto Berhad,2.891747286
+1624569271,Dutch Lady Milk Industries Berhad,38.47104557
+1624569271,YTL Corporation Berhad,1.10647496
+1624569271,Kulim (Malaysia) Berhad,3.733018775
+1624569273,CIMB Group Holdings Berhad,3.789383621
+1624569274,YTL Power International Berhad,1.553605434
+1624569276,Nestle (Malaysia) Berhad,144.7657692
+1624569276,Malayan Banking Berhad,7.4975803
+1624569276,Telekom Malaysia Berhad,3.04698873
+1624569278,Tenaga Nasional Berhad,9.198334495
+1624569278,PLUS Malaysia Berhad,5.911703332
+1624569278,Lotus Group Holdings Berhad,0.624863159
+1624569278,DiGi.Com Berhad,4.226307768
+1624569279,Hartalega Holdings Berhad,7.681242571
+1624569280,Maybank Berhad,9.316667337
+1624569284,Bank Islam Malaysia Berhad,1.775130727
+1624569284,Prestariang Berhad,0.933182213
+1624569285,Maxis Berhad,4.666604039
+1624569286,Genting Berhad,5.835008252
+1624569287,Petronas Chemicals Group Berhad,8.413076586
+1624569288,UOA Development Berhad,2.042638502
+1624569288,Prestariang Berhad,0.93924764
+1624569290,IOI Properties Group Berhad,1.103856142
+1624569291,Maybank Berhad,8.699129679
+1624569291,Kulim (Malaysia) Berhad,3.593387936
+1624569291,Malaysia Airports Holdings Berhad,7.264184208
+1624569292,Malaysia Airports Holdings Berhad,6.149856332
+1624569294,Bank Islam Malaysia Berhad,1.562030495
+1624569296,Malayan Banking Berhad,7.436350075
+1624569296,Petronas Holdings Berhad,8.567082174
+1624569297,Penang Port Commission,1.134803314
+1624569297,Sime Darby Berhad,2.545584061
+1624569300,Axiata Group Berhad,3.399265158
