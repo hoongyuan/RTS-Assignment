@@ -1,6 +1,4 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (RTS-StockTradingSystem.vcxproj).  This can lead to incorrect clean and rebuild behavior.
   DisplayPanel.cpp
-C:\Users\hoong\source\repos\RTS-Assignment\DisplayPanel.cpp(157,41): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\hoong\source\repos\RTS-Assignment\DisplayPanel.cpp(157,20): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
-C:\Users\hoong\source\repos\RTS-Assignment\DisplayPanel.cpp(190,27): warning C4101: 'ex': unreferenced local variable
+C:\Users\hoong\source\repos\RTS-Assignment\DisplayPanel.cpp(179,27): warning C4101: 'ex': unreferenced local variable
   RTS-Assignment.vcxproj -> C:\Users\hoong\source\repos\RTS-Assignment\x64\Debug\RTS-Assignment.exe

@@ -29,7 +29,6 @@ string DisplayPanel::stockMapToString(const Stock stocks) {
     if (!result.empty()) {
         result.pop_back();
     }
-
     return result;
 }
 
@@ -40,7 +39,6 @@ void DisplayPanel::updateStock(const Stock stock) {
     if (stock.getPreviousPrice() > 0) {
         stockString += to_string(stock.getPreviousPrice());
     }
-
     // Send data to display panel
     xQueueSend(stockQueue, stockString.c_str(), 1000);
 }
@@ -51,18 +49,15 @@ void DisplayPanel::updateOrderStatus(const Stock receivedStock, const vector<Use
     const int SIZE = 100; 
     string orderArr[SIZE];
     int i = 0;
-
     // Convert the data from vector to string and store in array
     for (User* user : users) {
         vector<Order*> orders = user->getOrders();
-
         for (Order* order : orders) {
             string stringOrder =
                 user->getUsername() + "," +
                 order->getStock() + "," +
                 order->getOrderType() + "," +
                 to_string(order->getTargetPrice());
-
             if (order->getOrderStatus() == true && order->getOrderCloseStatus() != true) {
                 order->setProfitPercentage(receivedStock.getPrice());
                 string profit = to_string(order->getProfitPercentage());
@@ -73,28 +68,22 @@ void DisplayPanel::updateOrderStatus(const Stock receivedStock, const vector<Use
                 if (order->getOrderType() == "BUY") {
                     string timetaken = to_string(order->getExecutionTime());
                     stringOrder += ",[Close Order],NaN," + timetaken;
-
                 }else if (order->getOrderType() == "SELL") {
                     string profit = to_string(order->getCloseProfit());
                     string timetaken = to_string(order->getExecutionTime());
                     stringOrder += ",[Close Order]," + profit + "%," + timetaken;
-                
                 }
             }
-
             orderArr[i++] = stringOrder;
         }
     }
-
+    orderArr[i] = "END";
     // Allocate memory for the dynamic array
     string* orderDataArray = new string[i];
     copy(orderArr, orderArr + i, orderDataArray);
-
     // Send data to display panel
     xQueueSend(orderQueue, &orderDataArray, 0);
-
     usersList = users;
-
 }
 
 
@@ -107,15 +96,12 @@ void DisplayPanel::updateOrderStatus(const double price, const vector<User*> use
     // Convert the data from vector to string and store in array
     for (User* user : users) {
         vector<Order*> orders = user->getOrders();
-
         for (Order* order : orders) {
-
             string stringOrder =
                 user->getUsername() + "," +
                 order->getStock() + "," +
                 order->getOrderType() + "," +
                 to_string(order->getTargetPrice());
-
             if (order->getOrderStatus() == true && order->getOrderCloseStatus() != true) {
                 if (order == pendingUpdateOrder) {
                     order->setProfitPercentage(price);
@@ -128,13 +114,11 @@ void DisplayPanel::updateOrderStatus(const double price, const vector<User*> use
                 if (order->getOrderType() == "BUY") {
                     string timetaken = to_string(order->getExecutionTime());
                     stringOrder += ",[Close Order],NaN," + timetaken;
-
                 }
                 else if (order->getOrderType() == "SELL") {
                     string profit = to_string(order->getCloseProfit());
                     string timetaken = to_string(order->getExecutionTime());
                     stringOrder += ",[Close Order]," + profit + "%," + timetaken;
-
                 }
             }
 
@@ -142,19 +126,17 @@ void DisplayPanel::updateOrderStatus(const double price, const vector<User*> use
             i++;
         }
     }
-
+    orderArr[i++] = "END";
     // Allocate memory for the dynamic array
     string* orderDataArray = new string[i];
     copy(orderArr, orderArr + i, orderDataArray);
-
     // Send data to display panel
     xQueueSend(orderQueue, &orderDataArray, 0);
-
     usersList = users;
 }
 
 void readOrderArray(string* orderReceived) {
-    const int size = orderReceived->size();
+    const string sentinel = "END";
     string username;
     string stockname;
     string ordertype;
@@ -163,9 +145,10 @@ void readOrderArray(string* orderReceived) {
     string profitpercentage;
     string timetaken;
 
-    for (int i = 0; !orderReceived[i].empty(); i++) {
+    for (int i = 0;; i++) {
         orderstatus = "";
         profitpercentage = "";
+        timetaken = "";
         try {
             if (!orderReceived[i].empty()) {
                 istringstream iss(orderReceived[i]);
@@ -185,6 +168,12 @@ void readOrderArray(string* orderReceived) {
                 }
 
                 orderPanel.push_back(line);
+            }
+            else {
+                break;
+            }
+            if (orderReceived[i + 1] == sentinel) {
+                break;
             }
         }
         catch (exception& ex) {
@@ -263,8 +252,7 @@ void printAll(void* pvParameters) {
 
     while (true) {
         refresh = true;
-
-        // Check if receive orders
+        double averageExecuteTime = 0;
         if (xQueueReceive(orderQueue, &orderListReceived, 0) == pdTRUE) {
             orderPanel.clear();
             readOrderArray(orderListReceived);
@@ -285,7 +273,6 @@ void printAll(void* pvParameters) {
         else {
             refresh = false;
         }
-
         system("cls");
         //       cout << R"(
         // ____   ______    ____    ______   _   _
@@ -305,14 +292,23 @@ void printAll(void* pvParameters) {
         cout << setw(30) << "Stock";
         cout << setw(14) << "Order Price";
         cout << setw(15) << "Order Status";
+        cout << setw(30) << "Profit Percentage";
+
+        cout << left << setw(14) << "User";
+        cout << setw(10) << "BUY/SELL";
+        cout << setw(30) << "Stock";
+        cout << setw(14) << "Order Price";
+        cout << setw(15) << "Order Status";
         cout << setw(15) << "Profit Percentage";
         cout << endl;
-        //print orders
-        //cout << "Orders: " << endl;
-        cout << "==========================================================================================================" << endl;
+        
+        int length = 214;
+        for (int i = 0; i < length; i++) {
+            cout << "=";
+        }
+        cout << endl;
 
         if (orderPanel.size() != 0) {
-
             string username;
             string ordertype;
             string stock;
@@ -320,31 +316,66 @@ void printAll(void* pvParameters) {
             string orderstatus;
             string profit;
             string timetaken;
-
             for (int i = 0; i < orderPanel.size(); i++) {
                 //cout << orderPanel[i] << endl;
                 orderstatus = "";
                 profit = "";
                 timetaken = "";
                 istringstream iss(orderPanel[i]);
-
                 getline(iss, username, ',');
                 getline(iss, ordertype, ',');
-                getline(iss, stockname, ',');
+                getline(iss, stock, ',');
                 getline(iss, targetprice, ',');
                 getline(iss, orderstatus, ',');
                 getline(iss, profit, ',');
                 getline(iss, timetaken, ',');
+                int rightSidePadding = 59;
+
+                if (orderstatus == "[Open Order]" || orderstatus == "[Close Order]") {
+                    rightSidePadding = 14;
+                }
 
                 cout << left << setw(14) << username
                     << setw(10) << ordertype
-                    << setw(30) << stockname
-                    << setw(14) << targetprice;
+                    << setw(30) << stock
+                    << setw(rightSidePadding) << targetprice;
 
                 if (orderstatus == "[Open Order]" || orderstatus == "[Close Order]") {
                     cout << left << setw(15) << orderstatus;
                     cout << setw(15) << profit;
-                    cout << setw(10) << timetaken;
+                    cout << setw(15) << timetaken;
+                    averageExecuteTime += stod(timetaken);
+                }
+
+                if (i + 1 < orderPanel.size()) {
+                    string username1;
+                    string ordertype1;
+                    string stock1;
+                    string targetprice1;
+                    string orderstatus1;
+                    string profit1;
+                    string timetaken1;
+                    istringstream iss(orderPanel[i+1]);
+                    getline(iss, username1, ',');
+                    getline(iss, ordertype1, ',');
+                    getline(iss, stock1, ',');
+                    getline(iss, targetprice1, ',');
+                    getline(iss, orderstatus1, ',');
+                    getline(iss, profit1, ',');
+                    getline(iss, timetaken1, ',');
+
+                    cout << left << setw(14) << username1
+                        << setw(10) << ordertype1
+                        << setw(30) << stock1
+                        << setw(14) << targetprice1;
+
+                    if (orderstatus1 == "[Open Order]" || orderstatus1 == "[Close Order]") {
+                        cout << left << setw(15) << orderstatus1;
+                        cout << setw(15) << profit1;
+                        cout << setw(8) << timetaken1;
+                        averageExecuteTime += stod(timetaken1);
+                    }
+                    i++;
                 }
                 cout << endl;
             }
@@ -352,38 +383,29 @@ void printAll(void* pvParameters) {
         else {
             cout << "There are no order!" << endl;
         }
-        cout << "==========================================================================================================" << endl;
+        for (int i = 0; i < length; i++) {
+            cout << "=";
+        }
+
+        //print average execution time of orders
+        if (orderPanel.size() != 0) {
+            cout << endl;
+            cout << "Average Order Execution Time: " << averageExecuteTime / orderPanel.size() << endl;
+        }
+        cout << endl;
 
         //print stocks
         // Display headers
-
         cout << left << setw(20) << "Last Updated";
         cout << setw(40) << "Stock";
         cout << setw(20) << "Price";
         //cout << "%Change"  << endl;
-
         cout << left << setw(20) << "Last Updated";
         cout << setw(40) << "Stock";
         cout << setw(20) << "Price" << endl;
-
         sort(stockPanel.begin(), stockPanel.end(), [](const Stock& a, const Stock& b) {
             return a.getSymbol() < b.getSymbol();
             });
-
-        //for (int i = 0; i < stockPanel.size(); i++) {
-        //    cout << left << setw(20) << stockPanel[i].getTimestamp();
-        //    cout << setw(40) << stockPanel[i].getSymbol();
-        //    if (stockPanel[i].getPrice() > stockPanel[i].getPreviousPrice()) {
-        //        SetConsoleTextAttribute(hConsole, FOREGROUND_GREEN);
-        //    }
-        //    else {
-        //        SetConsoleTextAttribute(hConsole, FOREGROUND_RED);
-        //    }
-        //    cout << setw(40) << stockPanel[i].getPrice();
-        //    SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
-        //    cout << endl;
-        //}
-
         for (int i = 0; i < stockPanel.size(); i++) {
             //print timestamp
             cout << left << setw(20) << stockPanel[i].getTimestamp();
@@ -398,7 +420,6 @@ void printAll(void* pvParameters) {
             }
             //print price
             cout << setw(20) << stockPanel[i].getPrice();
-
             //reset color
             SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
 
@@ -415,11 +436,8 @@ void printAll(void* pvParameters) {
                 SetConsoleTextAttribute(hConsole, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
                 i++;
             }
-
             cout << endl;
         }
-
-
         if (!refresh) {
             vTaskDelay(pdMS_TO_TICKS(1000));// wait for 1 second
         }
