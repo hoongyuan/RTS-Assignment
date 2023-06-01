@@ -289,20 +289,20 @@ void printAll(void* pvParameters) {
 
         cout << left << setw(14) << "User";
         cout << setw(10) << "BUY/SELL";
-        cout << setw(35) << "Stock";
+        cout << setw(37) << "Stock";
         cout << setw(14) << "Order Price";
         cout << setw(15) << "Order Status";
         cout << setw(30) << "Profit Percentage";
 
         cout << left << setw(14) << "User";
         cout << setw(10) << "BUY/SELL";
-        cout << setw(35) << "Stock";
+        cout << setw(37) << "Stock";
         cout << setw(14) << "Order Price";
         cout << setw(15) << "Order Status";
         cout << setw(15) << "Profit Percentage";
         cout << endl;
         
-        int length = 219;
+        int length = 227;
         for (int i = 0; i < length; i++) {
             cout << "=";
         }
@@ -337,7 +337,7 @@ void printAll(void* pvParameters) {
 
                 cout << left << setw(14) << username
                     << setw(10) << ordertype
-                    << setw(35) << stock
+                    << setw(37) << stock
                     << setw(rightSidePadding) << targetprice;
 
                 if (orderstatus == "[Open Order]" || orderstatus == "[Close Order]") {
@@ -366,7 +366,7 @@ void printAll(void* pvParameters) {
 
                     cout << left << setw(14) << username1
                         << setw(10) << ordertype1
-                        << setw(35) << stock1
+                        << setw(37) << stock1
                         << setw(14) << targetprice1;
 
                     if (orderstatus1 == "[Open Order]" || orderstatus1 == "[Close Order]") {
@@ -390,7 +390,7 @@ void printAll(void* pvParameters) {
         //print average execution time of orders
         if (orderPanel.size() != 0) {
             cout << endl;
-            cout << "Average Order Execution Time: " << averageExecuteTime / orderPanel.size() << endl;
+            cout << "Average Order Execution Time: " << fixed << setprecision(5) << averageExecuteTime / orderPanel.size() << endl;
         }
         cout << endl;
 
