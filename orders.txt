@@ -1,27 +1,101 @@
-User,Stock,OrderType,TargetPrice
-Hoong Yuan,Petronas Gas Berhad,BUY,16.20
-Jordan,Bank Islam Malaysia Berhad,BUY,1.470365843
-Kevin Lim,Kulim (Malaysia) Berhad,BUY,3.788
-Tristan,Bank Islam Malaysia Berhad,BUY,1.470365843
-Ng Jing Tao,Petronas Holdings Berhad,BUY,11.40
-Lennon,UOA Development Berhad,BUY,1.64241416
-Ng Jing Tao,UOA Development Berhad,BUY,1.734241416
-Hoong Yuan,Petronas Gas Berhad,SELL,18.20
-Jordan,Bank Islam Malaysia Berhad,SELL,1.500000
-Kevin Lim,Kulim (Malaysia) Berhad,BUY,3.788
-Ng Jing Tao,Petronas Holdings Berhad,BUY,11.40
-Lennon,Penang Port Commission,BUY,1.377276941
-Ng Jing Tao,FGV Holdings Berhad,BUY,1.186704702
-Ng Jing Tao,FGV Holdings Berhad,BUY,1.128670
-Kevin Lim,Public Bank Berhad,BUY,5.23256656
-Ng Jing Tao,Petronas Holdings Berhad,BUY,11.40
-Lennon,UOA Development Berhad,BUY,1.64241416
-Ng Jing Tao,UOA Development Berhad,BUY,1.734241416
-Hoong Yuan,Petronas Gas Berhad,SELL,18.20
-Jordan,Bank Islam Malaysia Berhad,SELL,1.500000
-Kevin Lim,Kulim (Malaysia) Berhad,BUY,3.788
-Ng Jing Tao,Petronas Holdings Berhad,BUY,11.40
-Lennon,Penang Port Commission,BUY,1.377276941
-Ng Jing Tao,FGV Holdings Berhad,BUY,1.186704702
-Ng Jing Tao,FGV Holdings Berhad,BUY,1.128670
-Kevin Lim,Public Bank Berhad,BUY,5.23256656
+User ,Stock,OrderType,Target Price
+Penelope,Berjaya Corporation Berhad,BUY,0.998873933
+Luna,Penang Port Commission,BUY,1.15792925
+Aria,Maxis Berhad,BUY,4.168731617
+Victoria,Petronas Chemicals Group Berhad,BUY,7.6289372
+Natalie,Ambank Group Berhad,BUY,3.024923848
+Addison,Bank Islam Malaysia Berhad,BUY,1.479467962
+Emily,Tasco Berhad,BUY,2.399936998
+Kinsley,YTL Corporation Berhad,BUY,1.197911321
+Kennedy,DiGi.Com Berhad,BUY,4.226929707
+Kennedy,DiGi.Com Berhad,BUY,4.115350521
+Chloe,Berjaya Corporation Berhad,BUY,0.98531584
+Emma,MISC Berhad,BUY,6.066018312
+Nora,Malayan Banking Berhad,BUY,8.560694698
+Aria,Top Glove Corporation Berhad,BUY,2.578779849
+Skylar,Kulim (Malaysia) Berhad,BUY,3.293922425
+Noah,Prestariang Berhad,BUY,0.812195981
+Grace,Genting Berhad,BUY,5.813775287
+Charlotte,PLUS Malaysia Berhad,BUY,5.6497421
+Eleanor,YTL Power International Berhad,BUY,1.347383159
+Hazel,Petronas Holdings Berhad,BUY,10.55915473
+Emily,Malaysia Smelting Corporation Berhad,BUY,3.010220093
+Scarlett,UOA Development Berhad,BUY,1.573434886
+Ella,Scientex Berhad,BUY,12.45065329
+Abigail,PLUS Malaysia Berhad,BUY,5.048639028
+Hazel,Petronas Holdings Berhad,BUY,9.127258338
+Zoey,Berjaya Sports Toto Berhad,BUY,2.900970942
+Paisley,Padini Holdings Berhad,BUY,2.285556434
+Avery,Public Bank Berhad,BUY,4.201306762
+Hannah,PLUS Malaysia Berhad,BUY,5.065762584
+Isabella,Dutch Lady Milk Industries Berhad,BUY,36.59372882
+Riley,Axiata Group Berhad,BUY,4.233424229
+Mia,Petronas Holdings Berhad,BUY,11.23892254
+Sofia,IGB Real Estate Investment Trust,BUY,2.092892612
+Anna,Tasco Berhad,BUY,1.891665363
+Genesis,Telekom Malaysia Berhad,BUY,2.83879964
+Hannah,Sapura Energy Berhad,BUY,0.663418865
+Zoe,Proton Holdings Berhad,BUY,1.193769839
+Mia,Petronas Holdings Berhad,BUY,11.31629621
+Amelia,YTL Power International Berhad,BUY,1.270321105
+Nora,Malaysia Building Society Berhad,BUY,1.247019996
+Liam,Sapura Energy Berhad,BUY,0.673750509
+Charlotte,Astro Malaysia Holdings Berhad,BUY,1.309772804
+Avery,Tenaga Nasional Berhad,BUY,8.937313936
+Emma,Dutch Lady Milk Industries Berhad,BUY,38.31402429
+Emily,Public Bank Berhad,BUY,4.617775505
+Skylar,Maxis Berhad,BUY,3.949308973
+Emma,Sime Darby Plantation Berhad,BUY,3.59747986
+Isabella,Nestle (Malaysia) Berhad,BUY,167.801609
+Sarah,Petronas Dagangan Berhad,BUY,15.77476057
+Aurora,Axiata Group Berhad,BUY,3.84660122
+Hannah,Bank Islam Malaysia Berhad,BUY,1.465898484
+Charlotte,Genting Malaysia Berhad,BUY,2.494123331
+Kennedy,Malaysia Airports Holdings Berhad,BUY,5.902905949
+Brooklyn,FGV Holdings Berhad,BUY,1.250739878
+Leah,Sime Darby Plantation Berhad,BUY,4.264229058
+Evelyn,Tenaga Nasional Berhad,BUY,10.84091256
+Savannah,Ambank Group Berhad,BUY,2.773542541
+Ellie,Malaysia Airports Holdings Berhad,BUY,5.931119365
+Noah,Kulim (Malaysia) Berhad,BUY,3.318303245
+Kennedy,Sime Darby Berhad,BUY,2.226801824
+Amelia,AirAsia Group Berhad,BUY,2.837737819
+Madison,Sime Darby Berhad,BUY,2.039587104
+Aubrey,Maybank Berhad,BUY,8.761742424
+Eleanor,PLUS Malaysia Berhad,BUY,4.922716958
+Chloe,Proton Holdings Berhad,BUY,0.950704412
+Nora,Malaysia Airports Holdings Berhad,BUY,7.120328192
+Riley,Astro Malaysia Holdings Berhad,BUY,1.089606593
+Bella,Penang Port Commission,BUY,1.419343428
+Lily,Kulim (Malaysia) Berhad,BUY,3.835144005
+Liam,Public Bank Berhad,BUY,5.108398302
+Emily,FGV Holdings Berhad,BUY,1.045705153
+Chloe,Petronas Gas Berhad,BUY,18.27707099
+Hazel,Top Glove Corporation Berhad,BUY,2.476026324
+Victoria,DiGi.Com Berhad,BUY,4.064284128
+Isabella,Public Bank Berhad,BUY,4.186074211
+Riley,Maxis Berhad,BUY,4.259968774
+Charlotte,PLUS Malaysia Berhad,SELL,5.15562774
+Charlotte,Astro Malaysia Holdings Berhad,SELL,1.348206382
+Charlotte,Genting Malaysia Berhad,SELL,3.085737765
+Victoria,Petronas Chemicals Group Berhad,SELL,6.760240385
+Sofia,IGB Real Estate Investment Trust,SELL,2.088125397
+Ella,Scientex Berhad,SELL,12.06665086
+Kennedy,Malaysia Airports Holdings Berhad,SELL,7.652668368
+Brooklyn,FGV Holdings Berhad,SELL,1.041824277
+Victoria,DiGi.Com Berhad,SELL,3.361530307
+Nora,Malayan Banking Berhad,SELL,9.214357577
+Eleanor,YTL Power International Berhad,SELL,1.662849829
+Aria,Maxis Berhad,SELL,5.088220176
+Hazel,Petronas Holdings Berhad,SELL,8.949379308
+Sarah,Petronas Dagangan Berhad,SELL,19.89205841
+Chloe,Proton Holdings Berhad,SELL,1.064155743
+Mia,Petronas Holdings Berhad,SELL,11.43405494
+Kennedy,DiGi.Com Berhad,SELL,3.512049924
+Eleanor,PLUS Malaysia Berhad,SELL,5.04461237
+Luna,Penang Port Commission,SELL,1.37309529
+Amelia,YTL Power International Berhad,SELL,1.2399347
+Isabella,Dutch Lady Milk Industries Berhad,SELL,37.27322277
+Anna,Tasco Berhad,SELL,1.991549107
+Savannah,Ambank Group Berhad,SELL,2.399770958
+Amelia,AirAsia Group Berhad,SELL,3.0132423

@@ -71,14 +71,6 @@ void csvReaderTask(void* pvParameters)
             string symbol = row[1];
             double price = stod(row[2]);
             Stock* stock = new Stock(symbol, price, timestamp);
-            //string stockCSVString = symbol + "," + to_string(price) + "," + to_string(timestamp);
-            //displaypanel.updateTime(timestamp,stockManager->getMap());
-
-            //stockManager->addStock(stock);
-            
-            /*if (uxQueueSpacesAvailable(sendParseStock) == 0) {
-                xQueueReset(sendParseStock);
-            }*/
 
             xQueueSend(sendParseStock, &stock, 100);
 
@@ -129,6 +121,7 @@ void csvReadOrder(void* pvParameters) {
             string ordertype = row[2];
             double targetprice = stod(row[3]);
 
+            //vTaskDelay(pdMS_TO_TICKS(100));
             orderManager->addOrder(user,stock,ordertype,targetprice);    
 
 

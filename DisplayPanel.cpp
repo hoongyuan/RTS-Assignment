@@ -46,7 +46,7 @@ void DisplayPanel::updateStock(const Stock stock) {
 void DisplayPanel::updateOrderStatus(const Stock receivedStock, const vector<User*> users)
 {
     //const int size = sizeof(users);
-    const int SIZE = 100; 
+    const int SIZE = 150; 
     string orderArr[SIZE];
     int i = 0;
     // Convert the data from vector to string and store in array
@@ -89,7 +89,7 @@ void DisplayPanel::updateOrderStatus(const Stock receivedStock, const vector<Use
 
 void DisplayPanel::updateOrderStatus(const double price, const vector<User*> users, const Order* pendingUpdateOrder) {
     //const int size = sizeof(users);
-    const int SIZE = 100;
+    const int SIZE = 150;
     string orderArr[SIZE];
     int i = 0;
 
@@ -284,25 +284,25 @@ void printAll(void* pvParameters) {
         //                                                    
         //   )" << endl;
 
-               //print time
+        //print time
         cout << "Time: " << simulatedTime << endl << endl;
 
         cout << left << setw(14) << "User";
         cout << setw(10) << "BUY/SELL";
-        cout << setw(30) << "Stock";
+        cout << setw(35) << "Stock";
         cout << setw(14) << "Order Price";
         cout << setw(15) << "Order Status";
         cout << setw(30) << "Profit Percentage";
 
         cout << left << setw(14) << "User";
         cout << setw(10) << "BUY/SELL";
-        cout << setw(30) << "Stock";
+        cout << setw(35) << "Stock";
         cout << setw(14) << "Order Price";
         cout << setw(15) << "Order Status";
         cout << setw(15) << "Profit Percentage";
         cout << endl;
         
-        int length = 214;
+        int length = 219;
         for (int i = 0; i < length; i++) {
             cout << "=";
         }
@@ -337,7 +337,7 @@ void printAll(void* pvParameters) {
 
                 cout << left << setw(14) << username
                     << setw(10) << ordertype
-                    << setw(30) << stock
+                    << setw(35) << stock
                     << setw(rightSidePadding) << targetprice;
 
                 if (orderstatus == "[Open Order]" || orderstatus == "[Close Order]") {
@@ -366,7 +366,7 @@ void printAll(void* pvParameters) {
 
                     cout << left << setw(14) << username1
                         << setw(10) << ordertype1
-                        << setw(30) << stock1
+                        << setw(35) << stock1
                         << setw(14) << targetprice1;
 
                     if (orderstatus1 == "[Open Order]" || orderstatus1 == "[Close Order]") {
