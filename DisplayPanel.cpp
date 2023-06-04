@@ -10,8 +10,8 @@
 #include <algorithm>
 
 HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-QueueHandle_t orderQueue = xQueueCreate(50, 50); //10 queue, 100 orders
-QueueHandle_t stockQueue = xQueueCreate(100, 60); //10 queue, 50 stocks
+QueueHandle_t orderQueue = xQueueCreate(50, 50); //50 queue, 50 orders
+QueueHandle_t stockQueue = xQueueCreate(100, 60); //100 queue, 60 stocks
 vector<Stock> stockPanel;
 vector<string> orderPanel;
 vector<User*> usersList;

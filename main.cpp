@@ -31,27 +31,25 @@ int main() {
     //Create time simulator task
     xTaskCreate(incrementSimulatedTimeTask, "SimulatedTime", configMINIMAL_STACK_SIZE, NULL, 1, NULL);
 
-    //Create file reader task
+    //Create Read Stock task
     xTaskCreate(csvReaderTask, "CSVReadStock", configMINIMAL_STACK_SIZE, &stockManager, 1, NULL);
 
-    //Create file reader task
+    //Create Read Order task
     xTaskCreate(csvReadOrder, "CSVReadOrder", configMINIMAL_STACK_SIZE, &orderManager, 1, NULL);
 
-    //Create file reader task
+    //Create Manage Order task
     xTaskCreate(manageOrder, "ManageOrder", configMINIMAL_STACK_SIZE, &orderManager, 1, NULL);
 
-    //Create file reader task
+    //Create Parse Stock task
     xTaskCreate(csvParseStock, "CSVParseStock", configMINIMAL_STACK_SIZE, &stockManager, 1, NULL);
 
     //Create display panel task
     xTaskCreate(printAll, "DisplayPanelStart", configMINIMAL_STACK_SIZE, &displayPanel, 1, NULL);
 
-    //Create display panel task
+    //Create Update Profit task
     xTaskCreate(updateProfit, "updateOrderProfit", configMINIMAL_STACK_SIZE, &displayPanel, 1, NULL);
 
     vTaskStartScheduler();
-
-    // Use the stockManager and stocks vector as needed
 
     return 0;
 }
